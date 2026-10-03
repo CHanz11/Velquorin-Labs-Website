@@ -31,22 +31,32 @@ const processSteps = [
 
 export default function ProcessSection() {
   return (
-    <section className="border-t border-[#20263d] bg-[#080b19] px-4 py-20 sm:px-6 sm:py-24 lg:px-8 lg:py-28">
-      <div className="mx-auto max-w-7xl">
+    <section className="relative overflow-hidden border-t border-slate-200 bg-[#f8f7ff] px-4 py-20 sm:px-6 sm:py-24 lg:px-8 lg:py-28">
+      {/* Background design */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0"
+      >
+        <div className="absolute left-1/2 top-[-180px] h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-violet-500/[0.07] blur-[130px]" />
+
+        <div className="absolute bottom-[-220px] right-[-120px] h-[420px] w-[420px] rounded-full bg-indigo-400/[0.05] blur-[120px]" />
+      </div>
+
+      <div className="relative mx-auto max-w-7xl">
         {/* Section heading */}
         <div className="mx-auto mb-12 max-w-3xl text-center sm:mb-16">
-          <p className="mb-3 text-[10px] font-medium uppercase tracking-[0.28em] text-[#8d92a8]">
+          <p className="mb-3 text-[10px] font-medium uppercase tracking-[0.28em] text-slate-500">
             Our Process
           </p>
 
-          <h2 className="text-3xl font-bold tracking-tight text-[#f5f6ff] sm:text-4xl lg:text-5xl">
+          <h2 className="text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl lg:text-5xl">
             From Idea to{" "}
-            <span className="bg-gradient-to-r from-[#a46cff] to-[#7457ff] bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent">
               Working Solution
             </span>
           </h2>
 
-          <p className="mx-auto mt-4 max-w-2xl text-sm leading-7 text-[#9ba1b7] sm:text-base">
+          <p className="mx-auto mt-4 max-w-2xl text-sm leading-7 text-slate-600 sm:text-base">
             A clear, collaborative approach to turn your business needs into
             practical AI and digital solutions.
           </p>
@@ -57,36 +67,36 @@ export default function ProcessSection() {
           {/* Desktop connecting line */}
           <div
             aria-hidden="true"
-            className="absolute left-[12.5%] right-[12.5%] top-[35px] hidden h-px bg-gradient-to-r from-transparent via-[#513493] to-transparent lg:block"
+            className="absolute left-[12.5%] right-[12.5%] top-[35px] hidden h-px bg-gradient-to-r from-transparent via-violet-300 to-transparent lg:block"
           />
 
           {processSteps.map((step) => (
             <article
               key={step.number}
-              className="group relative rounded-2xl border border-[#262d49] bg-[#101426] p-6 transition duration-300 hover:-translate-y-1 hover:border-[#6842bd]"
+              className="group relative rounded-2xl border border-slate-200 bg-white/90 p-6 shadow-[0_10px_35px_rgba(15,23,42,0.045)] backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:border-violet-300 hover:shadow-[0_18px_45px_rgba(124,58,237,0.10)]"
             >
               {/* Step number */}
               <div className="relative z-10 mb-7 flex items-center justify-between">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full border border-[#493080] bg-[#1a1239] text-sm font-medium text-[#b994ff] shadow-[0_0_25px_rgba(124,58,237,0.12)]">
+                <div className="flex h-12 w-12 items-center justify-center rounded-full border border-violet-200 bg-violet-50 text-sm font-medium text-violet-700 shadow-[0_8px_24px_rgba(124,58,237,0.10)]">
                   {step.number}
                 </div>
 
-                <span className="text-[9px] uppercase tracking-[0.24em] text-[#747b93]">
+                <span className="text-[9px] uppercase tracking-[0.24em] text-slate-400">
                   {step.label}
                 </span>
               </div>
 
-              <h3 className="mb-3 text-lg font-semibold text-[#f4f5ff]">
+              <h3 className="mb-3 text-lg font-semibold text-slate-900">
                 {step.title}
               </h3>
 
-              <p className="text-sm leading-6 text-[#969db3]">
+              <p className="text-sm leading-6 text-slate-600">
                 {step.description}
               </p>
 
               {/* Bottom accent */}
-              <div className="mt-7 h-px w-full bg-[#252b43]">
-                <div className="h-px w-0 bg-[#8b5cf6] transition-all duration-300 group-hover:w-full" />
+              <div className="mt-7 h-px w-full bg-slate-200">
+                <div className="h-px w-0 bg-violet-500 transition-all duration-300 group-hover:w-full" />
               </div>
             </article>
           ))}
@@ -94,8 +104,8 @@ export default function ProcessSection() {
 
         {/* Bottom message */}
         <div className="mt-10 flex justify-center">
-          <div className="inline-flex items-center gap-2 rounded-full border border-[#292f49] bg-[#0d1121] px-4 py-2 text-[11px] text-[#9298ad]">
-            <span className="h-1.5 w-1.5 rounded-full bg-[#8b5cf6]" />
+          <div className="inline-flex items-center gap-2 rounded-full border border-violet-200 bg-white/80 px-4 py-2 text-[11px] text-slate-600 shadow-sm backdrop-blur-sm">
+            <span className="h-1.5 w-1.5 rounded-full bg-violet-500" />
             Simple process. Practical solutions. Built around your business.
           </div>
         </div>

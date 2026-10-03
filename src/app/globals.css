@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 /* =========================================================
-   VELQUORIN LABS — DESIGN SYSTEM
+   VELQUORIN LABS — LIGHT DESIGN SYSTEM
    ========================================================= */
 
 :root {
@@ -12,24 +12,29 @@
   --color-accent: #6366f1;
 
   /* Backgrounds */
-  --color-background: #080b1a;
-  --color-background-deep: #050711;
-  --color-surface: #101426;
-  --color-surface-elevated: #171b31;
+  --color-background: #ffffff;
+  --color-background-deep: #f8f7ff;
+  --color-background-soft: #f5f3ff;
+
+  /* Surfaces */
+  --color-surface: #ffffff;
+  --color-surface-elevated: #faf9ff;
+  --color-surface-purple: #f5f3ff;
 
   /* Typography */
-  --color-text-primary: #f8fafc;
-  --color-text-secondary: #a8b0c3;
-  --color-text-muted: #717a91;
+  --color-text-primary: #11152b;
+  --color-text-secondary: #475569;
+  --color-text-muted: #64748b;
 
   /* Borders */
-  --color-border: #242a40;
-  --color-border-hover: #343b59;
+  --color-border: #e2e8f0;
+  --color-border-hover: #c4b5fd;
+  --color-border-purple: #ddd6fe;
 
   /* Status */
-  --color-success: #22c55e;
-  --color-warning: #f59e0b;
-  --color-error: #ef4444;
+  --color-success: #16a34a;
+  --color-warning: #d97706;
+  --color-error: #dc2626;
 
   /* Layout */
   --container-width: 1200px;
@@ -44,10 +49,13 @@
 
   /* Shadows */
   --shadow-card:
-    0 10px 30px rgba(0, 0, 0, 0.2);
+    0 10px 35px rgba(15, 23, 42, 0.07);
+
+  --shadow-card-hover:
+    0 18px 45px rgba(15, 23, 42, 0.1);
 
   --shadow-purple:
-    0 0 40px rgba(124, 58, 237, 0.2);
+    0 15px 45px rgba(124, 58, 237, 0.14);
 
   /* Animation */
   --transition-fast: 150ms ease;
@@ -62,7 +70,7 @@
 @theme inline {
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  
+
   --color-brand-primary: var(--color-primary);
   --color-brand-light: var(--color-primary-light);
   --color-brand-soft: var(--color-primary-soft);
@@ -70,15 +78,19 @@
 
   --color-site-background: var(--color-background);
   --color-site-deep: var(--color-background-deep);
+  --color-site-soft: var(--color-background-soft);
 
   --color-surface: var(--color-surface);
   --color-surface-elevated: var(--color-surface-elevated);
+  --color-surface-purple: var(--color-surface-purple);
 
   --color-text-primary: var(--color-text-primary);
   --color-text-secondary: var(--color-text-secondary);
   --color-text-muted: var(--color-text-muted);
 
   --color-border-default: var(--color-border);
+  --color-border-hover: var(--color-border-hover);
+  --color-border-purple: var(--color-border-purple);
 }
 
 /* =========================================================
@@ -91,6 +103,7 @@
 
 html {
   scroll-behavior: smooth;
+  background: var(--color-background);
 }
 
 html,
@@ -102,11 +115,25 @@ body {
 body {
   min-height: 100vh;
 
+  /*
+   * Keep the subtle Velquorin purple atmosphere from the
+   * original dark design, but place it on a light canvas.
+   */
   background:
     radial-gradient(
-      circle at 50% -20%,
-      rgba(124, 58, 237, 0.12),
-      transparent 40%
+      circle at 50% -10%,
+      rgba(124, 58, 237, 0.09),
+      transparent 32rem
+    ),
+    radial-gradient(
+      circle at 8% 35%,
+      rgba(99, 102, 241, 0.035),
+      transparent 28rem
+    ),
+    radial-gradient(
+      circle at 92% 70%,
+      rgba(139, 92, 246, 0.035),
+      transparent 28rem
     ),
     var(--color-background);
 
@@ -177,8 +204,8 @@ button {
    ========================================================= */
 
 ::selection {
-  background: rgba(124, 58, 237, 0.35);
-  color: #ffffff;
+  background: rgba(124, 58, 237, 0.2);
+  color: #11152b;
 }
 
 /* =========================================================
@@ -208,15 +235,60 @@ button {
 }
 
 /* =========================================================
+   LIGHT SECTION BACKGROUNDS
+   ========================================================= */
+
+.section-white {
+  background: #ffffff;
+}
+
+.section-soft {
+  background:
+    radial-gradient(
+      circle at 15% 20%,
+      rgba(124, 58, 237, 0.045),
+      transparent 24rem
+    ),
+    #f8fafc;
+}
+
+.section-purple-soft {
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(124, 58, 237, 0.07),
+      transparent 28rem
+    ),
+    #faf9ff;
+}
+
+/* =========================================================
+   LIGHT CARDS
+   ========================================================= */
+
+.light-card {
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-card);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.light-card:hover {
+  border-color: var(--color-border-hover);
+  box-shadow: var(--shadow-card-hover);
+}
+
+/* =========================================================
    BRAND EFFECTS
    ========================================================= */
 
 .brand-gradient-text {
   background: linear-gradient(
     90deg,
-    var(--color-primary-soft),
-    var(--color-primary-light),
-    var(--color-accent)
+    #7c3aed,
+    #8b5cf6,
+    #6366f1
   );
 
   background-clip: text;
@@ -227,6 +299,38 @@ button {
 
 .brand-glow {
   box-shadow: var(--shadow-purple);
+}
+
+/* =========================================================
+   DECORATIVE LIGHT GLOW
+   ========================================================= */
+
+.light-purple-glow {
+  background: rgba(124, 58, 237, 0.08);
+  filter: blur(100px);
+  pointer-events: none;
+}
+
+/* =========================================================
+   SCROLLBAR
+   ========================================================= */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f8fafc;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border: 2px solid #f8fafc;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a78bfa;
 }
 
 /* =========================================================
