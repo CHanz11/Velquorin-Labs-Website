@@ -269,7 +269,7 @@ const sections = [
 
 export default function PrivacyPolicyContent() {
   return (
-    <section className="border-b border-slate-800/80 bg-[#050817]">
+    <section className="border-b border-violet-100 bg-white">
       <div className="mx-auto max-w-6xl px-6 py-20 lg:px-8 lg:py-24">
         <div className="grid gap-12 lg:grid-cols-[240px_1fr] lg:gap-16">
           {/* Side navigation */}
@@ -285,7 +285,7 @@ export default function PrivacyPolicyContent() {
                     <li key={section.number}>
                       <a
                         href={`#section-${section.number}`}
-                        className="text-xs text-slate-500 transition-colors hover:text-violet-400"
+                        className="text-xs text-slate-500 transition-colors hover:text-violet-600"
                       >
                         {section.number}. {section.title}
                       </a>
@@ -295,7 +295,7 @@ export default function PrivacyPolicyContent() {
                   <li>
                     <a
                       href="#contact-privacy"
-                      className="text-xs text-slate-500 transition-colors hover:text-violet-400"
+                      className="text-xs text-slate-500 transition-colors hover:text-violet-600"
                     >
                       13. Contact Us
                     </a>
@@ -307,8 +307,9 @@ export default function PrivacyPolicyContent() {
 
           {/* Policy */}
           <div className="max-w-3xl">
-            <div className="mb-14 rounded-2xl border border-violet-500/20 bg-violet-500/[0.04] p-6 sm:p-8">
-              <p className="text-sm leading-7 text-slate-400">
+            {/* Introduction */}
+            <div className="mb-14 rounded-2xl border border-violet-200 bg-violet-50/50 p-6 sm:p-8">
+              <p className="text-sm leading-7 text-slate-600">
                 Velquorin Labs respects your privacy. This policy describes
                 the types of information we may collect, why we use it, when
                 it may be shared, and the choices that may be available to
@@ -316,24 +317,25 @@ export default function PrivacyPolicyContent() {
               </p>
             </div>
 
+            {/* Privacy sections */}
             <div className="space-y-0">
               {sections.map((section) => (
                 <article
                   id={`section-${section.number}`}
                   key={section.number}
-                  className="scroll-mt-28 border-b border-slate-800/80 py-10 first:pt-0"
+                  className="scroll-mt-28 border-b border-slate-200 py-10 first:pt-0"
                 >
                   <div className="mb-5 flex items-start gap-4">
-                    <span className="mt-1 flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-violet-500/30 bg-violet-500/5 text-[10px] font-semibold text-violet-300">
+                    <span className="mt-1 flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-violet-200 bg-violet-50 text-[10px] font-semibold text-violet-600">
                       {section.number}
                     </span>
 
-                    <h2 className="text-xl font-semibold tracking-tight text-white sm:text-2xl">
+                    <h2 className="text-xl font-semibold tracking-tight text-[#11152f] sm:text-2xl">
                       {section.title}
                     </h2>
                   </div>
 
-                  <div className="space-y-4 pl-0 text-sm leading-7 text-slate-400 sm:pl-12 [&_li]:relative [&_li]:pl-5 [&_li]:before:absolute [&_li]:before:left-0 [&_li]:before:top-[11px] [&_li]:before:h-1.5 [&_li]:before:w-1.5 [&_li]:before:rounded-full [&_li]:before:bg-violet-500 [&_ul]:space-y-2">
+                  <div className="space-y-4 pl-0 text-sm leading-7 text-slate-600 sm:pl-12 [&_li]:relative [&_li]:pl-5 [&_li]:before:absolute [&_li]:before:left-0 [&_li]:before:top-[11px] [&_li]:before:h-1.5 [&_li]:before:w-1.5 [&_li]:before:rounded-full [&_li]:before:bg-violet-500 [&_ul]:space-y-2">
                     {section.content}
                   </div>
                 </article>
@@ -345,16 +347,16 @@ export default function PrivacyPolicyContent() {
                 className="scroll-mt-28 pt-10"
               >
                 <div className="mb-5 flex items-start gap-4">
-                  <span className="mt-1 flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-violet-500/30 bg-violet-500/5 text-[10px] font-semibold text-violet-300">
+                  <span className="mt-1 flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-violet-200 bg-violet-50 text-[10px] font-semibold text-violet-600">
                     13
                   </span>
 
-                  <h2 className="text-xl font-semibold tracking-tight text-white sm:text-2xl">
+                  <h2 className="text-xl font-semibold tracking-tight text-[#11152f] sm:text-2xl">
                     Contact Us
                   </h2>
                 </div>
 
-                <div className="space-y-4 text-sm leading-7 text-slate-400 sm:pl-12">
+                <div className="space-y-4 text-sm leading-7 text-slate-600 sm:pl-12">
                   <p>
                     If you have questions about this Privacy Policy or would
                     like to make a privacy-related request, please contact
@@ -363,7 +365,7 @@ export default function PrivacyPolicyContent() {
 
                   <a
                     href="/contact"
-                    className="inline-flex items-center rounded-full border border-violet-500/30 bg-violet-500/5 px-5 py-2.5 text-xs font-semibold text-violet-300 transition hover:border-violet-400/60 hover:bg-violet-500/10 hover:text-violet-200"
+                    className="inline-flex items-center rounded-full border border-violet-200 bg-violet-50 px-5 py-2.5 text-xs font-semibold text-violet-700 transition hover:border-violet-300 hover:bg-violet-100 hover:text-violet-800"
                   >
                     Contact Velquorin Labs →
                   </a>

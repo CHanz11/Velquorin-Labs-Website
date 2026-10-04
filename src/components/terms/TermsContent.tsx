@@ -4,19 +4,55 @@ const sections = [
   { id: "acceptance", number: "01", title: "Acceptance of Terms" },
   { id: "services", number: "02", title: "Our Services" },
   { id: "eligibility", number: "03", title: "Eligibility" },
-  { id: "responsibilities", number: "04", title: "User Responsibilities" },
+  {
+    id: "responsibilities",
+    number: "04",
+    title: "User Responsibilities",
+  },
   { id: "acceptable-use", number: "05", title: "Acceptable Use" },
   { id: "ai-services", number: "06", title: "AI-Powered Services" },
-  { id: "client-content", number: "07", title: "Client Content and Data" },
+  {
+    id: "client-content",
+    number: "07",
+    title: "Client Content and Data",
+  },
   { id: "third-party", number: "08", title: "Third-Party Services" },
-  { id: "intellectual-property", number: "09", title: "Intellectual Property" },
-  { id: "payments", number: "10", title: "Payments and Subscriptions" },
-  { id: "termination", number: "11", title: "Suspension and Termination" },
-  { id: "availability", number: "12", title: "Service Availability" },
+  {
+    id: "intellectual-property",
+    number: "09",
+    title: "Intellectual Property",
+  },
+  {
+    id: "payments",
+    number: "10",
+    title: "Payments and Subscriptions",
+  },
+  {
+    id: "termination",
+    number: "11",
+    title: "Suspension and Termination",
+  },
+  {
+    id: "availability",
+    number: "12",
+    title: "Service Availability",
+  },
   { id: "disclaimers", number: "13", title: "Disclaimers" },
-  { id: "liability", number: "14", title: "Limitation of Liability" },
-  { id: "indemnification", number: "15", title: "Indemnification" },
-  { id: "changes", number: "16", title: "Changes to These Terms" },
+  {
+    id: "liability",
+    number: "14",
+    title: "Limitation of Liability",
+  },
+  {
+    id: "indemnification",
+    number: "15",
+    title: "Indemnification",
+  },
+  {
+    id: "changes",
+    number: "16",
+    title: "Changes to These Terms",
+  },
   { id: "governing-law", number: "17", title: "Governing Law" },
   { id: "contact", number: "18", title: "Contact Us" },
 ];
@@ -30,24 +66,51 @@ function SectionHeading({
 }) {
   return (
     <div className="mb-5 flex items-center gap-3">
-      <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-violet-500/40 bg-violet-500/10 text-[10px] font-medium text-violet-300">
+      <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-violet-200 bg-violet-50 text-[10px] font-medium text-violet-600">
         {number}
       </span>
 
-      <h2 className="text-xl font-semibold tracking-tight text-white">
+      <h2 className="text-xl font-semibold tracking-tight text-slate-950">
         {children}
       </h2>
     </div>
   );
 }
 
-export default function TermsContent() {
+function BulletList({ items }: { items: string[] }) {
   return (
-    <section className="border-b border-slate-800 bg-[#050817]">
-      <div className="mx-auto grid max-w-6xl gap-12 px-6 py-20 sm:px-8 lg:grid-cols-[220px_minmax(0,1fr)] lg:px-10 lg:py-24">
+    <ul className="space-y-2 pl-1">
+      {items.map((item) => (
+        <li key={item} className="flex gap-3">
+          <span className="mt-[11px] h-1.5 w-1.5 shrink-0 rounded-full bg-violet-500" />
+          <span>{item}</span>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+export default function TermsContent() {
+  const articleClass =
+    "scroll-mt-28 border-b border-slate-200 py-9";
+
+  const bodyClass =
+    "space-y-4 text-sm leading-7 text-slate-600";
+
+  return (
+    <section className="relative border-b border-slate-200 bg-white">
+      {/* Soft background glow */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 overflow-hidden"
+      >
+        <div className="absolute left-[55%] top-0 h-[500px] w-[700px] -translate-x-1/2 rounded-full bg-violet-100/50 blur-[150px]" />
+      </div>
+
+      <div className="relative mx-auto grid max-w-6xl gap-12 px-6 py-20 sm:px-8 lg:grid-cols-[220px_minmax(0,1fr)] lg:px-10 lg:py-24">
         {/* Table of contents */}
         <aside className="lg:sticky lg:top-24 lg:self-start">
-          <p className="mb-5 text-[10px] font-medium uppercase tracking-[0.28em] text-slate-500">
+          <p className="mb-5 text-[10px] font-semibold uppercase tracking-[0.28em] text-slate-500">
             Terms of Service
           </p>
 
@@ -57,9 +120,9 @@ export default function TermsContent() {
                 <li key={section.id}>
                   <a
                     href={`#${section.id}`}
-                    className="group flex items-start gap-2 text-xs leading-5 text-slate-500 transition-colors hover:text-violet-300"
+                    className="group flex items-start gap-2 text-xs leading-5 text-slate-500 transition-colors hover:text-violet-600"
                   >
-                    <span className="w-5 shrink-0 text-slate-600 group-hover:text-violet-400">
+                    <span className="w-5 shrink-0 text-slate-400 transition-colors group-hover:text-violet-500">
                       {section.number}
                     </span>
 
@@ -71,11 +134,11 @@ export default function TermsContent() {
           </nav>
         </aside>
 
-        {/* Terms */}
+        {/* Terms content */}
         <div className="min-w-0">
           {/* Introduction */}
-          <div className="mb-10 rounded-2xl border border-slate-800 bg-[#0b1023]/70 p-6 sm:p-7">
-            <p className="text-sm leading-7 text-slate-400">
+          <div className="mb-10 rounded-2xl border border-violet-200/80 bg-violet-50/40 p-6 sm:p-7">
+            <p className="text-sm leading-7 text-slate-600">
               These Terms of Service (&quot;Terms&quot;) govern your access to
               and use of the Velquorin Labs website and the services we provide.
               By accessing our website, communicating with us about a project,
@@ -86,11 +149,13 @@ export default function TermsContent() {
           {/* 01 */}
           <article
             id="acceptance"
-            className="scroll-mt-28 border-b border-slate-800 py-9 first:pt-0"
+            className={`${articleClass} first:pt-0`}
           >
-            <SectionHeading number="01">Acceptance of Terms</SectionHeading>
+            <SectionHeading number="01">
+              Acceptance of Terms
+            </SectionHeading>
 
-            <div className="space-y-4 text-sm leading-7 text-slate-400">
+            <div className={bodyClass}>
               <p>
                 By accessing or using the Velquorin Labs website or services,
                 you acknowledge that you have read, understood, and agree to be
@@ -111,33 +176,25 @@ export default function TermsContent() {
           </article>
 
           {/* 02 */}
-          <article
-            id="services"
-            className="scroll-mt-28 border-b border-slate-800 py-9"
-          >
+          <article id="services" className={articleClass}>
             <SectionHeading number="02">Our Services</SectionHeading>
 
-            <div className="space-y-4 text-sm leading-7 text-slate-400">
+            <div className={bodyClass}>
               <p>
                 Velquorin Labs develops and provides digital and AI-powered
                 solutions for businesses. Depending on the project or service,
                 our work may include:
               </p>
 
-              <ul className="space-y-2 pl-1">
-                {[
+              <BulletList
+                items={[
                   "AI chatbots and conversational AI experiences",
                   "AI automation and business workflow solutions",
                   "Conversational forms and information collection systems",
                   "Website design, development, and maintenance",
                   "Custom AI and digital solutions",
-                ].map((item) => (
-                  <li key={item} className="flex gap-3">
-                    <span className="mt-[11px] h-1.5 w-1.5 shrink-0 rounded-full bg-violet-500" />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
+                ]}
+              />
 
               <p>
                 Specific features, deliverables, timelines, pricing, and other
@@ -148,13 +205,10 @@ export default function TermsContent() {
           </article>
 
           {/* 03 */}
-          <article
-            id="eligibility"
-            className="scroll-mt-28 border-b border-slate-800 py-9"
-          >
+          <article id="eligibility" className={articleClass}>
             <SectionHeading number="03">Eligibility</SectionHeading>
 
-            <div className="space-y-4 text-sm leading-7 text-slate-400">
+            <div className={bodyClass}>
               <p>
                 You may use our services only if you are legally able to enter
                 into a binding agreement under applicable law.
@@ -169,13 +223,12 @@ export default function TermsContent() {
           </article>
 
           {/* 04 */}
-          <article
-            id="responsibilities"
-            className="scroll-mt-28 border-b border-slate-800 py-9"
-          >
-            <SectionHeading number="04">User Responsibilities</SectionHeading>
+          <article id="responsibilities" className={articleClass}>
+            <SectionHeading number="04">
+              User Responsibilities
+            </SectionHeading>
 
-            <div className="space-y-4 text-sm leading-7 text-slate-400">
+            <div className={bodyClass}>
               <p>
                 You are responsible for the information, instructions, content,
                 credentials, permissions, and other materials you provide to us
@@ -184,31 +237,23 @@ export default function TermsContent() {
 
               <p>You agree to:</p>
 
-              <ul className="space-y-2 pl-1">
-                {[
+              <BulletList
+                items={[
                   "Provide information that is accurate to the best of your knowledge",
                   "Maintain appropriate rights and permissions for content you provide",
                   "Use our services in accordance with applicable laws and regulations",
                   "Protect account credentials and other access information where applicable",
                   "Notify us of suspected unauthorized access or misuse involving your account or project",
-                ].map((item) => (
-                  <li key={item} className="flex gap-3">
-                    <span className="mt-[11px] h-1.5 w-1.5 shrink-0 rounded-full bg-violet-500" />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
+                ]}
+              />
             </div>
           </article>
 
           {/* 05 */}
-          <article
-            id="acceptable-use"
-            className="scroll-mt-28 border-b border-slate-800 py-9"
-          >
+          <article id="acceptable-use" className={articleClass}>
             <SectionHeading number="05">Acceptable Use</SectionHeading>
 
-            <div className="space-y-4 text-sm leading-7 text-slate-400">
+            <div className={bodyClass}>
               <p>
                 You may not use our website, systems, or services for unlawful,
                 abusive, fraudulent, harmful, or unauthorized activities.
@@ -228,13 +273,12 @@ export default function TermsContent() {
           </article>
 
           {/* 06 */}
-          <article
-            id="ai-services"
-            className="scroll-mt-28 border-b border-slate-800 py-9"
-          >
-            <SectionHeading number="06">AI-Powered Services</SectionHeading>
+          <article id="ai-services" className={articleClass}>
+            <SectionHeading number="06">
+              AI-Powered Services
+            </SectionHeading>
 
-            <div className="space-y-4 text-sm leading-7 text-slate-400">
+            <div className={bodyClass}>
               <p>
                 Some Velquorin Labs services use artificial intelligence,
                 machine learning, automation, or third-party AI technologies to
@@ -258,13 +302,12 @@ export default function TermsContent() {
           </article>
 
           {/* 07 */}
-          <article
-            id="client-content"
-            className="scroll-mt-28 border-b border-slate-800 py-9"
-          >
-            <SectionHeading number="07">Client Content and Data</SectionHeading>
+          <article id="client-content" className={articleClass}>
+            <SectionHeading number="07">
+              Client Content and Data
+            </SectionHeading>
 
-            <div className="space-y-4 text-sm leading-7 text-slate-400">
+            <div className={bodyClass}>
               <p>
                 You retain your rights in content, information, and materials
                 that you provide to Velquorin Labs, subject to any separate
@@ -286,13 +329,12 @@ export default function TermsContent() {
           </article>
 
           {/* 08 */}
-          <article
-            id="third-party"
-            className="scroll-mt-28 border-b border-slate-800 py-9"
-          >
-            <SectionHeading number="08">Third-Party Services</SectionHeading>
+          <article id="third-party" className={articleClass}>
+            <SectionHeading number="08">
+              Third-Party Services
+            </SectionHeading>
 
-            <div className="space-y-4 text-sm leading-7 text-slate-400">
+            <div className={bodyClass}>
               <p>
                 Our services may integrate with or depend on third-party
                 platforms, APIs, hosting providers, payment processors, AI
@@ -309,13 +351,12 @@ export default function TermsContent() {
           </article>
 
           {/* 09 */}
-          <article
-            id="intellectual-property"
-            className="scroll-mt-28 border-b border-slate-800 py-9"
-          >
-            <SectionHeading number="09">Intellectual Property</SectionHeading>
+          <article id="intellectual-property" className={articleClass}>
+            <SectionHeading number="09">
+              Intellectual Property
+            </SectionHeading>
 
-            <div className="space-y-4 text-sm leading-7 text-slate-400">
+            <div className={bodyClass}>
               <p>
                 The Velquorin Labs name, branding, website design, original
                 website content, software components, documentation, and other
@@ -338,15 +379,12 @@ export default function TermsContent() {
           </article>
 
           {/* 10 */}
-          <article
-            id="payments"
-            className="scroll-mt-28 border-b border-slate-800 py-9"
-          >
+          <article id="payments" className={articleClass}>
             <SectionHeading number="10">
               Payments and Subscriptions
             </SectionHeading>
 
-            <div className="space-y-4 text-sm leading-7 text-slate-400">
+            <div className={bodyClass}>
               <p>
                 Certain Velquorin Labs services may require payment, recurring
                 subscriptions, or project-based fees. Pricing and payment terms
@@ -369,15 +407,12 @@ export default function TermsContent() {
           </article>
 
           {/* 11 */}
-          <article
-            id="termination"
-            className="scroll-mt-28 border-b border-slate-800 py-9"
-          >
+          <article id="termination" className={articleClass}>
             <SectionHeading number="11">
               Suspension and Termination
             </SectionHeading>
 
-            <div className="space-y-4 text-sm leading-7 text-slate-400">
+            <div className={bodyClass}>
               <p>
                 We may suspend, restrict, or terminate access to a service where
                 reasonably necessary to protect our systems, users, third
@@ -398,13 +433,12 @@ export default function TermsContent() {
           </article>
 
           {/* 12 */}
-          <article
-            id="availability"
-            className="scroll-mt-28 border-b border-slate-800 py-9"
-          >
-            <SectionHeading number="12">Service Availability</SectionHeading>
+          <article id="availability" className={articleClass}>
+            <SectionHeading number="12">
+              Service Availability
+            </SectionHeading>
 
-            <div className="space-y-4 text-sm leading-7 text-slate-400">
+            <div className={bodyClass}>
               <p>
                 We work to provide reliable services, but we do not guarantee
                 that every service will always be uninterrupted, error-free, or
@@ -420,13 +454,10 @@ export default function TermsContent() {
           </article>
 
           {/* 13 */}
-          <article
-            id="disclaimers"
-            className="scroll-mt-28 border-b border-slate-800 py-9"
-          >
+          <article id="disclaimers" className={articleClass}>
             <SectionHeading number="13">Disclaimers</SectionHeading>
 
-            <div className="space-y-4 text-sm leading-7 text-slate-400">
+            <div className={bodyClass}>
               <p>
                 To the extent permitted by applicable law, our website and
                 services are provided on an &quot;as is&quot; and &quot;as
@@ -443,15 +474,12 @@ export default function TermsContent() {
           </article>
 
           {/* 14 */}
-          <article
-            id="liability"
-            className="scroll-mt-28 border-b border-slate-800 py-9"
-          >
+          <article id="liability" className={articleClass}>
             <SectionHeading number="14">
               Limitation of Liability
             </SectionHeading>
 
-            <div className="space-y-4 text-sm leading-7 text-slate-400">
+            <div className={bodyClass}>
               <p>
                 To the maximum extent permitted by applicable law, Velquorin
                 Labs will not be liable for indirect, incidental, special,
@@ -467,13 +495,12 @@ export default function TermsContent() {
           </article>
 
           {/* 15 */}
-          <article
-            id="indemnification"
-            className="scroll-mt-28 border-b border-slate-800 py-9"
-          >
-            <SectionHeading number="15">Indemnification</SectionHeading>
+          <article id="indemnification" className={articleClass}>
+            <SectionHeading number="15">
+              Indemnification
+            </SectionHeading>
 
-            <div className="space-y-4 text-sm leading-7 text-slate-400">
+            <div className={bodyClass}>
               <p>
                 To the extent permitted by applicable law, you agree to be
                 responsible for claims, losses, liabilities, or expenses
@@ -484,13 +511,12 @@ export default function TermsContent() {
           </article>
 
           {/* 16 */}
-          <article
-            id="changes"
-            className="scroll-mt-28 border-b border-slate-800 py-9"
-          >
-            <SectionHeading number="16">Changes to These Terms</SectionHeading>
+          <article id="changes" className={articleClass}>
+            <SectionHeading number="16">
+              Changes to These Terms
+            </SectionHeading>
 
-            <div className="space-y-4 text-sm leading-7 text-slate-400">
+            <div className={bodyClass}>
               <p>
                 We may update these Terms from time to time as our services,
                 technologies, business practices, or legal obligations change.
@@ -505,13 +531,12 @@ export default function TermsContent() {
           </article>
 
           {/* 17 */}
-          <article
-            id="governing-law"
-            className="scroll-mt-28 border-b border-slate-800 py-9"
-          >
-            <SectionHeading number="17">Governing Law</SectionHeading>
+          <article id="governing-law" className={articleClass}>
+            <SectionHeading number="17">
+              Governing Law
+            </SectionHeading>
 
-            <div className="space-y-4 text-sm leading-7 text-slate-400">
+            <div className={bodyClass}>
               <p>
                 These Terms will be governed by applicable law, subject to any
                 mandatory legal rights or protections that apply based on your
@@ -530,7 +555,7 @@ export default function TermsContent() {
           <article id="contact" className="scroll-mt-28 pt-9">
             <SectionHeading number="18">Contact Us</SectionHeading>
 
-            <div className="space-y-5 text-sm leading-7 text-slate-400">
+            <div className="space-y-5 text-sm leading-7 text-slate-600">
               <p>
                 If you have questions about these Terms of Service or would
                 like to discuss a service-related matter, please contact
@@ -539,7 +564,7 @@ export default function TermsContent() {
 
               <Link
                 href="/contact"
-                className="inline-flex items-center rounded-full border border-violet-500/40 bg-violet-500/5 px-5 py-2.5 text-xs font-medium text-violet-300 transition hover:border-violet-400 hover:bg-violet-500/10 hover:text-violet-200"
+                className="inline-flex items-center rounded-full border border-violet-200 bg-violet-50 px-5 py-2.5 text-xs font-medium text-violet-700 transition hover:border-violet-300 hover:bg-violet-100"
               >
                 Contact Velquorin Labs →
               </Link>

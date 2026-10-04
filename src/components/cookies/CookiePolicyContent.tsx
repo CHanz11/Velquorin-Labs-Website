@@ -25,11 +25,11 @@ function SectionHeading({
 }) {
   return (
     <div className="mb-5 flex items-center gap-3">
-      <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-violet-500/40 bg-violet-500/10 text-[10px] font-medium text-violet-300">
+      <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-violet-200 bg-violet-50 text-[10px] font-medium text-violet-600">
         {number}
       </span>
 
-      <h2 className="text-xl font-semibold tracking-tight text-white">
+      <h2 className="text-xl font-semibold tracking-tight text-slate-950">
         {children}
       </h2>
     </div>
@@ -41,7 +41,7 @@ function BulletList({ items }: { items: string[] }) {
     <ul className="space-y-2 pl-1">
       {items.map((item) => (
         <li key={item} className="flex gap-3">
-          <span className="mt-[11px] h-1.5 w-1.5 shrink-0 rounded-full bg-violet-500" />
+          <span className="mt-[11px] h-1.5 w-1.5 shrink-0 rounded-full bg-violet-600" />
           <span>{item}</span>
         </li>
       ))}
@@ -50,12 +50,26 @@ function BulletList({ items }: { items: string[] }) {
 }
 
 export default function CookiePolicyContent() {
+  const articleClass =
+    "scroll-mt-28 border-b border-slate-200 py-9";
+
+  const contentClass =
+    "space-y-4 text-sm leading-7 text-slate-600";
+
   return (
-    <section className="border-b border-slate-800 bg-[#050817]">
-      <div className="mx-auto grid max-w-6xl gap-12 px-6 py-20 sm:px-8 lg:grid-cols-[220px_minmax(0,1fr)] lg:px-10 lg:py-24">
+    <section className="relative border-b border-violet-100 bg-white">
+      {/* Subtle background glow */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 overflow-hidden"
+      >
+        <div className="absolute left-[55%] top-0 h-[500px] w-[700px] -translate-x-1/2 rounded-full bg-violet-100/45 blur-[150px]" />
+      </div>
+
+      <div className="relative mx-auto grid max-w-6xl gap-12 px-6 py-20 sm:px-8 lg:grid-cols-[220px_minmax(0,1fr)] lg:px-10 lg:py-24">
         {/* Table of contents */}
         <aside className="lg:sticky lg:top-24 lg:self-start">
-          <p className="mb-5 text-[10px] font-medium uppercase tracking-[0.28em] text-slate-500">
+          <p className="mb-5 text-[10px] font-semibold uppercase tracking-[0.28em] text-slate-500">
             Cookie Policy
           </p>
 
@@ -65,9 +79,9 @@ export default function CookiePolicyContent() {
                 <li key={section.id}>
                   <a
                     href={`#${section.id}`}
-                    className="group flex items-start gap-2 text-xs leading-5 text-slate-500 transition-colors hover:text-violet-300"
+                    className="group flex items-start gap-2 text-xs leading-5 text-slate-500 transition-colors hover:text-violet-700"
                   >
-                    <span className="w-5 shrink-0 text-slate-600 group-hover:text-violet-400">
+                    <span className="w-5 shrink-0 text-slate-400 transition-colors group-hover:text-violet-600">
                       {section.number}
                     </span>
 
@@ -82,8 +96,8 @@ export default function CookiePolicyContent() {
         {/* Policy content */}
         <div className="min-w-0">
           {/* Introduction */}
-          <div className="mb-10 rounded-2xl border border-slate-800 bg-[#0b1023]/70 p-6 sm:p-7">
-            <p className="text-sm leading-7 text-slate-400">
+          <div className="mb-10 rounded-2xl border border-violet-200 bg-violet-50/40 p-6 shadow-sm sm:p-7">
+            <p className="text-sm leading-7 text-slate-600">
               This Cookie Policy explains how Velquorin Labs may use cookies
               and similar technologies on our website. It should be read
               together with our Privacy Policy, which explains more broadly how
@@ -94,11 +108,11 @@ export default function CookiePolicyContent() {
           {/* 01 */}
           <article
             id="what-are-cookies"
-            className="scroll-mt-28 border-b border-slate-800 py-9 first:pt-0"
+            className={`${articleClass} first:pt-0`}
           >
             <SectionHeading number="01">What Are Cookies?</SectionHeading>
 
-            <div className="space-y-4 text-sm leading-7 text-slate-400">
+            <div className={contentClass}>
               <p>
                 Cookies are small text files or pieces of information that a
                 website may store on your browser or device when you visit it.
@@ -116,15 +130,12 @@ export default function CookiePolicyContent() {
           </article>
 
           {/* 02 */}
-          <article
-            id="how-we-use"
-            className="scroll-mt-28 border-b border-slate-800 py-9"
-          >
+          <article id="how-we-use" className={articleClass}>
             <SectionHeading number="02">
               How We May Use Cookies
             </SectionHeading>
 
-            <div className="space-y-4 text-sm leading-7 text-slate-400">
+            <div className={contentClass}>
               <p>
                 Velquorin Labs may use cookies where they are necessary to
                 operate our website or where we introduce features that benefit
@@ -132,7 +143,10 @@ export default function CookiePolicyContent() {
                 supporting integrations.
               </p>
 
-              <p>Depending on the technologies enabled on our website, cookies may help us:</p>
+              <p>
+                Depending on the technologies enabled on our website, cookies
+                may help us:
+              </p>
 
               <BulletList
                 items={[
@@ -147,13 +161,10 @@ export default function CookiePolicyContent() {
           </article>
 
           {/* 03 */}
-          <article
-            id="cookie-types"
-            className="scroll-mt-28 border-b border-slate-800 py-9"
-          >
+          <article id="cookie-types" className={articleClass}>
             <SectionHeading number="03">Types of Cookies</SectionHeading>
 
-            <div className="space-y-4 text-sm leading-7 text-slate-400">
+            <div className={contentClass}>
               <p>
                 Cookies can be categorized according to their purpose and how
                 long they remain on a device.
@@ -176,13 +187,10 @@ export default function CookiePolicyContent() {
           </article>
 
           {/* 04 */}
-          <article
-            id="essential"
-            className="scroll-mt-28 border-b border-slate-800 py-9"
-          >
+          <article id="essential" className={articleClass}>
             <SectionHeading number="04">Essential Cookies</SectionHeading>
 
-            <div className="space-y-4 text-sm leading-7 text-slate-400">
+            <div className={contentClass}>
               <p>
                 Essential cookies are used when necessary for core website
                 functions, security, network management, or features that you
@@ -198,13 +206,10 @@ export default function CookiePolicyContent() {
           </article>
 
           {/* 05 */}
-          <article
-            id="preferences"
-            className="scroll-mt-28 border-b border-slate-800 py-9"
-          >
+          <article id="preferences" className={articleClass}>
             <SectionHeading number="05">Preference Cookies</SectionHeading>
 
-            <div className="space-y-4 text-sm leading-7 text-slate-400">
+            <div className={contentClass}>
               <p>
                 Preference or functionality cookies can allow a website to
                 remember choices you make, such as interface settings or other
@@ -220,13 +225,10 @@ export default function CookiePolicyContent() {
           </article>
 
           {/* 06 */}
-          <article
-            id="analytics"
-            className="scroll-mt-28 border-b border-slate-800 py-9"
-          >
+          <article id="analytics" className={articleClass}>
             <SectionHeading number="06">Analytics Cookies</SectionHeading>
 
-            <div className="space-y-4 text-sm leading-7 text-slate-400">
+            <div className={contentClass}>
               <p>
                 Analytics technologies can help website operators understand
                 how visitors use a website, such as which pages are visited,
@@ -244,15 +246,12 @@ export default function CookiePolicyContent() {
           </article>
 
           {/* 07 */}
-          <article
-            id="third-party"
-            className="scroll-mt-28 border-b border-slate-800 py-9"
-          >
+          <article id="third-party" className={articleClass}>
             <SectionHeading number="07">
               Third-Party Technologies
             </SectionHeading>
 
-            <div className="space-y-4 text-sm leading-7 text-slate-400">
+            <div className={contentClass}>
               <p>
                 Some website features may rely on third-party services such as
                 hosting providers, embedded content, payment services,
@@ -275,13 +274,10 @@ export default function CookiePolicyContent() {
           </article>
 
           {/* 08 */}
-          <article
-            id="choices"
-            className="scroll-mt-28 border-b border-slate-800 py-9"
-          >
+          <article id="choices" className={articleClass}>
             <SectionHeading number="08">Your Cookie Choices</SectionHeading>
 
-            <div className="space-y-4 text-sm leading-7 text-slate-400">
+            <div className={contentClass}>
               <p>
                 Where optional cookies require a choice or consent under
                 applicable law, Velquorin Labs may provide controls that allow
@@ -302,13 +298,10 @@ export default function CookiePolicyContent() {
           </article>
 
           {/* 09 */}
-          <article
-            id="browser-controls"
-            className="scroll-mt-28 border-b border-slate-800 py-9"
-          >
+          <article id="browser-controls" className={articleClass}>
             <SectionHeading number="09">Browser Controls</SectionHeading>
 
-            <div className="space-y-4 text-sm leading-7 text-slate-400">
+            <div className={contentClass}>
               <p>
                 Most web browsers provide settings that allow you to view,
                 block, restrict, or delete cookies. The available controls and
@@ -328,13 +321,10 @@ export default function CookiePolicyContent() {
           </article>
 
           {/* 10 */}
-          <article
-            id="signals"
-            className="scroll-mt-28 border-b border-slate-800 py-9"
-          >
+          <article id="signals" className={articleClass}>
             <SectionHeading number="10">Privacy Signals</SectionHeading>
 
-            <div className="space-y-4 text-sm leading-7 text-slate-400">
+            <div className={contentClass}>
               <p>
                 Some browsers and privacy tools can transmit preference signals,
                 including signals intended to communicate choices regarding
@@ -351,13 +341,10 @@ export default function CookiePolicyContent() {
           </article>
 
           {/* 11 */}
-          <article
-            id="retention"
-            className="scroll-mt-28 border-b border-slate-800 py-9"
-          >
+          <article id="retention" className={articleClass}>
             <SectionHeading number="11">Cookie Retention</SectionHeading>
 
-            <div className="space-y-4 text-sm leading-7 text-slate-400">
+            <div className={contentClass}>
               <p>
                 The length of time a cookie remains on your device depends on
                 its purpose and configuration. Some cookies last only for a
@@ -373,15 +360,12 @@ export default function CookiePolicyContent() {
           </article>
 
           {/* 12 */}
-          <article
-            id="changes"
-            className="scroll-mt-28 border-b border-slate-800 py-9"
-          >
+          <article id="changes" className={articleClass}>
             <SectionHeading number="12">
               Changes to This Cookie Policy
             </SectionHeading>
 
-            <div className="space-y-4 text-sm leading-7 text-slate-400">
+            <div className={contentClass}>
               <p>
                 We may update this Cookie Policy as our website, technologies,
                 service providers, or legal obligations change.
@@ -400,7 +384,7 @@ export default function CookiePolicyContent() {
           <article id="contact" className="scroll-mt-28 pt-9">
             <SectionHeading number="13">Contact Us</SectionHeading>
 
-            <div className="space-y-5 text-sm leading-7 text-slate-400">
+            <div className="space-y-5 text-sm leading-7 text-slate-600">
               <p>
                 If you have questions about this Cookie Policy or how
                 Velquorin Labs uses cookies and similar technologies, please
@@ -410,14 +394,14 @@ export default function CookiePolicyContent() {
               <div className="flex flex-wrap gap-3">
                 <Link
                   href="/contact"
-                  className="inline-flex items-center rounded-full border border-violet-500/40 bg-violet-500/5 px-5 py-2.5 text-xs font-medium text-violet-300 transition hover:border-violet-400 hover:bg-violet-500/10 hover:text-violet-200"
+                  className="inline-flex items-center rounded-full border border-violet-200 bg-violet-50 px-5 py-2.5 text-xs font-medium text-violet-700 transition hover:border-violet-300 hover:bg-violet-100"
                 >
                   Contact Velquorin Labs →
                 </Link>
 
                 <Link
                   href="/privacy-policy"
-                  className="inline-flex items-center rounded-full border border-slate-700 px-5 py-2.5 text-xs font-medium text-slate-400 transition hover:border-violet-500/40 hover:text-violet-300"
+                  className="inline-flex items-center rounded-full border border-slate-200 bg-white px-5 py-2.5 text-xs font-medium text-slate-600 transition hover:border-violet-300 hover:text-violet-700"
                 >
                   Read Privacy Policy →
                 </Link>
