@@ -54,105 +54,118 @@ export default function HeroSection() {
 
         {/* RIGHT VISUAL */}
         <div className="home-hero-visual">
+
           <div
-            className="home-hero-visual-glow"
+            className="home-hero-ai-glow"
             aria-hidden="true"
           />
 
-          <div className="home-hero-workflow-window">
-            {/* Window Bar */}
-            <div className="home-hero-window-bar">
-              <div className="home-hero-window-dots">
-                <span />
-                <span />
-                <span />
+          <div className="home-hero-ai-scene">
+
+            {/* Decorative orbit rings */}
+            <div className="home-hero-ai-ring home-hero-ai-ring-one" />
+            <div className="home-hero-ai-ring home-hero-ai-ring-two" />
+            <div className="home-hero-ai-ring home-hero-ai-ring-three" />
+
+            {/* Connection lines */}
+            <div className="home-hero-ai-line home-hero-ai-line-top" />
+            <div className="home-hero-ai-line home-hero-ai-line-right" />
+            <div className="home-hero-ai-line home-hero-ai-line-bottom" />
+            <div className="home-hero-ai-line home-hero-ai-line-left" />
+
+            {/* Center AI Core */}
+            <div className="home-hero-ai-core">
+
+              <div className="home-hero-ai-core-pulse" />
+
+              <div className="home-hero-ai-core-inner">
+                <span className="home-hero-ai-core-icon">
+                  ✦
+                </span>
+
+                <span className="home-hero-ai-core-label">
+                  VELQUORIN AI
+                </span>
               </div>
 
-              <span className="home-hero-window-title">
-                Connected Business Automation
-              </span>
             </div>
 
-            {/* Workflow */}
-            <div className="home-hero-workflow">
-              {/* Chatbot */}
-              <div className="home-hero-workflow-card">
-                <div className="home-hero-workflow-card-header">
-                  <span className="home-hero-workflow-card-title">
-                    AI Chatbot
-                  </span>
-
-                  <span className="home-hero-workflow-badge">
-                    Customer
-                  </span>
-                </div>
-
-                <p>
-                  &quot;I&apos;m interested in your website maintenance
-                  service.&quot;
-                </p>
+            {/* AI Chatbot */}
+            <div className="home-hero-ai-node home-hero-ai-node-chat">
+              <div className="home-hero-ai-node-icon">
+                ◇
               </div>
 
-              <div className="home-hero-workflow-arrow">
-                ↓
-              </div>
+              <div>
+                <span className="home-hero-ai-node-title">
+                  AI Chatbot
+                </span>
 
-              {/* Processing */}
-              <div className="home-hero-workflow-card">
-                <div className="home-hero-workflow-card-header">
-                  <span className="home-hero-workflow-card-title">
-                    AI Processing
-                  </span>
-
-                  <span className="home-hero-workflow-badge">
-                    Automation
-                  </span>
-                </div>
-
-                <p>
-                  Understand the request and prepare the next business action.
-                </p>
-              </div>
-
-              <div className="home-hero-workflow-arrow">
-                ↓
-              </div>
-
-              {/* Result cards */}
-              <div className="home-hero-result-grid">
-                <div className="home-hero-result-card">
-                  <span className="home-hero-workflow-card-title">
-                    Lead Captured
-                  </span>
-
-                  <p>
-                    Customer information organized for follow-up.
-                  </p>
-                </div>
-
-                <div className="home-hero-result-card">
-                  <span className="home-hero-workflow-card-title">
-                    Team Notification
-                  </span>
-
-                  <p>
-                    The business team receives the new inquiry.
-                  </p>
-                </div>
+                <span className="home-hero-ai-node-status">
+                  Active
+                </span>
               </div>
             </div>
+
+            {/* Automation */}
+            <div className="home-hero-ai-node home-hero-ai-node-automation">
+              <div className="home-hero-ai-node-icon">
+                ⚡
+              </div>
+
+              <div>
+                <span className="home-hero-ai-node-title">
+                  Automation
+                </span>
+
+                <span className="home-hero-ai-node-status">
+                  Connected
+                </span>
+              </div>
+            </div>
+
+            {/* AI Forms */}
+            <div className="home-hero-ai-node home-hero-ai-node-forms">
+              <div className="home-hero-ai-node-icon">
+                ✦
+              </div>
+
+              <div>
+                <span className="home-hero-ai-node-title">
+                  AI Forms
+                </span>
+
+                <span className="home-hero-ai-node-status">
+                  Intelligent
+                </span>
+              </div>
+            </div>
+
+            {/* Web Solutions */}
+            <div className="home-hero-ai-node home-hero-ai-node-web">
+              <div className="home-hero-ai-node-icon">
+                ◎
+              </div>
+
+              <div>
+                <span className="home-hero-ai-node-title">
+                  Web Solutions
+                </span>
+
+                <span className="home-hero-ai-node-status">
+                  Online
+                </span>
+              </div>
+            </div>
+
+            {/* Moving particles */}
+            <span className="home-hero-ai-particle home-hero-ai-particle-one" />
+            <span className="home-hero-ai-particle home-hero-ai-particle-two" />
+            <span className="home-hero-ai-particle home-hero-ai-particle-three" />
+            <span className="home-hero-ai-particle home-hero-ai-particle-four" />
+
           </div>
 
-          {/* Floating Card */}
-          <div className="home-hero-floating-card">
-            <p className="home-hero-floating-label">
-              Connected workflow
-            </p>
-
-            <p className="home-hero-floating-title">
-              Chat → Automation → Business
-            </p>
-          </div>
         </div>
       </div>
     </section>

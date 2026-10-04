@@ -415,7 +415,7 @@
    1023px and below
    ========================================================= */
 
-@media (max-width: 1023px) {
+@media (max-width: 1100px) {
 
   .home-hero-container {
     grid-template-columns: 1fr;
@@ -434,10 +434,6 @@
 
   .home-hero-title {
     font-size: 64px;
-  }
-
-  .home-hero-visual {
-    max-width: 680px;
   }
 
 }
@@ -480,28 +476,30 @@
     line-height: 1.7;
   }
 
-  .home-hero-floating-card {
-    display: none;
-  }
-
 }
 
 
 /* =========================================================
    MOBILE
-   480px and below
+   460px and below
    ========================================================= */
-
-@media (max-width: 480px) {
+@media (max-width: 600px) {
 
   .home-hero-container {
-    padding: 72px 20px 64px;
+    padding: 48px 20px 56px;
 
-    gap: 48px;
+    gap: 34px;
+  }
+
+  .home-hero-content {
+    width: 100%;
+    max-width: none;
+
+    margin: 0;
   }
 
   .home-hero-eyebrow {
-    margin-bottom: 22px;
+    margin-bottom: 18px;
 
     padding: 6px 11px;
 
@@ -509,14 +507,16 @@
   }
 
   .home-hero-title {
-    font-size: 44px;
+    font-size: clamp(38px, 10vw, 48px);
 
-    line-height: 1.02;
+    line-height: 1;
 
     letter-spacing: -0.04em;
   }
 
   .home-hero-description {
+    max-width: 100%;
+
     margin-top: 20px;
 
     font-size: 14px;
@@ -524,7 +524,7 @@
   }
 
   .home-hero-buttons {
-    margin-top: 28px;
+    margin-top: 26px;
   }
 
   .home-hero-button {
@@ -537,56 +537,9 @@
     column-gap: 16px;
     row-gap: 8px;
 
-    margin-top: 26px;
+    margin-top: 24px;
 
     font-size: 10px;
-  }
-
-  .home-hero-window-bar {
-    padding: 14px 16px;
-  }
-
-  .home-hero-window-title {
-    max-width: 180px;
-
-    font-size: 9px;
-  }
-
-  .home-hero-window-dots {
-    gap: 6px;
-  }
-
-  .home-hero-window-dots span {
-    width: 8px;
-    height: 8px;
-  }
-
-  .home-hero-workflow {
-    padding: 16px;
-  }
-
-  .home-hero-workflow-card {
-    padding: 14px;
-  }
-
-  .home-hero-workflow-card-title {
-    font-size: 12px;
-  }
-
-  .home-hero-workflow-badge {
-    font-size: 9px;
-  }
-
-  .home-hero-workflow-card p {
-    font-size: 12px;
-  }
-
-  .home-hero-result-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .home-hero-result-card {
-    padding: 14px;
   }
 
 }
@@ -617,12 +570,379 @@
     width: 100%;
   }
 
-  .home-hero-window-title {
-    max-width: 130px;
+}
+
+/* =========================================================
+   HERO AI VISUAL RESPONSIVE
+   ========================================================= */
+
+
+/* =========================================================
+   TABLET / SMALL DESKTOP
+   1023px and below
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+  .home-hero-visual {
+    width: 100%;
+    max-width: 620px;
+    height: 470px;
+
+    margin: 0 auto;
+  }
+
+  .home-hero-ai-scene {
+    width: 100%;
+    height: 100%;
+
+    transform: none;
   }
 
 }
 
+/* =========================================================
+   TABLET
+   767px and below
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+  .home-hero-visual {
+    max-width: 540px;
+    height: 430px;
+  }
+
+  /* Rings */
+
+  .home-hero-ai-ring-one {
+    width: 190px;
+    height: 190px;
+  }
+
+  .home-hero-ai-ring-two {
+    width: 290px;
+    height: 290px;
+  }
+
+  .home-hero-ai-ring-three {
+    width: 380px;
+    height: 380px;
+  }
+
+  /* Core */
+
+  .home-hero-ai-core {
+    width: 125px;
+    height: 125px;
+  }
+
+  .home-hero-ai-core-icon {
+    width: 44px;
+    height: 44px;
+
+    font-size: 21px;
+  }
+
+  /* Nodes */
+
+  .home-hero-ai-node {
+    min-width: 140px;
+
+    padding: 10px 12px;
+  }
+
+  .home-hero-ai-node-chat {
+    top: 24px;
+  }
+
+  .home-hero-ai-node-forms {
+    bottom: 24px;
+  }
+
+  .home-hero-ai-node-automation {
+    right: 8px;
+  }
+
+  .home-hero-ai-node-web {
+    left: 8px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   600px and below
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  .home-hero-visual {
+    width: 100%;
+    max-width: 420px;
+    height: 350px;
+
+    margin: 0 auto;
+  }
+
+  .home-hero-ai-scene {
+    position: relative;
+
+    left: auto;
+
+    width: 100%;
+    height: 100%;
+
+    transform: none;
+  }
+
+
+  /* Background glow */
+
+  .home-hero-ai-glow {
+    width: 280px;
+    height: 280px;
+
+    filter: blur(24px);
+  }
+
+
+  /* Rings */
+
+  .home-hero-ai-ring-one {
+    width: 145px;
+    height: 145px;
+  }
+
+  .home-hero-ai-ring-two {
+    width: 225px;
+    height: 225px;
+  }
+
+  .home-hero-ai-ring-three {
+    width: 305px;
+    height: 305px;
+  }
+
+
+  /* AI Core */
+
+  .home-hero-ai-core {
+    width: 104px;
+    height: 104px;
+  }
+
+  .home-hero-ai-core::before {
+    inset: 6px;
+  }
+
+  .home-hero-ai-core-inner {
+    gap: 6px;
+  }
+
+  .home-hero-ai-core-icon {
+    width: 38px;
+    height: 38px;
+
+    border-radius: 11px;
+
+    font-size: 18px;
+  }
+
+  .home-hero-ai-core-label {
+    font-size: 8px;
+
+    letter-spacing: 0.1em;
+  }
+
+
+  /* Nodes */
+
+  .home-hero-ai-node {
+    min-width: 112px;
+
+    gap: 7px;
+
+    padding: 8px 9px;
+
+    border-radius: 11px;
+  }
+
+  .home-hero-ai-node-icon {
+    width: 27px;
+    height: 27px;
+
+    border-radius: 8px;
+
+    font-size: 12px;
+  }
+
+  .home-hero-ai-node-title {
+    font-size: 9px;
+  }
+
+  .home-hero-ai-node-status {
+    margin-top: 1px;
+
+    font-size: 7px;
+  }
+
+
+  /* Top */
+
+  .home-hero-ai-node-chat {
+    top: 8px;
+    left: 50%;
+
+    transform: translateX(-50%);
+  }
+
+
+  /* Bottom */
+
+  .home-hero-ai-node-forms {
+    bottom: 8px;
+    left: 50%;
+
+    transform: translateX(-50%);
+  }
+
+
+  /* Left */
+
+  .home-hero-ai-node-web {
+    top: 50%;
+    left: 0;
+
+    transform: translateY(-50%);
+  }
+
+
+  /* Right */
+
+  .home-hero-ai-node-automation {
+    top: 50%;
+    right: 0;
+
+    transform: translateY(-50%);
+  }
+
+
+  /* Lines */
+
+  .home-hero-ai-line {
+    height: 82px;
+  }
+
+}
+
+/* =========================================================
+   SMALL MOBILE
+   380px and below
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+  .home-hero-visual {
+    height: 320px;
+  }
+
+
+  /* Rings */
+
+  .home-hero-ai-ring-one {
+    width: 130px;
+    height: 130px;
+  }
+
+  .home-hero-ai-ring-two {
+    width: 200px;
+    height: 200px;
+  }
+
+  .home-hero-ai-ring-three {
+    width: 270px;
+    height: 270px;
+  }
+
+
+  /* Core */
+
+  .home-hero-ai-core {
+    width: 92px;
+    height: 92px;
+  }
+
+  .home-hero-ai-core-icon {
+    width: 34px;
+    height: 34px;
+
+    font-size: 16px;
+  }
+
+  .home-hero-ai-core-label {
+    font-size: 7px;
+  }
+
+
+  /* Nodes */
+
+  .home-hero-ai-node {
+    min-width: 100px;
+
+    padding: 7px 8px;
+  }
+
+  .home-hero-ai-node-icon {
+    width: 24px;
+    height: 24px;
+
+    font-size: 11px;
+  }
+
+  .home-hero-ai-node-title {
+    font-size: 8px;
+  }
+
+  .home-hero-ai-node-status {
+    font-size: 6px;
+  }
+
+  .home-hero-ai-node-web {
+    left: -2px;
+  }
+
+  .home-hero-ai-node-automation {
+    right: -2px;
+  }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+/* @media (prefers-reduced-motion: reduce) {
+  .home-hero-ai-glow,
+  .home-hero-ai-ring,
+  .home-hero-ai-core,
+  .home-hero-ai-core-pulse,
+  .home-hero-ai-core-pulse::after,
+  .home-hero-ai-core-icon,
+  .home-hero-ai-node,
+  .home-hero-ai-node-icon,
+  .home-hero-ai-line::after,
+  .home-hero-ai-particle {
+    animation: none !important;
+  }
+
+  .home-hero-ai-core,
+  .home-hero-ai-ring {
+    opacity: 1;
+  }
+} */
 /* =========================================================
    HOMEPAGE VALUE SECTION RESPONSIVE
    ========================================================= */
