@@ -27,20 +27,21 @@ const values = [
 
 export default function ValueSection() {
   return (
-    <section className="relative border-b border-border-default bg-site-deep">
-      <div className="site-container site-section">
+    <section className="home-value-section">
+      <div className="site-container home-value-container">
         {/* Section heading */}
-        <div className="mx-auto max-w-3xl text-center">
-          <p className="mb-3 text-xs font-medium uppercase tracking-[0.16em] text-brand-soft">
+        <div className="home-value-heading">
+          <p className="home-value-eyebrow">
             Technology That Creates Real Business Value
           </p>
 
-          <h2 className="text-3xl font-semibold tracking-[-0.035em] sm:text-4xl lg:text-5xl">
+          <h2 className="home-value-title">
             Practical AI and Web Solutions
-            <br className="hidden sm:block" /> Built for Real Results
+            <br className="home-value-title-break" />
+            Built for Real Results
           </h2>
 
-          <p className="mx-auto mb-0 mt-5 max-w-2xl text-sm leading-7 text-text-secondary sm:text-base">
+          <p className="home-value-description">
             Turn complex technology into practical solutions that help your
             business save time, improve customer experiences, capture more
             opportunities, and operate more efficiently.
@@ -48,35 +49,30 @@ export default function ValueSection() {
         </div>
 
         {/* Value cards */}
-        <div className="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+        <div className="home-value-grid">
           {values.map((value) => (
-            <article
-              key={value.number}
-              className="group relative overflow-hidden rounded-2xl border border-border-default bg-surface p-6 transition duration-300 hover:-translate-y-1 hover:border-[var(--color-border-hover)] hover:bg-surface-elevated"
-            >
-              {/* subtle card glow */}
+            <article key={value.number} className="home-value-card">
               <div
                 aria-hidden="true"
-                className="pointer-events-none absolute -right-12 -top-12 h-32 w-32 rounded-full bg-brand-primary/0 blur-3xl transition duration-300 group-hover:bg-brand-primary/10"
+                className="home-value-card-glow"
               />
 
-              <div className="relative">
-                {/* Icon / number */}
-                <div className="mb-6 flex items-center justify-between">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-xl border border-brand-primary/20 bg-brand-primary/10 text-brand-soft">
+              <div className="home-value-card-content">
+                <div className="home-value-card-top">
+                  <div className="home-value-number">
                     {value.number}
                   </div>
 
-                  <span className="text-[10px] uppercase tracking-[0.16em] text-text-muted">
+                  <span className="home-value-label">
                     Value
                   </span>
                 </div>
 
-                <h3 className="mb-3 text-lg font-semibold text-text-primary">
+                <h3 className="home-value-card-title">
                   {value.title}
                 </h3>
 
-                <p className="mb-0 text-sm leading-6 text-text-secondary">
+                <p className="home-value-card-description">
                   {value.description}
                 </p>
               </div>
@@ -85,11 +81,14 @@ export default function ValueSection() {
         </div>
 
         {/* Bottom supporting statement */}
-        <div className="mt-10 flex justify-center">
-          <div className="inline-flex items-center gap-3 rounded-full border border-border-default bg-surface/60 px-5 py-2.5 text-xs text-text-secondary">
-            <span className="h-1.5 w-1.5 rounded-full bg-brand-light" />
-            Built around practical business outcomes — not technology for its
-            own sake.
+        <div className="home-value-support-wrapper">
+          <div className="home-value-support">
+            <span className="home-value-support-dot" />
+
+            <span>
+              Built around practical business outcomes — not technology for its
+              own sake.
+            </span>
           </div>
         </div>
       </div>

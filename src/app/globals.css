@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@import "../styles/style.css";
+@import "../styles/media.css";
 
 /* =========================================================
    VELQUORIN LABS — LIGHT DESIGN SYSTEM
