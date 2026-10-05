@@ -1,0 +1,457 @@
+/* =========================================================
+   VELQUORIN LABS
+   HERO ANIMATION SYSTEM
+   ========================================================= */
+
+
+/* =========================================================
+   HERO — AI CORE
+   ========================================================= */
+
+.home-hero-ai-core {
+  animation:
+    heroCoreFloat 4s ease-in-out infinite,
+    heroCoreGlow 3s ease-in-out infinite;
+
+  will-change: transform, box-shadow;
+}
+
+
+/* =========================================================
+   HERO — CORE FLOAT
+   ========================================================= */
+
+@keyframes heroCoreFloat {
+  0%,
+  100% {
+    transform:
+      translate(-50%, -50%)
+      translateY(0);
+  }
+
+  50% {
+    transform:
+      translate(-50%, -50%)
+      translateY(-7px);
+  }
+}
+
+
+/* =========================================================
+   HERO — CORE GLOW
+   ========================================================= */
+
+@keyframes heroCoreGlow {
+  0%,
+  100% {
+    box-shadow:
+      0 20px 50px rgba(124, 58, 237, 0.15),
+      0 0 0 rgba(124, 58, 237, 0);
+  }
+
+  50% {
+    box-shadow:
+      0 25px 60px rgba(124, 58, 237, 0.25),
+      0 0 35px rgba(124, 58, 237, 0.18);
+  }
+}
+
+
+/* =========================================================
+   HERO — CORE ICON
+   ========================================================= */
+
+.home-hero-ai-core-icon {
+  animation: heroCoreIcon 3s ease-in-out infinite;
+
+  will-change: transform;
+}
+
+@keyframes heroCoreIcon {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.08);
+  }
+}
+
+
+/* =========================================================
+   HERO — CORE PULSE
+   ========================================================= */
+
+.home-hero-ai-core-pulse {
+  animation: heroCorePulse 2.8s ease-out infinite;
+
+  will-change: transform, opacity;
+}
+
+.home-hero-ai-core-pulse::after {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  border: 1px solid rgba(124, 58, 237, 0.30);
+  border-radius: 50%;
+
+  animation:
+    heroCorePulse 2.8s ease-out 1.4s infinite;
+
+  will-change: transform, opacity;
+}
+
+@keyframes heroCorePulse {
+  0% {
+    opacity: 0.75;
+
+    transform: scale(1);
+  }
+
+  70% {
+    opacity: 0.15;
+  }
+
+  100% {
+    opacity: 0;
+
+    transform: scale(1.65);
+  }
+}
+
+
+/* =========================================================
+   HERO — BACKGROUND GLOW
+   ========================================================= */
+
+.home-hero-ai-glow {
+  animation:
+    homeHeroGlow 4s ease-in-out infinite;
+
+  will-change: transform, opacity;
+}
+
+@keyframes homeHeroGlow {
+  0%,
+  100% {
+    opacity: 0.65;
+
+    transform:
+      translate(-50%, -50%)
+      scale(0.95);
+  }
+
+  50% {
+    opacity: 1;
+
+    transform:
+      translate(-50%, -50%)
+      scale(1.08);
+  }
+}
+
+
+/* =========================================================
+   HERO — ORBIT RINGS
+   ========================================================= */
+
+.home-hero-ai-ring {
+  opacity: 1;
+
+  will-change: transform;
+}
+
+.home-hero-ai-ring-one {
+  animation:
+    heroOrbitClockwise 18s linear infinite;
+}
+
+.home-hero-ai-ring-two {
+  animation:
+    heroOrbitCounterClockwise 24s linear infinite;
+}
+
+.home-hero-ai-ring-three {
+  animation:
+    heroOrbitClockwise 32s linear infinite;
+}
+
+
+/* =========================================================
+   HERO — ORBIT CLOCKWISE
+   ========================================================= */
+
+@keyframes heroOrbitClockwise {
+  from {
+    transform:
+      translate(-50%, -50%)
+      rotate(0deg);
+  }
+
+  to {
+    transform:
+      translate(-50%, -50%)
+      rotate(360deg);
+  }
+}
+
+
+/* =========================================================
+   HERO — ORBIT COUNTER CLOCKWISE
+   ========================================================= */
+
+@keyframes heroOrbitCounterClockwise {
+  from {
+    transform:
+      translate(-50%, -50%)
+      rotate(360deg);
+  }
+
+  to {
+    transform:
+      translate(-50%, -50%)
+      rotate(0deg);
+  }
+}
+
+
+/* =========================================================
+   HERO — SERVICE NODES
+   ========================================================= */
+
+.home-hero-ai-node-chat {
+  animation:
+    heroNodeTop 4.5s ease-in-out infinite;
+
+  will-change: transform;
+}
+
+.home-hero-ai-node-automation {
+  animation:
+    heroNodeRight 5s ease-in-out infinite;
+
+  will-change: transform;
+}
+
+.home-hero-ai-node-forms {
+  animation:
+    heroNodeBottom 4.8s ease-in-out infinite;
+
+  will-change: transform;
+}
+
+.home-hero-ai-node-web {
+  animation:
+    heroNodeLeft 5.2s ease-in-out infinite;
+
+  will-change: transform;
+}
+
+
+/* =========================================================
+   HERO — TOP NODE
+   ========================================================= */
+
+@keyframes heroNodeTop {
+  0%,
+  100% {
+    transform:
+      translateX(-50%)
+      translateY(0);
+  }
+
+  50% {
+    transform:
+      translateX(-50%)
+      translateY(-7px);
+  }
+}
+
+
+/* =========================================================
+   HERO — RIGHT NODE
+   ========================================================= */
+
+@keyframes heroNodeRight {
+  0%,
+  100% {
+    transform:
+      translateY(-50%)
+      translateX(0);
+  }
+
+  50% {
+    transform:
+      translateY(-50%)
+      translateX(7px);
+  }
+}
+
+
+/* =========================================================
+   HERO — BOTTOM NODE
+   ========================================================= */
+
+@keyframes heroNodeBottom {
+  0%,
+  100% {
+    transform:
+      translateX(-50%)
+      translateY(0);
+  }
+
+  50% {
+    transform:
+      translateX(-50%)
+      translateY(7px);
+  }
+}
+
+
+/* =========================================================
+   HERO — LEFT NODE
+   ========================================================= */
+
+@keyframes heroNodeLeft {
+  0%,
+  100% {
+    transform:
+      translateY(-50%)
+      translateX(0);
+  }
+
+  50% {
+    transform:
+      translateY(-50%)
+      translateX(-7px);
+  }
+}
+
+
+/* =========================================================
+   HERO — DATA FLOW
+   ========================================================= */
+
+.home-hero-ai-line::after {
+  content: "";
+
+  position: absolute;
+
+  top: -40%;
+  left: 0;
+
+  width: 100%;
+  height: 35%;
+
+  border-radius: 999px;
+
+  background:
+    linear-gradient(
+      to bottom,
+      transparent,
+      #8b5cf6,
+      #6366f1,
+      transparent
+    );
+
+  box-shadow:
+    0 0 8px rgba(124, 58, 237, 0.8);
+
+  animation:
+    heroDataFlow 2s linear infinite;
+
+  will-change: top;
+}
+
+
+/* =========================================================
+   HERO — DATA FLOW MOVEMENT
+   ========================================================= */
+
+@keyframes heroDataFlow {
+  from {
+    top: -40%;
+  }
+
+  to {
+    top: 120%;
+  }
+}
+
+
+/* =========================================================
+   HERO — DATA FLOW TIMING
+   ========================================================= */
+
+.home-hero-ai-line-right::after {
+  animation-delay: 0.5s;
+}
+
+.home-hero-ai-line-bottom::after {
+  animation-delay: 1s;
+}
+
+.home-hero-ai-line-left::after {
+  animation-delay: 1.5s;
+}
+
+
+/* =========================================================
+   HERO — PARTICLES
+   ========================================================= */
+
+.home-hero-ai-particle {
+  animation:
+    heroParticle 3.5s ease-in-out infinite;
+
+  will-change: transform, opacity;
+}
+
+
+/* =========================================================
+   HERO — PARTICLE TIMING
+   ========================================================= */
+
+.home-hero-ai-particle-one {
+  animation-delay: 0s;
+}
+
+.home-hero-ai-particle-two {
+  animation-delay: 0.8s;
+}
+
+.home-hero-ai-particle-three {
+  animation-delay: 1.6s;
+}
+
+.home-hero-ai-particle-four {
+  animation-delay: 2.4s;
+}
+
+
+/* =========================================================
+   HERO — PARTICLE MOVEMENT
+   ========================================================= */
+
+@keyframes heroParticle {
+  0%,
+  100% {
+    opacity: 0.25;
+
+    transform:
+      translateY(0)
+      scale(0.8);
+  }
+
+  50% {
+    opacity: 1;
+
+    transform:
+      translateY(-10px)
+      scale(1.3);
+  }
+}
