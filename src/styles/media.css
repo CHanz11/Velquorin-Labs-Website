@@ -2076,3 +2076,529 @@
     line-height: 1.2rem;
   }
 }
+
+/* ===========================================================================================
+ABOUT PAGE RESPONSIVE STYLES
+=========================================================================================== */
+
+/* =========================================================
+   ABOUT HERO — RESPONSIVE
+   ========================================================= */
+
+@media (min-width: 640px) {
+  .about-hero-section {
+    padding-right: 24px;
+    padding-left: 24px;
+
+    padding-top: 128px;
+    padding-bottom: 128px;
+  }
+
+  .about-hero-title {
+    font-size: 48px;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .about-hero-section {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+
+  .about-hero-title {
+    font-size: 60px;
+  }
+}
+
+
+@media (max-width: 639px) {
+  .about-hero-title-break {
+    display: none;
+  }
+
+  .about-hero-description {
+    font-size: 16px;
+
+    line-height: 1.9;
+  }
+
+  .about-hero-services {
+    column-gap: 20px;
+  }
+
+  .about-hero-glow-primary {
+    width: 560px;
+    height: 340px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .about-hero-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .about-hero-title {
+    font-size: 32px;
+
+    line-height: 1.08;
+  }
+
+  .about-hero-description {
+    margin-top: 20px;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+  }
+
+  .about-hero-services {
+    margin-top: 32px;
+
+    column-gap: 16px;
+    row-gap: 10px;
+
+    font-size: 11px;
+  }
+}
+
+/* =========================================================
+   ABOUT — WHO WE ARE RESPONSIVE
+   ========================================================= */
+
+@media (min-width: 640px) {
+  .about-who-container {
+    padding-right: 32px;
+    padding-left: 32px;
+
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .about-who-title {
+    font-size: 36px;
+  }
+
+  .about-who-description {
+    font-size: 16px;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .about-who-container {
+    padding-right: 40px;
+    padding-left: 40px;
+
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+
+  .about-who-title {
+    font-size: 48px;
+  }
+}
+
+
+@media (max-width: 1023px) {
+  .about-who-intro {
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+  }
+
+  .about-who-principles {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    margin-top: 56px;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .about-who-container {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+
+  .about-who-intro {
+    gap: 32px;
+  }
+
+  .about-who-title {
+    font-size: 32px;
+  }
+
+  .about-who-principles {
+    grid-template-columns: 1fr;
+
+    gap: 16px;
+
+    margin-top: 48px;
+  }
+
+  .about-who-card {
+    padding: 24px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .about-who-container {
+    padding-right: 20px;
+    padding-left: 20px;
+
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .about-who-title {
+    font-size: 30px;
+
+    line-height: 1.08;
+  }
+
+  .about-who-description {
+    gap: 16px;
+
+    font-size: 15px;
+
+    line-height: 1.75;
+  }
+
+  .about-who-principles {
+    margin-top: 40px;
+  }
+}
+
+/* =========================================================
+   ABOUT — WHAT WE BUILD RESPONSIVE
+   ========================================================= */
+
+@media (min-width: 640px) {
+  .about-build-container {
+    padding-right: 32px;
+    padding-left: 32px;
+
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .about-build-title {
+    font-size: 36px;
+  }
+
+  .about-build-description {
+    font-size: 16px;
+  }
+
+  .about-build-card {
+    padding: 28px;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .about-build-container {
+    padding-right: 40px;
+    padding-left: 40px;
+
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+
+  .about-build-title {
+    font-size: 48px;
+  }
+
+  .about-build-grid {
+    margin-top: 64px;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .about-build-container {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+
+  .about-build-grid {
+    grid-template-columns: 1fr;
+
+    margin-top: 48px;
+  }
+
+  .about-build-title {
+    font-size: 32px;
+  }
+
+  .about-build-card {
+    padding: 24px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .about-build-container {
+    padding-right: 20px;
+    padding-left: 20px;
+
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .about-build-title {
+    font-size: 30px;
+
+    line-height: 1.08;
+  }
+
+  .about-build-description {
+    margin-top: 18px;
+
+    font-size: 15px;
+
+    line-height: 1.75;
+  }
+
+  .about-build-card-header {
+    margin-bottom: 28px;
+  }
+
+  .about-build-card h3 {
+    font-size: 17px;
+  }
+
+  .about-build-card-description {
+    font-size: 14px;
+
+    line-height: 1.6;
+  }
+
+  .about-build-bottom-badge {
+    gap: 8px;
+
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .about-build-bottom-badge p {
+    font-size: 10px;
+  }
+}
+
+/* =========================================================
+   ABOUT — OUR APPROACH RESPONSIVE
+   ========================================================= */
+
+@media (min-width: 640px) {
+  .about-approach-container {
+    padding-right: 32px;
+    padding-left: 32px;
+
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .about-approach-title {
+    font-size: 36px;
+  }
+
+  .about-approach-description {
+    font-size: 16px;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .about-approach-container {
+    padding-right: 40px;
+    padding-left: 40px;
+
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+
+  .about-approach-title {
+    font-size: 48px;
+  }
+
+  .about-approach-grid {
+    margin-top: 64px;
+  }
+}
+
+
+@media (max-width: 1023px) {
+  .about-approach-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+
+@media (max-width: 767px) {
+  .about-approach-container {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+
+  .about-approach-title {
+    font-size: 32px;
+  }
+
+  .about-approach-grid {
+    grid-template-columns: 1fr;
+
+    margin-top: 48px;
+  }
+
+  .about-approach-card {
+    padding: 24px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .about-approach-container {
+    padding-right: 20px;
+    padding-left: 20px;
+
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .about-approach-title {
+    font-size: 30px;
+
+    line-height: 1.08;
+  }
+
+  .about-approach-description {
+    margin-top: 18px;
+
+    font-size: 15px;
+
+    line-height: 1.75;
+  }
+
+  .about-approach-card-header {
+    margin-bottom: 28px;
+  }
+
+  .about-approach-bottom {
+    margin-top: 32px;
+
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+/* =========================================================
+   ABOUT — CTA RESPONSIVE
+   ========================================================= */
+
+@media (min-width: 640px) {
+  .about-cta-container {
+    padding-right: 32px;
+    padding-left: 32px;
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .about-cta-box {
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .about-cta-title {
+    font-size: 36px;
+  }
+
+  .about-cta-description {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .about-cta-container {
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+
+  .about-cta-box {
+    padding-right: 64px;
+    padding-left: 64px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .about-cta-title {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 639px) {
+  .about-cta-buttons {
+    flex-direction: column;
+  }
+
+  .about-cta-button-primary,
+  .about-cta-button-secondary {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .about-cta-supporting-dot {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-cta-container {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-cta-container {
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .about-cta-box {
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    border-radius: 20px;
+  }
+
+  .about-cta-title {
+    font-size: 30px;
+    line-height: 1.08;
+  }
+
+  .about-cta-description {
+    margin-top: 18px;
+    font-size: 15px;
+    line-height: 1.75;
+  }
+
+  .about-cta-buttons {
+    margin-top: 28px;
+  }
+
+  .about-cta-supporting {
+    margin-top: 24px;
+  }
+}

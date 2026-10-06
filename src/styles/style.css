@@ -3754,3 +3754,1324 @@
   font-size: 0.75rem;
   line-height: 1.25rem;
 }
+
+
+/* ===========================================================================================
+ABOUT PAGE STYLES
+=========================================================================================== */
+
+/* =========================================================
+   ABOUT HERO SECTION
+   ========================================================= */
+
+.about-hero-section {
+  position: relative;
+
+  overflow: hidden;
+
+  padding: 96px 16px;
+
+  background: #ffffff;
+
+  border-bottom: 1px solid #e2e8f0;
+}
+
+
+/* =========================================================
+   ABOUT HERO BACKGROUND GLOWS
+   ========================================================= */
+
+.about-hero-glow {
+  position: absolute;
+
+  pointer-events: none;
+
+  border-radius: 9999px;
+
+  filter: blur(100px);
+}
+
+.about-hero-glow-primary {
+  top: 0;
+  left: 50%;
+
+  width: 700px;
+  height: 420px;
+
+  transform: translateX(-50%);
+
+  background: rgba(168, 85, 247, 0.10);
+}
+
+.about-hero-glow-secondary {
+  bottom: 0;
+  left: -128px;
+
+  width: 288px;
+  height: 288px;
+
+  background: rgba(129, 140, 248, 0.05);
+}
+
+
+/* =========================================================
+   ABOUT HERO CONTAINER
+   ========================================================= */
+
+.about-hero-container {
+  position: relative;
+
+  z-index: 10;
+
+  width: 100%;
+  max-width: 1152px;
+
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   ABOUT HERO CONTENT
+   ========================================================= */
+
+.about-hero-content {
+  width: 100%;
+  max-width: 896px;
+}
+
+
+/* =========================================================
+   ABOUT HERO EYEBROW
+   ========================================================= */
+
+.about-hero-eyebrow {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  margin-bottom: 24px;
+
+  padding: 6px 12px;
+
+  background: #faf5ff;
+
+  border: 1px solid #d8b4fe;
+
+  border-radius: 9999px;
+
+  color: #6b21a8;
+
+  font-size: 10px;
+  font-weight: 500;
+
+  line-height: 1.5;
+
+  letter-spacing: 0.25em;
+
+  text-transform: uppercase;
+}
+
+.about-hero-eyebrow-dot {
+  width: 6px;
+  height: 6px;
+
+  flex: 0 0 6px;
+
+  background: #a855f7;
+
+  border-radius: 50%;
+}
+
+
+/* =========================================================
+   ABOUT HERO TITLE
+   ========================================================= */
+
+.about-hero-title {
+  margin: 0;
+
+  color: #020617;
+
+  font-size: 36px;
+  font-weight: 600;
+
+  line-height: 1.05;
+
+  letter-spacing: -0.025em;
+}
+
+.about-hero-title-gradient {
+  background:
+    linear-gradient(
+      90deg,
+      #9333ea,
+      #4f46e5
+    );
+
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* =========================================================
+   ABOUT HERO DESCRIPTION
+   ========================================================= */
+
+.about-hero-description {
+  max-width: 672px;
+
+  margin: 24px 0 0;
+
+  color: #475569;
+
+  font-size: 16px;
+
+  line-height: 2;
+}
+
+
+/* =========================================================
+   ABOUT HERO SERVICES
+   ========================================================= */
+
+.about-hero-services {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  column-gap: 32px;
+  row-gap: 12px;
+
+  margin-top: 40px;
+
+  color: #64748b;
+
+  font-size: 12px;
+  font-weight: 500;
+
+  line-height: 1.5;
+}
+
+/* =========================================================
+   ABOUT — WHO WE ARE
+   ========================================================= */
+
+.about-who-section {
+  position: relative;
+
+  overflow: hidden;
+
+  background: #ffffff;
+
+  border-top: 1px solid #e2e8f0;
+}
+
+
+/* =========================================================
+   BACKGROUND GLOW
+   ========================================================= */
+
+.about-who-glow {
+  position: absolute;
+
+  top: 50%;
+  left: -160px;
+
+  width: 384px;
+  height: 384px;
+
+  transform: translateY(-50%);
+
+  pointer-events: none;
+
+  background: rgba(167, 139, 250, 0.05);
+
+  border-radius: 50%;
+
+  filter: blur(120px);
+}
+
+
+/* =========================================================
+   CONTAINER
+   ========================================================= */
+
+.about-who-container {
+  position: relative;
+
+  width: 100%;
+  max-width: 1152px;
+
+  margin: 0 auto;
+
+  padding: 80px 24px;
+}
+
+
+/* =========================================================
+   INTRO
+   ========================================================= */
+
+.about-who-intro {
+  display: grid;
+
+  grid-template-columns: 0.9fr 1.1fr;
+
+  align-items: center;
+
+  gap: 80px;
+}
+
+
+/* =========================================================
+   LEFT HEADING
+   ========================================================= */
+
+.about-who-heading {
+  width: 100%;
+}
+
+.about-who-eyebrow {
+  margin: 0 0 16px;
+
+  color: #7c3aed;
+
+  font-size: 10px;
+  font-weight: 500;
+
+  line-height: 1.5;
+
+  letter-spacing: 0.28em;
+
+  text-transform: uppercase;
+}
+
+.about-who-title {
+  max-width: 576px;
+
+  margin: 0;
+
+  color: #020617;
+
+  font-size: 30px;
+  font-weight: 600;
+
+  line-height: 1.05;
+
+  letter-spacing: -0.03em;
+}
+
+.about-who-title-gradient {
+  background:
+    linear-gradient(
+      90deg,
+      #7c3aed,
+      #4f46e5
+    );
+
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* =========================================================
+   RIGHT DESCRIPTION
+   ========================================================= */
+
+.about-who-description {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 20px;
+
+  color: #475569;
+
+  font-size: 14px;
+
+  line-height: 1.75;
+}
+
+.about-who-description p {
+  margin: 0;
+}
+
+
+/* =========================================================
+   PRINCIPLES
+   ========================================================= */
+
+.about-who-principles {
+  display: grid;
+
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  gap: 16px;
+
+  margin-top: 80px;
+}
+
+
+/* =========================================================
+   PRINCIPLE CARD
+   ========================================================= */
+
+.about-who-card {
+  padding: 24px;
+
+  background: #ffffff;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 16px;
+
+  box-shadow:
+    0 1px 2px rgba(15, 23, 42, 0.05);
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.about-who-card:hover {
+  transform: translateY(-4px);
+
+  border-color: #c4b5fd;
+
+  box-shadow:
+    0 4px 12px rgba(15, 23, 42, 0.08);
+}
+
+
+/* =========================================================
+   CARD NUMBER
+   ========================================================= */
+
+.about-who-card-number {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 36px;
+  height: 36px;
+
+  margin-bottom: 20px;
+
+  border: 1px solid #ddd6fe;
+
+  border-radius: 50%;
+
+  background: #f5f3ff;
+
+  color: #6d28d9;
+
+  font-size: 12px;
+  font-weight: 500;
+}
+
+
+/* =========================================================
+   CARD CONTENT
+   ========================================================= */
+
+.about-who-card h3 {
+  margin: 0 0 8px;
+
+  color: #020617;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  line-height: 1.5;
+}
+
+.about-who-card p {
+  margin: 0;
+
+  color: #475569;
+
+  font-size: 14px;
+
+  line-height: 1.5;
+}
+
+/* =========================================================
+   ABOUT — WHAT WE BUILD
+   ========================================================= */
+
+.about-build-section {
+  position: relative;
+
+  overflow: hidden;
+
+  background: #f8f7ff;
+
+  border-top: 1px solid #e2e8f0;
+}
+
+
+/* =========================================================
+   BACKGROUND GLOWS
+   ========================================================= */
+
+.about-build-glow {
+  position: absolute;
+
+  width: 384px;
+  height: 384px;
+
+  pointer-events: none;
+
+  border-radius: 50%;
+
+  filter: blur(120px);
+}
+
+.about-build-glow-primary {
+  top: 80px;
+  right: -160px;
+
+  background: rgba(167, 139, 250, 0.10);
+}
+
+.about-build-glow-secondary {
+  bottom: -160px;
+  left: -120px;
+
+  background: rgba(165, 180, 252, 0.10);
+}
+
+
+/* =========================================================
+   CONTAINER
+   ========================================================= */
+
+.about-build-container {
+  position: relative;
+
+  width: 100%;
+  max-width: 1152px;
+
+  margin: 0 auto;
+
+  padding: 80px 24px;
+}
+
+
+/* =========================================================
+   HEADING
+   ========================================================= */
+
+.about-build-heading {
+  width: 100%;
+  max-width: 672px;
+}
+
+.about-build-eyebrow {
+  margin: 0 0 16px;
+
+  color: #7c3aed;
+
+  font-size: 10px;
+  font-weight: 500;
+
+  line-height: 1.5;
+
+  letter-spacing: 0.28em;
+
+  text-transform: uppercase;
+}
+
+.about-build-title {
+  margin: 0;
+
+  color: #020617;
+
+  font-size: 30px;
+  font-weight: 600;
+
+  line-height: 1.05;
+
+  letter-spacing: -0.03em;
+}
+
+.about-build-title-gradient {
+  background:
+    linear-gradient(
+      90deg,
+      #7c3aed,
+      #4f46e5
+    );
+
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-build-description {
+  max-width: 576px;
+
+  margin: 20px 0 0;
+
+  color: #475569;
+
+  font-size: 14px;
+
+  line-height: 1.75;
+}
+
+
+/* =========================================================
+   SOLUTION GRID
+   ========================================================= */
+
+.about-build-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 16px;
+
+  margin-top: 56px;
+}
+
+
+/* =========================================================
+   SOLUTION CARD
+   ========================================================= */
+
+.about-build-card {
+  padding: 24px;
+
+  background: #ffffff;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 16px;
+
+  box-shadow:
+    0 1px 2px rgba(15, 23, 42, 0.05);
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.about-build-card:hover {
+  transform: translateY(-4px);
+
+  border-color: #c4b5fd;
+
+  box-shadow:
+    0 4px 12px rgba(15, 23, 42, 0.08);
+}
+
+
+/* =========================================================
+   CARD HEADER
+   ========================================================= */
+
+.about-build-card-header {
+  display: flex;
+
+  align-items: flex-start;
+  justify-content: space-between;
+
+  gap: 16px;
+
+  margin-bottom: 32px;
+}
+
+.about-build-card-label {
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 9px;
+  font-weight: 500;
+
+  line-height: 1.5;
+
+  letter-spacing: 0.25em;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   CARD NUMBER
+   ========================================================= */
+
+.about-build-card-number {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 36px;
+  height: 36px;
+
+  flex: 0 0 36px;
+
+  border: 1px solid #ddd6fe;
+
+  border-radius: 50%;
+
+  background: #f5f3ff;
+
+  color: #6d28d9;
+
+  font-size: 12px;
+  font-weight: 500;
+}
+
+
+/* =========================================================
+   CARD CONTENT
+   ========================================================= */
+
+.about-build-card h3 {
+  margin: 0;
+
+  color: #020617;
+
+  font-size: 18px;
+  font-weight: 600;
+
+  line-height: 1.5;
+}
+
+.about-build-card-description {
+  max-width: 512px;
+
+  margin: 12px 0 0;
+
+  color: #475569;
+
+  font-size: 14px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   CARD ITEMS
+   ========================================================= */
+
+.about-build-items {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin-top: 24px;
+}
+
+.about-build-item {
+  padding: 6px 12px;
+
+  background: #f8fafc;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 999px;
+
+  color: #475569;
+
+  font-size: 11px;
+  font-weight: 500;
+
+  line-height: 1.5;
+
+  transition:
+    border-color 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.about-build-card:hover .about-build-item {
+  border-color: #ddd6fe;
+
+  background: rgba(245, 243, 255, 0.6);
+}
+
+
+/* =========================================================
+   BOTTOM STATEMENT
+   ========================================================= */
+
+.about-build-bottom {
+  display: flex;
+
+  justify-content: center;
+
+  margin-top: 32px;
+}
+
+.about-build-bottom-badge {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 10px 20px;
+
+  background: #ffffff;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 999px;
+
+  box-shadow:
+    0 1px 2px rgba(15, 23, 42, 0.05);
+}
+
+.about-build-bottom-dot {
+  width: 6px;
+  height: 6px;
+
+  flex: 0 0 6px;
+
+  border-radius: 50%;
+
+  background: #8b5cf6;
+}
+
+.about-build-bottom-badge p {
+  margin: 0;
+
+  color: #475569;
+
+  font-size: 11px;
+
+  line-height: 1.5;
+}
+
+/* =========================================================
+   ABOUT — OUR APPROACH
+   ========================================================= */
+
+.about-approach-section {
+  position: relative;
+
+  overflow: hidden;
+
+  background: #ffffff;
+
+  border-top: 1px solid #e2e8f0;
+}
+
+
+/* =========================================================
+   BACKGROUND GLOWS
+   ========================================================= */
+
+.about-approach-glow {
+  position: absolute;
+
+  pointer-events: none;
+
+  border-radius: 50%;
+
+  filter: blur(130px);
+}
+
+.about-approach-glow-primary {
+  top: 0;
+  left: 50%;
+
+  width: 700px;
+  height: 420px;
+
+  transform: translateX(-50%);
+
+  background: rgba(167, 139, 250, 0.07);
+}
+
+.about-approach-glow-secondary {
+  right: -160px;
+  bottom: 0;
+
+  width: 320px;
+  height: 320px;
+
+  background: rgba(129, 140, 248, 0.05);
+
+  filter: blur(110px);
+}
+
+
+/* =========================================================
+   CONTAINER
+   ========================================================= */
+
+.about-approach-container {
+  position: relative;
+
+  width: 100%;
+  max-width: 1152px;
+
+  margin: 0 auto;
+
+  padding: 80px 24px;
+}
+
+
+/* =========================================================
+   HEADING
+   ========================================================= */
+
+.about-approach-heading {
+  width: 100%;
+  max-width: 768px;
+
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+.about-approach-eyebrow {
+  margin: 0 0 16px;
+
+  color: #7c3aed;
+
+  font-size: 10px;
+  font-weight: 500;
+
+  line-height: 1.5;
+
+  letter-spacing: 0.28em;
+
+  text-transform: uppercase;
+}
+
+.about-approach-title {
+  margin: 0;
+
+  color: #020617;
+
+  font-size: 30px;
+  font-weight: 600;
+
+  line-height: 1.05;
+
+  letter-spacing: -0.03em;
+}
+
+.about-approach-title-gradient {
+  background:
+    linear-gradient(
+      90deg,
+      #7c3aed,
+      #4f46e5
+    );
+
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-approach-description {
+  max-width: 672px;
+
+  margin: 20px auto 0;
+
+  color: #475569;
+
+  font-size: 14px;
+
+  line-height: 1.75;
+}
+
+
+/* =========================================================
+   APPROACH GRID
+   ========================================================= */
+
+.about-approach-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  gap: 16px;
+
+  margin-top: 56px;
+}
+
+
+/* =========================================================
+   APPROACH CARD
+   ========================================================= */
+
+.about-approach-card {
+  position: relative;
+
+  overflow: hidden;
+
+  padding: 24px;
+
+  background: #ffffff;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 16px;
+
+  box-shadow:
+    0 1px 2px rgba(15, 23, 42, 0.05);
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.about-approach-card:hover {
+  transform: translateY(-4px);
+
+  border-color: #c4b5fd;
+
+  box-shadow:
+    0 4px 12px rgba(15, 23, 42, 0.08);
+}
+
+
+/* =========================================================
+   CARD HEADER
+   ========================================================= */
+
+.about-approach-card-header {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 32px;
+}
+
+.about-approach-card-number {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 36px;
+  height: 36px;
+
+  border: 1px solid #ddd6fe;
+
+  border-radius: 50%;
+
+  background: #f5f3ff;
+
+  color: #6d28d9;
+
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.about-approach-card-dot {
+  width: 6px;
+  height: 6px;
+
+  border-radius: 50%;
+
+  background: #8b5cf6;
+}
+
+
+/* =========================================================
+   CARD CONTENT
+   ========================================================= */
+
+.about-approach-card h3 {
+  margin: 0;
+
+  color: #020617;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  line-height: 1.5;
+}
+
+.about-approach-card-description {
+  margin: 12px 0 0;
+
+  color: #475569;
+
+  font-size: 14px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   BOTTOM HOVER ACCENT
+   ========================================================= */
+
+.about-approach-card-accent {
+  position: absolute;
+
+  right: 24px;
+  bottom: 0;
+  left: 24px;
+
+  height: 1px;
+
+  background: #f1f5f9;
+}
+
+.about-approach-card-accent div {
+  width: 0;
+  height: 1px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #8b5cf6,
+      #6366f1
+    );
+
+  transition: width 0.3s ease;
+}
+
+.about-approach-card:hover .about-approach-card-accent div {
+  width: 100%;
+}
+
+
+/* =========================================================
+   BOTTOM STATEMENT
+   ========================================================= */
+
+.about-approach-bottom {
+  width: 100%;
+  max-width: 768px;
+
+  margin: 40px auto 0;
+
+  padding: 20px 24px;
+
+  text-align: center;
+
+  background: #fafaff;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 16px;
+
+  box-shadow:
+    0 1px 2px rgba(15, 23, 42, 0.05);
+}
+
+.about-approach-bottom p {
+  margin: 0;
+
+  color: #475569;
+
+  font-size: 14px;
+
+  line-height: 1.5;
+}
+
+.about-approach-bottom span {
+  color: #0f172a;
+
+  font-weight: 500;
+}
+
+/* =========================================================
+   ABOUT — CTA
+   ========================================================= */
+
+.about-cta-section {
+  position: relative;
+  overflow: hidden;
+  background: #ffffff;
+  border-top: 1px solid #e2e8f0;
+}
+
+.about-cta-container {
+  position: relative;
+  width: 100%;
+  max-width: 1152px;
+  margin: 0 auto;
+  padding: 80px 24px;
+}
+
+.about-cta-box {
+  position: relative;
+  overflow: hidden;
+  padding: 56px 24px;
+  text-align: center;
+  background: linear-gradient(
+    135deg,
+    rgba(245, 243, 255, 0.8),
+    #ffffff,
+    rgba(238, 242, 255, 0.8)
+  );
+  border: 1px solid #ddd6fe;
+  border-radius: 24px;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.05);
+}
+
+.about-cta-glow {
+  position: absolute;
+  pointer-events: none;
+  border-radius: 50%;
+  filter: blur(48px);
+}
+
+.about-cta-glow-primary {
+  top: 50%;
+  left: 50%;
+  width: 320px;
+  height: 320px;
+  transform: translate(-50%, -50%);
+  background: rgba(196, 181, 253, 0.2);
+}
+
+.about-cta-glow-secondary {
+  top: -80px;
+  right: -80px;
+  width: 256px;
+  height: 256px;
+  background: rgba(199, 210, 254, 0.25);
+}
+
+.about-cta-glow-tertiary {
+  bottom: -96px;
+  left: -80px;
+  width: 256px;
+  height: 256px;
+  background: rgba(233, 213, 255, 0.2);
+}
+
+.about-cta-content {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.about-cta-eyebrow {
+  margin: 0 0 16px;
+  color: #7c3aed;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+}
+
+.about-cta-title {
+  margin: 0;
+  color: #020617;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
+
+.about-cta-title-gradient {
+  background: linear-gradient(90deg, #7c3aed, #4f46e5);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-cta-description {
+  max-width: 672px;
+  margin: 20px auto 0;
+  color: #475569;
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+.about-cta-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.about-cta-button-primary,
+.about-cta-button-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 12px 24px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.about-cta-button-primary {
+  color: #ffffff;
+  background: #7c3aed;
+  border: 1px solid #7c3aed;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.05);
+}
+
+.about-cta-button-primary:hover {
+  background: #8b5cf6;
+  border-color: #8b5cf6;
+}
+
+.about-cta-button-secondary {
+  color: #1e293b;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid #cbd5e1;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.05);
+}
+
+.about-cta-button-secondary:hover {
+  color: #6d28d9;
+  background: #f5f3ff;
+  border-color: #c4b5fd;
+}
+
+.about-cta-supporting {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  column-gap: 20px;
+  row-gap: 8px;
+  margin-top: 28px;
+  color: #64748b;
+  font-size: 11px;
+}
+
+.about-cta-supporting-dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #8b5cf6;
+}
