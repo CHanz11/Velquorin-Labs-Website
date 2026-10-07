@@ -2602,3 +2602,1264 @@ ABOUT PAGE RESPONSIVE STYLES
     margin-top: 24px;
   }
 }
+
+/* =========================================================
+   SERVICES — HERO RESPONSIVE
+   ========================================================= */
+
+@media (min-width: 640px) {
+  .services-hero-container {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+
+  .services-hero-title {
+    font-size: 48px;
+  }
+
+  .services-hero-description {
+    font-size: 16px;
+  }
+
+  .services-hero-buttons {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1024px) {
+  .services-hero-container {
+    padding-right: 32px;
+    padding-left: 32px;
+    padding-top: 128px;
+    padding-bottom: 128px;
+  }
+
+  .services-hero-title {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 639px) {
+  .services-hero-container {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .services-hero-buttons {
+    flex-direction: column;
+  }
+
+  .services-hero-button-primary,
+  .services-hero-button-secondary {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-hero-container {
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .services-hero-title {
+    font-size: 32px;
+    line-height: 1.08;
+  }
+
+  .services-hero-description {
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 1.75;
+  }
+
+  .services-hero-buttons {
+    margin-top: 28px;
+  }
+
+  .services-hero-service-labels {
+    margin-top: 28px;
+    gap: 10px 20px;
+    font-size: 11px;
+  }
+}
+
+/* =========================================================
+   SERVICES — OVERVIEW RESPONSIVE
+   ========================================================= */
+
+@media (min-width: 640px) {
+  .services-overview-container {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+
+  .services-overview-title {
+    font-size: 36px;
+  }
+
+  .services-overview-description {
+    font-size: 16px;
+  }
+
+  .services-overview-card {
+    padding: 28px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .services-overview-container {
+    padding-right: 32px;
+    padding-left: 32px;
+    padding-top: 128px;
+    padding-bottom: 128px;
+  }
+
+  .services-overview-title {
+    font-size: 40px;
+  }
+
+  .services-overview-grid {
+    margin-top: 48px;
+  }
+}
+
+@media (max-width: 639px) {
+  .services-overview-container {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .services-overview-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services-overview-custom {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .services-overview-custom-button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-overview-container {
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .services-overview-title {
+    font-size: 30px;
+    line-height: 1.15;
+  }
+
+  .services-overview-description {
+    margin-top: 14px;
+    font-size: 15px;
+    line-height: 1.75;
+  }
+
+  .services-overview-grid {
+    gap: 16px;
+    margin-top: 40px;
+  }
+
+  .services-overview-card {
+    padding: 20px;
+  }
+
+  .services-overview-card h3 {
+    margin-top: 24px;
+  }
+
+  .services-overview-custom {
+    padding: 20px;
+  }
+}
+
+/* =========================================================
+   SERVICES — AI CHATBOTS RESPONSIVE
+   ========================================================= */
+
+@media (min-width: 640px) {
+  .services-chatbots-container {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+
+  .services-chatbots-title {
+    font-size: 36px;
+  }
+
+  .services-chatbots-description {
+    font-size: 16px;
+  }
+
+  .services-chatbots-capability {
+    padding: 24px;
+  }
+
+  .services-chatbots-shasha-content {
+    padding: 32px;
+  }
+
+  .services-chatbots-shasha-action {
+    padding: 32px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .services-chatbots-container {
+    padding-right: 32px;
+    padding-left: 32px;
+    padding-top: 128px;
+    padding-bottom: 128px;
+  }
+
+  .services-chatbots-title {
+    font-size: 40px;
+  }
+
+  .services-chatbots-top {
+    gap: 80px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .services-chatbots-top {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+}
+
+@media (max-width: 639px) {
+  .services-chatbots-container {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .services-chatbots-buttons {
+    flex-direction: column;
+  }
+
+  .services-chatbots-button-primary,
+  .services-chatbots-button-secondary {
+    width: 100%;
+  }
+
+  .services-chatbots-shasha-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .services-chatbots-shasha-action {
+    border-top: 1px solid #ede9fe;
+    border-left: 0;
+  }
+
+  .services-chatbots-shasha-action a {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-chatbots-container {
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .services-chatbots-title {
+    font-size: 30px;
+    line-height: 1.15;
+  }
+
+  .services-chatbots-description {
+    margin-top: 18px;
+    font-size: 15px;
+    line-height: 1.75;
+  }
+
+  .services-chatbots-description + .services-chatbots-description {
+    margin-top: 14px;
+  }
+
+  .services-chatbots-buttons {
+    margin-top: 28px;
+  }
+
+  .services-chatbots-capabilities {
+    grid-template-columns: 1fr;
+  }
+
+  .services-chatbots-capability {
+    padding: 20px;
+  }
+
+  .services-chatbots-shasha {
+    margin-top: 48px;
+  }
+
+  .services-chatbots-shasha-content,
+  .services-chatbots-shasha-action {
+    padding: 20px;
+  }
+
+  .services-chatbots-shasha h3 {
+    font-size: 22px;
+  }
+
+  .services-chatbots-shasha-description {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+}
+
+/* =========================================================
+   SERVICES — AI AUTOMATION RESPONSIVE
+   ========================================================= */
+
+@media (min-width: 640px) {
+  .services-automation-container {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+
+  .services-automation-title {
+    font-size: 36px;
+  }
+
+  .services-automation-description {
+    font-size: 16px;
+  }
+
+  .services-automation-card {
+    padding: 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .services-automation-container {
+    padding-right: 32px;
+    padding-left: 32px;
+    padding-top: 128px;
+    padding-bottom: 128px;
+  }
+
+  .services-automation-title {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .services-automation-top {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+}
+
+@media (max-width: 639px) {
+  .services-automation-container {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .services-automation-buttons {
+    flex-direction: column;
+  }
+
+  .services-automation-button-primary,
+  .services-automation-button-secondary {
+    width: 100%;
+  }
+
+  .services-automation-features {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-automation-container {
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .services-automation-title {
+    font-size: 30px;
+    line-height: 1.15;
+  }
+
+  .services-automation-description {
+    margin-top: 18px;
+    font-size: 15px;
+    line-height: 1.75;
+  }
+
+  .services-automation-description + .services-automation-description {
+    margin-top: 14px;
+  }
+
+  .services-automation-buttons {
+    margin-top: 28px;
+  }
+
+  .services-automation-card {
+    padding: 20px;
+  }
+
+  .services-automation-flow {
+    margin-top: 40px;
+    padding: 18px 20px;
+  }
+
+  .services-automation-flow-content {
+    gap: 8px;
+    font-size: 9px;
+  }
+}
+
+/* =========================================================
+   SERVICES — CONVERSATIONAL AI FORMS RESPONSIVE
+   ========================================================= */
+
+@media (min-width: 640px) {
+  .services-forms-container {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+
+  .services-forms-title {
+    font-size: 36px;
+  }
+
+  .services-forms-description {
+    font-size: 16px;
+  }
+
+  .services-forms-card {
+    padding: 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .services-forms-container {
+    padding-right: 32px;
+    padding-left: 32px;
+    padding-top: 128px;
+    padding-bottom: 128px;
+  }
+
+  .services-forms-title {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .services-forms-top {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+}
+
+@media (max-width: 639px) {
+  .services-forms-container {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .services-forms-buttons {
+    flex-direction: column;
+  }
+
+  .services-forms-button-primary,
+  .services-forms-button-secondary {
+    width: 100%;
+  }
+
+  .services-forms-features {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-forms-container {
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .services-forms-title {
+    font-size: 30px;
+    line-height: 1.15;
+  }
+
+  .services-forms-description {
+    margin-top: 18px;
+    font-size: 15px;
+    line-height: 1.75;
+  }
+
+  .services-forms-description + .services-forms-description {
+    margin-top: 14px;
+  }
+
+  .services-forms-buttons {
+    margin-top: 28px;
+  }
+
+  .services-forms-card {
+    padding: 20px;
+  }
+
+  .services-forms-flow {
+    margin-top: 40px;
+    padding: 18px 20px;
+  }
+
+  .services-forms-flow-content {
+    gap: 8px;
+    font-size: 9px;
+  }
+}
+
+/* =========================================================
+   SERVICES — WEB SOLUTIONS RESPONSIVE
+   ========================================================= */
+
+@media (min-width: 640px) {
+  .services-web-container {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+
+  .services-web-title {
+    font-size: 36px;
+  }
+
+  .services-web-description {
+    font-size: 16px;
+  }
+
+  .services-web-card {
+    padding: 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .services-web-container {
+    padding-right: 32px;
+    padding-left: 32px;
+    padding-top: 128px;
+    padding-bottom: 128px;
+  }
+
+  .services-web-title {
+    font-size: 40px;
+  }
+
+  .services-web-top {
+    gap: 80px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .services-web-top {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+}
+
+@media (max-width: 639px) {
+  .services-web-container {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .services-web-buttons {
+    flex-direction: column;
+  }
+
+  .services-web-button-primary,
+  .services-web-button-secondary {
+    width: 100%;
+  }
+
+  .services-web-features {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-web-container {
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .services-web-title {
+    font-size: 30px;
+    line-height: 1.15;
+  }
+
+  .services-web-description {
+    margin-top: 18px;
+    font-size: 15px;
+    line-height: 1.75;
+  }
+
+  .services-web-description + .services-web-description {
+    margin-top: 14px;
+  }
+
+  .services-web-buttons {
+    margin-top: 28px;
+  }
+
+  .services-web-card {
+    padding: 20px;
+  }
+
+  .services-web-flow {
+    margin-top: 40px;
+    padding: 18px 20px;
+  }
+
+  .services-web-flow-content {
+    gap: 8px;
+    font-size: 9px;
+  }
+}
+
+/* =========================================================
+   SERVICES — CUSTOM SOLUTIONS RESPONSIVE
+   ========================================================= */
+
+@media (min-width: 640px) {
+  .services-custom-container {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+
+  .services-custom-title {
+    font-size: 36px;
+  }
+
+  .services-custom-description {
+    font-size: 16px;
+  }
+
+  .services-custom-connected-inner {
+    padding: 32px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .services-custom-container {
+    padding-right: 32px;
+    padding-left: 32px;
+    padding-top: 128px;
+    padding-bottom: 128px;
+  }
+
+  .services-custom-title {
+    font-size: 40px;
+  }
+
+  .services-custom-connected-inner {
+    grid-template-columns: 1fr auto;
+  }
+
+  .services-custom-cta {
+    padding-left: 32px;
+    border-left: 1px solid #ede9fe;
+  }
+}
+
+@media (max-width: 639px) {
+  .services-custom-features {
+    grid-template-columns: 1fr;
+  }
+
+  .services-custom-cta a {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-custom-container {
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .services-custom-title {
+    font-size: 30px;
+    line-height: 1.15;
+  }
+
+  .services-custom-description {
+    margin-top: 18px;
+    font-size: 15px;
+    line-height: 1.75;
+  }
+
+  .services-custom-features {
+    margin-top: 40px;
+  }
+
+  .services-custom-card {
+    padding: 20px;
+  }
+
+  .services-custom-card-content {
+    gap: 16px;
+  }
+
+  .services-custom-connected {
+    margin-top: 32px;
+  }
+
+  .services-custom-connected-inner {
+    padding: 20px;
+  }
+
+  .services-custom-connected h3 {
+    font-size: 18px;
+  }
+
+  .services-custom-connected-description {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .services-custom-flow {
+    width: 100%;
+    padding: 12px 16px;
+  }
+
+  .services-custom-flow-content {
+    gap: 8px;
+    font-size: 9px;
+  }
+}
+
+/* =========================================================
+   SERVICES — CTA RESPONSIVE
+   ========================================================= */
+
+@media (min-width: 640px) {
+  .services-cta-container {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+
+  .services-cta-box {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .services-cta-title {
+    font-size: 36px;
+  }
+
+  .services-cta-description {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .services-cta-container {
+    padding-right: 32px;
+    padding-left: 32px;
+    padding-top: 128px;
+    padding-bottom: 128px;
+  }
+
+  .services-cta-box {
+    padding-right: 64px;
+    padding-left: 64px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .services-cta-title {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 639px) {
+  .services-cta-buttons {
+    flex-direction: column;
+  }
+
+  .services-cta-button-primary,
+  .services-cta-button-secondary {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-cta-container {
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .services-cta-box {
+    padding: 56px 20px;
+    border-radius: 20px;
+  }
+
+  .services-cta-title {
+    font-size: 30px;
+    line-height: 1.15;
+  }
+
+  .services-cta-description {
+    margin-top: 18px;
+    font-size: 15px;
+    line-height: 1.75;
+  }
+
+  .services-cta-buttons {
+    margin-top: 28px;
+  }
+
+  .services-cta-tags {
+    margin-top: 28px;
+    gap: 6px 12px;
+  }
+}
+
+/* =========================================================
+   CONTACT — HERO RESPONSIVE
+   ========================================================= */
+
+@media (min-width: 640px) {
+  .contact-hero-container {
+    padding-right: 32px;
+    padding-left: 32px;
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+
+  .contact-hero-title {
+    font-size: 48px;
+  }
+
+  .contact-hero-description {
+    font-size: 16px;
+  }
+
+  .contact-hero-email-link {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact-hero-container {
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 128px;
+    padding-bottom: 128px;
+  }
+
+  .contact-hero-title {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 639px) {
+  .contact-hero-container {
+    min-height: 480px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .contact-hero-services {
+    gap: 10px;
+    margin-top: 32px;
+  }
+
+  .contact-hero-contact {
+    gap: 16px;
+  }
+
+  .contact-hero-divider {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-hero-container {
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .contact-hero-title {
+    font-size: 30px;
+    line-height: 1.08;
+  }
+
+  .contact-hero-description {
+    margin-top: 18px;
+    font-size: 15px;
+    line-height: 1.75;
+  }
+
+  .contact-hero-eyebrow {
+    margin-bottom: 20px;
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+
+  .contact-hero-service {
+    padding: 7px 12px;
+  }
+
+  .contact-hero-contact {
+    margin-top: 28px;
+    padding-top: 20px;
+  }
+
+  .contact-hero-contact-description {
+    max-width: 100%;
+  }
+
+  .contact-hero-glow-primary {
+    left: 0;
+    width: 500px;
+    height: 420px;
+  }
+
+  .contact-hero-glow-secondary {
+    right: -180px;
+    width: 360px;
+    height: 300px;
+  }
+}
+
+/* =========================================================
+   CONTACT — FORM RESPONSIVE
+   ========================================================= */
+
+@media (min-width: 640px) {
+  .contact-form-container {
+    padding-right: 32px;
+    padding-left: 32px;
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+
+  .contact-form-title {
+    font-size: 36px;
+  }
+
+  .contact-form-description {
+    font-size: 16px;
+  }
+
+  .contact-form-card {
+    padding: 32px;
+  }
+
+  .contact-form-footer {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact-form-container {
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 128px;
+    padding-bottom: 128px;
+  }
+
+  .contact-form-title {
+    font-size: 48px;
+  }
+
+  .contact-form-card {
+    padding: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact-form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 639px) {
+  .contact-form-container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .contact-form-support {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-form-container {
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .contact-form-title {
+    font-size: 30px;
+    line-height: 1.08;
+  }
+
+  .contact-form-description {
+    margin-top: 14px;
+    font-size: 15px;
+    line-height: 1.75;
+  }
+
+  .contact-form-card {
+    margin-top: 36px;
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .contact-form {
+    gap: 24px;
+  }
+
+  .contact-form-row {
+    gap: 20px;
+  }
+
+  .contact-form-submit {
+    width: 100%;
+  }
+
+  .contact-form-glow {
+    width: 320px;
+    height: 320px;
+  }
+
+  .contact-form-glow-left {
+    left: -160px;
+  }
+
+  .contact-form-glow-right {
+    right: -160px;
+  }
+}
+
+/* =========================================================
+   CONTACT — INFO / STEPS RESPONSIVE
+   ========================================================= */
+
+@media (min-width: 640px) {
+  .contact-info-steps-container {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+
+  .contact-info-steps-title {
+    font-size: 36px;
+  }
+
+  .contact-info-steps-description {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact-info-steps-container {
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+
+  .contact-info-steps-title {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact-info-steps-container {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+
+  .contact-info-steps-title {
+    font-size: 32px;
+  }
+
+  .contact-info-steps-grid {
+    grid-template-columns: 1fr;
+    margin-top: 48px;
+  }
+
+  .contact-info-steps-bar-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact-info-steps-tags {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-info-steps-container {
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .contact-info-steps-title {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  .contact-info-steps-description {
+    font-size: 15px;
+    line-height: 1.75;
+  }
+
+  .contact-info-step-card {
+    padding: 24px;
+  }
+
+  .contact-info-steps-bar {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+/* =========================================================
+   CONTACT — INFO / CTA RESPONSIVE
+   ========================================================= */
+
+@media (min-width: 640px) {
+  .contact-info-container {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+
+  .contact-info-card {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .contact-info-title {
+    font-size: 36px;
+  }
+
+  .contact-info-description {
+    font-size: 16px;
+  }
+
+  .contact-info-actions {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact-info-container {
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+
+  .contact-info-card {
+    padding-right: 64px;
+    padding-left: 64px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .contact-info-title {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 639px) {
+  .contact-info-container {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+
+  .contact-info-card {
+    padding: 48px 20px;
+  }
+
+  .contact-info-title {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  .contact-info-description {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .contact-info-actions {
+    flex-direction: column;
+  }
+
+  .contact-info-primary-button,
+  .contact-info-secondary-button {
+    width: 100%;
+    max-width: 240px;
+  }
+
+  .contact-info-services {
+    column-gap: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-info-container {
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .contact-info-card {
+    padding: 40px 16px;
+    border-radius: 14px;
+  }
+
+  .contact-info-title {
+    font-size: 28px;
+  }
+
+  .contact-info-inner-glow {
+    width: 300px;
+    height: 160px;
+  }
+
+  .contact-info-services {
+    column-gap: 14px;
+  }
+}

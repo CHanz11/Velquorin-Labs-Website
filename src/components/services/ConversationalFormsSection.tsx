@@ -29,65 +29,59 @@ export default function ConversationalFormsSection() {
   return (
     <section
       id="conversational-forms"
-      className="relative overflow-hidden border-b border-slate-200 bg-white"
+      className="services-forms-section"
     >
       {/* Background glow */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-0"
-        style={{
-          background:
-            "radial-gradient(circle at 25% 45%, rgba(124,58,237,0.06), transparent 38%)",
-        }}
+        className="services-forms-glow"
       />
 
-      <div className="relative mx-auto max-w-6xl px-6 py-24 lg:py-32">
-        <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-start lg:gap-20">
+      <div className="services-forms-container">
+        <div className="services-forms-top">
           {/* Left Content */}
-          <div>
-            <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-violet-200 bg-violet-50 px-3 py-1">
-              <span className="h-1.5 w-1.5 rounded-full bg-violet-500" />
+          <div className="services-forms-content">
+            <div className="services-forms-label">
+              <span className="services-forms-label-dot" />
 
-              <span className="text-[10px] font-medium uppercase tracking-[0.22em] text-violet-700">
-                Smart Lead Collection · Service 03
-              </span>
+              <span>Smart Lead Collection · Service 03</span>
             </div>
 
-            <p className="mb-2 text-[10px] font-medium uppercase tracking-[0.25em] text-slate-500">
+            <p className="services-forms-eyebrow">
               Conversational AI Forms
             </p>
 
-            <h2 className="max-w-xl text-3xl font-semibold tracking-tight text-[#15182f] sm:text-4xl">
+            <h2 className="services-forms-title">
               Turn Forms Into{" "}
-              <span className="bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent">
+              <span className="services-forms-title-gradient">
                 Better Conversations.
               </span>
             </h2>
 
-            <p className="mt-5 max-w-xl text-sm leading-7 text-slate-600">
+            <p className="services-forms-description">
               Velquorin Labs creates conversational form experiences that help
               businesses collect customer information through a simpler,
               guided interaction instead of overwhelming users with long
               traditional forms.
             </p>
 
-            <p className="mt-4 max-w-xl text-sm leading-7 text-slate-600">
+            <p className="services-forms-description">
               Responses can be understood, validated, and organized into
               structured information while keeping the customer in control
               before anything is submitted.
             </p>
 
-            <div className="mt-7 flex flex-wrap gap-3">
+            <div className="services-forms-buttons">
               <a
                 href="/contact"
-                className="inline-flex items-center justify-center rounded-full bg-violet-600 px-5 py-3 text-xs font-medium text-white shadow-[0_8px_24px_rgba(124,58,237,0.18)] transition hover:bg-violet-500"
+                className="services-forms-button-primary"
               >
                 Discuss a Form Project
               </a>
 
               <a
                 href="#custom-solutions"
-                className="inline-flex items-center justify-center rounded-full border border-slate-200 bg-white px-5 py-3 text-xs font-medium text-slate-700 shadow-sm transition hover:border-violet-300 hover:bg-violet-50 hover:text-violet-700"
+                className="services-forms-button-secondary"
               >
                 Explore Custom Solutions
               </a>
@@ -95,46 +89,42 @@ export default function ConversationalFormsSection() {
           </div>
 
           {/* Feature Cards */}
-          <div className="grid gap-4 sm:grid-cols-2">
+          <div className="services-forms-features">
             {formFeatures.map((feature) => (
               <div
                 key={feature.number}
-                className="group rounded-2xl border border-slate-200 bg-white p-6 shadow-[0_8px_30px_rgba(15,23,42,0.04)] transition duration-300 hover:-translate-y-1 hover:border-violet-300 hover:shadow-[0_14px_35px_rgba(124,58,237,0.08)]"
+                className="services-forms-card"
               >
-                <div className="mb-5 flex items-center justify-between">
-                  <span className="flex h-9 w-9 items-center justify-center rounded-full border border-violet-200 bg-violet-50 text-[10px] font-medium text-violet-600">
+                <div className="services-forms-card-header">
+                  <span className="services-forms-card-number">
                     {feature.number}
                   </span>
 
-                  <span className="h-1.5 w-1.5 rounded-full bg-violet-500" />
+                  <span className="services-forms-card-dot" />
                 </div>
 
-                <h3 className="text-sm font-semibold text-[#15182f]">
-                  {feature.title}
-                </h3>
+                <h3>{feature.title}</h3>
 
-                <p className="mt-2 text-xs leading-6 text-slate-600">
-                  {feature.description}
-                </p>
+                <p>{feature.description}</p>
               </div>
             ))}
           </div>
         </div>
 
         {/* Form Flow */}
-        <div className="mt-12 rounded-2xl border border-violet-100 bg-[#faf9ff] px-6 py-5 shadow-[0_8px_30px_rgba(15,23,42,0.035)]">
-          <div className="flex flex-wrap items-center justify-center gap-3 text-[10px] font-medium text-slate-500">
+        <div className="services-forms-flow">
+          <div className="services-forms-flow-content">
             <span>Ask</span>
-            <span className="text-violet-500">→</span>
+            <span className="services-forms-flow-arrow">→</span>
 
             <span>Understand</span>
-            <span className="text-violet-500">→</span>
+            <span className="services-forms-flow-arrow">→</span>
 
             <span>Validate</span>
-            <span className="text-violet-500">→</span>
+            <span className="services-forms-flow-arrow">→</span>
 
             <span>Review</span>
-            <span className="text-violet-500">→</span>
+            <span className="services-forms-flow-arrow">→</span>
 
             <span>Submit</span>
           </div>

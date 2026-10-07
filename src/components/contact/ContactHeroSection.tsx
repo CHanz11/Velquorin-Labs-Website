@@ -8,54 +8,49 @@ export default function ContactHeroSection() {
   ];
 
   return (
-    <section className="relative overflow-hidden border-b border-violet-100 bg-white">
+    <section className="contact-hero-section">
       {/* Background decoration */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-0"
+        className="contact-hero-background"
       >
-        {/* Main soft purple glow */}
-        <div className="absolute left-[20%] top-[-180px] h-[520px] w-[620px] rounded-full bg-violet-100/70 blur-[120px]" />
-
-        {/* Secondary glow */}
-        <div className="absolute right-[-100px] top-[80px] h-[360px] w-[460px] rounded-full bg-indigo-100/50 blur-[110px]" />
-
-        {/* Very subtle bottom fade */}
-        <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-violet-50/50 to-transparent" />
+        <div className="contact-hero-glow contact-hero-glow-primary" />
+        <div className="contact-hero-glow contact-hero-glow-secondary" />
+        <div className="contact-hero-glow contact-hero-glow-bottom" />
       </div>
 
-      <div className="relative mx-auto flex min-h-[520px] max-w-7xl items-center px-6 py-24 sm:px-8 lg:px-10 lg:py-32">
-        <div className="max-w-4xl">
+      <div className="contact-hero-container">
+        <div className="contact-hero-content">
           {/* Eyebrow */}
-          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-violet-200 bg-white/80 px-3.5 py-1.5 shadow-sm backdrop-blur-sm">
-            <span className="h-1.5 w-1.5 rounded-full bg-violet-500" />
+          <div className="contact-hero-eyebrow">
+            <span className="contact-hero-eyebrow-dot" />
 
-            <span className="text-[10px] font-semibold uppercase tracking-[0.28em] text-violet-600">
+            <span>
               Contact Velquorin Labs
             </span>
           </div>
 
           {/* Heading */}
-          <h1 className="max-w-4xl text-4xl font-semibold leading-[1.05] tracking-[-0.035em] text-[#15172f] sm:text-5xl lg:text-6xl">
+          <h1 className="contact-hero-title">
             Let&apos;s Build Something{" "}
-            <span className="bg-gradient-to-r from-violet-600 via-purple-500 to-indigo-500 bg-clip-text text-transparent">
+            <span className="contact-hero-title-gradient">
               Smarter Together.
             </span>
           </h1>
 
           {/* Description */}
-          <p className="mt-6 max-w-2xl text-sm leading-7 text-slate-600 sm:text-base">
+          <p className="contact-hero-description">
             Have a project, business challenge, or idea in mind? Tell us what
             you&apos;re looking to improve, automate, or build, and we&apos;ll
             explore how Velquorin Labs can help.
           </p>
 
           {/* Service labels */}
-          <div className="mt-9 flex flex-wrap items-center gap-x-3 gap-y-3">
+          <div className="contact-hero-services">
             {services.map((service) => (
               <span
                 key={service}
-                className="rounded-full border border-slate-200 bg-white/80 px-3.5 py-2 text-[10px] font-medium text-slate-600 shadow-sm transition duration-200 hover:border-violet-200 hover:bg-violet-50 hover:text-violet-700"
+                className="contact-hero-service"
               >
                 {service}
               </span>
@@ -63,15 +58,15 @@ export default function ContactHeroSection() {
           </div>
 
           {/* Contact detail */}
-          <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3 border-t border-slate-200/80 pt-6">
-            <div className="flex items-center gap-3">
-              <div className="flex h-9 w-9 items-center justify-center rounded-xl border border-violet-200 bg-violet-50 text-violet-600">
+          <div className="contact-hero-contact">
+            <div className="contact-hero-email">
+              <div className="contact-hero-email-icon">
                 <svg
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="1.8"
-                  className="h-4 w-4"
+                  className="contact-hero-email-svg"
                   aria-hidden="true"
                 >
                   <path
@@ -88,22 +83,22 @@ export default function ContactHeroSection() {
               </div>
 
               <div>
-                <p className="text-[9px] font-semibold uppercase tracking-[0.2em] text-slate-400">
+                <p className="contact-hero-email-label">
                   Email Us
                 </p>
 
                 <a
                   href="mailto:velquorinlabs@gmail.com"
-                  className="mt-0.5 block text-xs font-medium text-[#15172f] transition hover:text-violet-600 sm:text-sm"
+                  className="contact-hero-email-link"
                 >
                   velquorinlabs@gmail.com
                 </a>
               </div>
             </div>
 
-            <div className="hidden h-8 w-px bg-slate-200 sm:block" />
+            <div className="contact-hero-divider" />
 
-            <p className="max-w-sm text-xs leading-5 text-slate-500">
+            <p className="contact-hero-contact-description">
               Share your idea with us and we&apos;ll help identify a practical
               next step for your project.
             </p>

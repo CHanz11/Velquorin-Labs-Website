@@ -27,62 +27,56 @@ const automationFeatures = [
 
 export default function AiAutomationSection() {
   return (
-    <section className="relative overflow-hidden border-b border-slate-200 bg-[#f8f7ff]">
+    <section className="services-automation-section">
       {/* Background glow */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-0"
-        style={{
-          background:
-            "radial-gradient(circle at 75% 40%, rgba(124,58,237,0.08), transparent 38%)",
-        }}
+        className="services-automation-glow"
       />
 
-      <div className="relative mx-auto max-w-6xl px-6 py-24 lg:py-32">
-        <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-start lg:gap-20">
+      <div className="services-automation-container">
+        <div className="services-automation-top">
           {/* Left Content */}
-          <div>
-            <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-violet-200 bg-white px-3 py-1 shadow-sm">
-              <span className="h-1.5 w-1.5 rounded-full bg-violet-500" />
+          <div className="services-automation-content">
+            <div className="services-automation-label">
+              <span className="services-automation-label-dot" />
 
-              <span className="text-[10px] font-medium uppercase tracking-[0.22em] text-violet-700">
-                Business Automation · Service 02
-              </span>
+              <span>Business Automation · Service 02</span>
             </div>
 
-            <p className="mb-2 text-[10px] font-medium uppercase tracking-[0.25em] text-slate-500">
+            <p className="services-automation-eyebrow">
               AI Automation
             </p>
 
-            <h2 className="max-w-xl text-3xl font-semibold tracking-tight text-[#15182f] sm:text-4xl">
+            <h2 className="services-automation-title">
               Smarter Workflows Built to{" "}
-              <span className="bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent">
+              <span className="services-automation-title-gradient">
                 Save Time.
               </span>
             </h2>
 
-            <p className="mt-5 max-w-xl text-sm leading-7 text-slate-600">
+            <p className="services-automation-description">
               Velquorin Labs creates intelligent automation systems that connect
               business processes, reduce repetitive manual work, and help teams
               operate more efficiently.
             </p>
 
-            <p className="mt-4 max-w-xl text-sm leading-7 text-slate-600">
+            <p className="services-automation-description">
               From simple task automation to connected AI-powered workflows, we
               design solutions around how your business actually operates.
             </p>
 
-            <div className="mt-7 flex flex-wrap gap-3">
+            <div className="services-automation-buttons">
               <a
                 href="/contact"
-                className="inline-flex items-center justify-center rounded-full bg-violet-600 px-5 py-3 text-xs font-medium text-white shadow-[0_8px_24px_rgba(124,58,237,0.18)] transition hover:bg-violet-500"
+                className="services-automation-button-primary"
               >
                 Discuss an Automation
               </a>
 
               <a
                 href="#custom-solutions"
-                className="inline-flex items-center justify-center rounded-full border border-slate-200 bg-white px-5 py-3 text-xs font-medium text-slate-700 shadow-sm transition hover:border-violet-300 hover:bg-violet-50 hover:text-violet-700"
+                className="services-automation-button-secondary"
               >
                 Explore Custom Solutions
               </a>
@@ -90,43 +84,39 @@ export default function AiAutomationSection() {
           </div>
 
           {/* Feature Cards */}
-          <div className="grid gap-4 sm:grid-cols-2">
+          <div className="services-automation-features">
             {automationFeatures.map((feature) => (
               <div
                 key={feature.number}
-                className="group rounded-2xl border border-slate-200 bg-white p-6 shadow-[0_8px_30px_rgba(15,23,42,0.04)] transition duration-300 hover:-translate-y-1 hover:border-violet-300 hover:shadow-[0_14px_35px_rgba(124,58,237,0.08)]"
+                className="services-automation-card"
               >
-                <div className="mb-5 flex items-center justify-between">
-                  <span className="flex h-9 w-9 items-center justify-center rounded-full border border-violet-200 bg-violet-50 text-[10px] font-medium text-violet-600">
+                <div className="services-automation-card-header">
+                  <span className="services-automation-card-number">
                     {feature.number}
                   </span>
 
-                  <span className="h-1.5 w-1.5 rounded-full bg-violet-500" />
+                  <span className="services-automation-card-dot" />
                 </div>
 
-                <h3 className="text-sm font-semibold text-[#15182f]">
-                  {feature.title}
-                </h3>
+                <h3>{feature.title}</h3>
 
-                <p className="mt-2 text-xs leading-6 text-slate-600">
-                  {feature.description}
-                </p>
+                <p>{feature.description}</p>
               </div>
             ))}
           </div>
         </div>
 
         {/* Bottom Automation Flow */}
-        <div className="mt-12 rounded-2xl border border-violet-100 bg-white px-6 py-5 shadow-[0_8px_30px_rgba(15,23,42,0.035)]">
-          <div className="flex flex-wrap items-center justify-center gap-3 text-[10px] font-medium text-slate-500">
+        <div className="services-automation-flow">
+          <div className="services-automation-flow-content">
             <span>Business Process</span>
-            <span className="text-violet-500">→</span>
+            <span className="services-automation-flow-arrow">→</span>
             <span>Automation</span>
-            <span className="text-violet-500">→</span>
+            <span className="services-automation-flow-arrow">→</span>
             <span>AI Assistance</span>
-            <span className="text-violet-500">→</span>
+            <span className="services-automation-flow-arrow">→</span>
             <span>Connected Systems</span>
-            <span className="text-violet-500">→</span>
+            <span className="services-automation-flow-arrow">→</span>
             <span>Better Operations</span>
           </div>
         </div>
