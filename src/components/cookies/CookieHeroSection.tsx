@@ -1,50 +1,46 @@
 export default function CookieHeroSection() {
   return (
-    <section className="relative overflow-hidden border-b border-slate-200 bg-white">
+    <section className="cookie-hero-section">
       {/* Background glow */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-0"
+        className="cookie-hero-background"
       >
-        <div className="absolute left-[20%] top-[-180px] h-[520px] w-[520px] rounded-full bg-violet-200/30 blur-[140px]" />
+        <div className="cookie-hero-glow" />
       </div>
 
-      <div className="relative mx-auto max-w-6xl px-6 py-24 sm:px-8 sm:py-28 lg:px-10 lg:py-32">
-        <div className="max-w-4xl">
+      <div className="cookie-hero-container">
+        <div className="cookie-hero-content">
           {/* Eyebrow */}
-          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-violet-200 bg-violet-50 px-3 py-1">
-            <span className="h-1.5 w-1.5 rounded-full bg-violet-500" />
+          <div className="cookie-hero-eyebrow">
+            <span className="cookie-hero-eyebrow-dot" />
 
-            <span className="text-[10px] font-medium uppercase tracking-[0.28em] text-violet-700">
+            <span className="cookie-hero-eyebrow-text">
               Legal &amp; Cookies
             </span>
           </div>
 
           {/* Heading */}
-          <h1 className="max-w-4xl text-4xl font-semibold leading-[1.05] tracking-tight text-slate-950 sm:text-5xl lg:text-6xl">
+          <h1 className="cookie-hero-heading">
             Clear Information About{" "}
-            <span className="bg-gradient-to-r from-violet-600 to-indigo-500 bg-clip-text text-transparent">
+            <span className="cookie-hero-heading-gradient">
               Cookies &amp; Tracking.
             </span>
           </h1>
 
           {/* Description */}
-          <p className="mt-5 max-w-2xl text-sm leading-7 text-slate-600 sm:text-base">
+          <p className="cookie-hero-description">
             This Cookie Policy explains how Velquorin Labs may use cookies and
             similar technologies when you visit our website, why they may be
             used, and the choices available to you.
           </p>
 
           {/* Metadata */}
-          <div className="mt-8 flex flex-wrap items-center gap-x-5 gap-y-2 text-xs text-slate-500">
+          <div className="cookie-hero-metadata">
             <span>Velquorin Labs</span>
-
-            <span className="text-violet-500">•</span>
-
+            <span className="cookie-hero-metadata-dot">•</span>
             <span>Cookie Policy</span>
-
-            <span className="text-violet-500">•</span>
-
+            <span className="cookie-hero-metadata-dot">•</span>
             <span>Last updated: October 3, 2026</span>
           </div>
         </div>

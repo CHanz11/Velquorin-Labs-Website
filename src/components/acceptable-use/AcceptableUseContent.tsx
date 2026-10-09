@@ -28,27 +28,19 @@ function SectionHeading({
   title: string;
 }) {
   return (
-    <div className="mb-5 flex items-center gap-3">
-      <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-violet-200 bg-violet-50 text-[9px] font-semibold text-violet-600">
-        {number}
-      </span>
-
-      <h2 className="text-lg font-semibold tracking-tight text-slate-950 sm:text-xl">
-        {title}
-      </h2>
+    <div className="acceptable-use-section-heading">
+      <span className="acceptable-use-section-number">{number}</span>
+      <h2 className="acceptable-use-section-title">{title}</h2>
     </div>
   );
 }
 
 function BulletList({ items }: { items: string[] }) {
   return (
-    <ul className="mt-4 space-y-2.5">
+    <ul className="acceptable-use-bullet-list">
       {items.map((item) => (
-        <li
-          key={item}
-          className="flex gap-3 text-sm leading-7 text-slate-600"
-        >
-          <span className="mt-[11px] h-1.5 w-1.5 shrink-0 rounded-full bg-violet-500" />
+        <li key={item} className="acceptable-use-bullet-item">
+          <span className="acceptable-use-bullet-dot" />
           <span>{item}</span>
         </li>
       ))}
@@ -58,37 +50,36 @@ function BulletList({ items }: { items: string[] }) {
 
 export default function AcceptableUseContent() {
   return (
-    <section className="relative border-b border-slate-200 bg-white">
+    <section className="acceptable-use-content-section">
       {/* Soft background glow */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-0 overflow-hidden"
+        className="acceptable-use-content-background"
       >
-        <div className="absolute left-[15%] top-0 h-[500px] w-[500px] rounded-full bg-violet-100/40 blur-[140px]" />
-        <div className="absolute right-[5%] top-[35%] h-[420px] w-[420px] rounded-full bg-indigo-50/60 blur-[140px]" />
+        <div className="acceptable-use-content-glow acceptable-use-content-glow-primary" />
+        <div className="acceptable-use-content-glow acceptable-use-content-glow-secondary" />
       </div>
 
-      <div className="relative mx-auto max-w-6xl px-6 py-20 sm:px-8 sm:py-24 lg:px-10 lg:py-28">
-        <div className="grid gap-12 lg:grid-cols-[220px_minmax(0,1fr)] lg:gap-16">
+      <div className="acceptable-use-content-container">
+        <div className="acceptable-use-content-layout">
           {/* Table of contents */}
-          <aside className="hidden lg:block">
-            <div className="sticky top-28">
-              <p className="mb-5 text-[10px] font-semibold uppercase tracking-[0.28em] text-slate-500">
+          <aside className="acceptable-use-sidebar">
+            <div className="acceptable-use-sidebar-inner">
+              <p className="acceptable-use-sidebar-title">
                 Acceptable Use
               </p>
 
               <nav aria-label="Acceptable Use Policy sections">
-                <ul className="space-y-3">
+                <ul className="acceptable-use-sidebar-list">
                   {sections.map((section) => (
                     <li key={section.id}>
                       <a
                         href={`#${section.id}`}
-                        className="group flex items-start gap-3 text-xs text-slate-600 transition-colors hover:text-violet-600"
+                        className="acceptable-use-sidebar-link"
                       >
-                        <span className="w-5 shrink-0 text-[9px] text-slate-400 transition-colors group-hover:text-violet-500">
+                        <span className="acceptable-use-sidebar-number">
                           {section.number}
                         </span>
-
                         <span>{section.title}</span>
                       </a>
                     </li>
@@ -99,10 +90,10 @@ export default function AcceptableUseContent() {
           </aside>
 
           {/* Policy content */}
-          <div className="min-w-0">
-            {/* Intro */}
-            <div className="mb-12 rounded-2xl border border-violet-200 bg-violet-50/40 p-6 shadow-sm sm:p-7">
-              <p className="text-sm leading-7 text-slate-600">
+          <div className="acceptable-use-main">
+            {/* Introduction */}
+            <div className="acceptable-use-intro">
+              <p className="acceptable-use-body-text">
                 This Acceptable Use Policy describes the rules for accessing
                 and using Velquorin Labs websites, AI solutions, automation
                 systems, digital services, and related technology. It is
@@ -114,11 +105,11 @@ export default function AcceptableUseContent() {
             {/* 01 */}
             <article
               id="purpose"
-              className="scroll-mt-28 border-b border-slate-200 pb-10"
+              className="acceptable-use-article acceptable-use-article-first"
             >
               <SectionHeading number="01" title="Purpose of This Policy" />
 
-              <div className="space-y-4 text-sm leading-7 text-slate-600">
+              <div className="acceptable-use-prose">
                 <p>
                   Velquorin Labs provides AI-powered and digital solutions
                   designed to help businesses communicate with customers,
@@ -135,13 +126,10 @@ export default function AcceptableUseContent() {
             </article>
 
             {/* 02 */}
-            <article
-              id="permitted-use"
-              className="scroll-mt-28 border-b border-slate-200 py-10"
-            >
+            <article id="permitted-use" className="acceptable-use-article">
               <SectionHeading number="02" title="Permitted Use" />
 
-              <p className="text-sm leading-7 text-slate-600">
+              <p className="acceptable-use-body-text">
                 You may use Velquorin Labs services for legitimate business,
                 professional, and other lawful purposes in accordance with
                 applicable agreements and policies.
@@ -159,13 +147,10 @@ export default function AcceptableUseContent() {
             </article>
 
             {/* 03 */}
-            <article
-              id="prohibited-use"
-              className="scroll-mt-28 border-b border-slate-200 py-10"
-            >
+            <article id="prohibited-use" className="acceptable-use-article">
               <SectionHeading number="03" title="Prohibited Activities" />
 
-              <p className="text-sm leading-7 text-slate-600">
+              <p className="acceptable-use-body-text">
                 You may not use Velquorin Labs services to engage in,
                 facilitate, promote, or support unlawful, harmful, fraudulent,
                 abusive, or deceptive activity.
@@ -185,13 +170,10 @@ export default function AcceptableUseContent() {
             </article>
 
             {/* 04 */}
-            <article
-              id="ai-use"
-              className="scroll-mt-28 border-b border-slate-200 py-10"
-            >
+            <article id="ai-use" className="acceptable-use-article">
               <SectionHeading number="04" title="AI & Automated Systems" />
 
-              <div className="space-y-4 text-sm leading-7 text-slate-600">
+              <div className="acceptable-use-prose">
                 <p>
                   Velquorin Labs services may include artificial intelligence,
                   conversational AI, automated workflows, data analysis, and
@@ -217,13 +199,10 @@ export default function AcceptableUseContent() {
             </article>
 
             {/* 05 */}
-            <article
-              id="security"
-              className="scroll-mt-28 border-b border-slate-200 py-10"
-            >
+            <article id="security" className="acceptable-use-article">
               <SectionHeading number="05" title="Security & System Abuse" />
 
-              <p className="text-sm leading-7 text-slate-600">
+              <p className="acceptable-use-body-text">
                 You must not interfere with the security, availability,
                 integrity, or normal operation of Velquorin Labs systems or
                 services.
@@ -241,16 +220,13 @@ export default function AcceptableUseContent() {
             </article>
 
             {/* 06 */}
-            <article
-              id="spam"
-              className="scroll-mt-28 border-b border-slate-200 py-10"
-            >
+            <article id="spam" className="acceptable-use-article">
               <SectionHeading
                 number="06"
                 title="Spam & Unwanted Communications"
               />
 
-              <div className="space-y-4 text-sm leading-7 text-slate-600">
+              <div className="acceptable-use-prose">
                 <p>
                   Our services must not be used to send unlawful spam,
                   unsolicited bulk communications, abusive messages, or
@@ -267,13 +243,10 @@ export default function AcceptableUseContent() {
             </article>
 
             {/* 07 */}
-            <article
-              id="data"
-              className="scroll-mt-28 border-b border-slate-200 py-10"
-            >
+            <article id="data" className="acceptable-use-article">
               <SectionHeading number="07" title="Data & Privacy" />
 
-              <p className="text-sm leading-7 text-slate-600">
+              <p className="acceptable-use-body-text">
                 You are responsible for ensuring that information submitted to
                 or processed through your use of our services is collected and
                 used lawfully.
@@ -288,12 +261,12 @@ export default function AcceptableUseContent() {
                 ]}
               />
 
-              <p className="mt-4 text-sm leading-7 text-slate-600">
+              <p className="acceptable-use-body-text acceptable-use-spaced-paragraph">
                 Additional information about our handling of personal
                 information is available in our{" "}
                 <Link
                   href="/privacy-policy"
-                  className="font-medium text-violet-600 transition-colors hover:text-violet-700"
+                  className="acceptable-use-inline-link"
                 >
                   Privacy Policy
                 </Link>
@@ -304,11 +277,11 @@ export default function AcceptableUseContent() {
             {/* 08 */}
             <article
               id="intellectual-property"
-              className="scroll-mt-28 border-b border-slate-200 py-10"
+              className="acceptable-use-article"
             >
               <SectionHeading number="08" title="Intellectual Property" />
 
-              <div className="space-y-4 text-sm leading-7 text-slate-600">
+              <div className="acceptable-use-prose">
                 <p>
                   You may not use Velquorin Labs services to knowingly violate
                   copyrights, trademarks, patents, trade secrets, or other
@@ -325,13 +298,10 @@ export default function AcceptableUseContent() {
             </article>
 
             {/* 09 */}
-            <article
-              id="third-party"
-              className="scroll-mt-28 border-b border-slate-200 py-10"
-            >
+            <article id="third-party" className="acceptable-use-article">
               <SectionHeading number="09" title="Third-Party Services" />
 
-              <div className="space-y-4 text-sm leading-7 text-slate-600">
+              <div className="acceptable-use-prose">
                 <p>
                   Velquorin Labs services may connect with third-party
                   platforms, APIs, AI providers, payment services, email
@@ -348,13 +318,10 @@ export default function AcceptableUseContent() {
             </article>
 
             {/* 10 */}
-            <article
-              id="enforcement"
-              className="scroll-mt-28 border-b border-slate-200 py-10"
-            >
+            <article id="enforcement" className="acceptable-use-article">
               <SectionHeading number="10" title="Enforcement" />
 
-              <div className="space-y-4 text-sm leading-7 text-slate-600">
+              <div className="acceptable-use-prose">
                 <p>
                   If we reasonably determine that use of our services violates
                   this policy, applicable law, or creates a material security
@@ -373,7 +340,7 @@ export default function AcceptableUseContent() {
                 ]}
               />
 
-              <p className="mt-4 text-sm leading-7 text-slate-600">
+              <p className="acceptable-use-body-text acceptable-use-spaced-paragraph">
                 Enforcement decisions may consider the nature, severity,
                 duration, and impact of the activity, as well as applicable
                 contractual and legal requirements.
@@ -381,23 +348,20 @@ export default function AcceptableUseContent() {
             </article>
 
             {/* 11 */}
-            <article
-              id="reporting"
-              className="scroll-mt-28 border-b border-slate-200 py-10"
-            >
+            <article id="reporting" className="acceptable-use-article">
               <SectionHeading number="11" title="Reporting Violations" />
 
-              <p className="text-sm leading-7 text-slate-600">
+              <p className="acceptable-use-body-text">
                 If you believe that Velquorin Labs services are being used in
                 violation of this policy, please contact us with sufficient
                 information for us to review the issue. Please do not send
                 sensitive information unless it is necessary for the report.
               </p>
 
-              <div className="mt-6">
+              <div className="acceptable-use-action">
                 <Link
                   href="/contact"
-                  className="inline-flex items-center rounded-full border border-violet-200 bg-violet-50 px-4 py-2 text-xs font-medium text-violet-700 transition-colors hover:border-violet-300 hover:bg-violet-100"
+                  className="acceptable-use-action-link acceptable-use-action-primary"
                 >
                   Report an Issue →
                 </Link>
@@ -405,13 +369,10 @@ export default function AcceptableUseContent() {
             </article>
 
             {/* 12 */}
-            <article
-              id="changes"
-              className="scroll-mt-28 border-b border-slate-200 py-10"
-            >
+            <article id="changes" className="acceptable-use-article">
               <SectionHeading number="12" title="Changes to This Policy" />
 
-              <div className="space-y-4 text-sm leading-7 text-slate-600">
+              <div className="acceptable-use-prose">
                 <p>
                   We may update this Acceptable Use Policy as our services,
                   technologies, security practices, or legal obligations
@@ -428,26 +389,29 @@ export default function AcceptableUseContent() {
             </article>
 
             {/* 13 */}
-            <article id="contact" className="scroll-mt-28 pt-10">
+            <article
+              id="contact"
+              className="acceptable-use-contact-article"
+            >
               <SectionHeading number="13" title="Contact Us" />
 
-              <p className="text-sm leading-7 text-slate-600">
+              <p className="acceptable-use-body-text">
                 If you have questions about this Acceptable Use Policy or need
                 to report potential misuse of Velquorin Labs services, please
                 contact us through our Contact page.
               </p>
 
-              <div className="mt-6 flex flex-wrap gap-3">
+              <div className="acceptable-use-contact-actions">
                 <Link
                   href="/contact"
-                  className="inline-flex items-center rounded-full border border-violet-200 bg-violet-50 px-4 py-2 text-xs font-medium text-violet-700 transition-colors hover:border-violet-300 hover:bg-violet-100"
+                  className="acceptable-use-action-link acceptable-use-action-primary"
                 >
                   Contact Velquorin Labs →
                 </Link>
 
                 <Link
                   href="/terms-of-service"
-                  className="inline-flex items-center rounded-full border border-slate-300 bg-white px-4 py-2 text-xs font-medium text-slate-700 transition-colors hover:border-violet-300 hover:text-violet-700"
+                  className="acceptable-use-action-link acceptable-use-action-secondary"
                 >
                   Read Terms of Service →
                 </Link>

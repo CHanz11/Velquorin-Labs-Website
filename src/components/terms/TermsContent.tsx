@@ -60,29 +60,24 @@ const sections = [
 function SectionHeading({
   number,
   children,
-}: {
-  number: string;
-  children: React.ReactNode;
-}) {
-  return (
-    <div className="mb-5 flex items-center gap-3">
-      <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-violet-200 bg-violet-50 text-[10px] font-medium text-violet-600">
-        {number}
-      </span>
-
-      <h2 className="text-xl font-semibold tracking-tight text-slate-950">
-        {children}
-      </h2>
-    </div>
-  );
+    }: {
+      number: string;
+      children: React.ReactNode;
+    }) {
+    return (
+      <div className="terms-content-heading">
+      <span className="terms-content-number">{number}</span>
+      <h2 className="terms-content-heading-title">{children}</h2>
+      </div>
+    );
 }
 
 function BulletList({ items }: { items: string[] }) {
   return (
-    <ul className="space-y-2 pl-1">
+    <ul className="terms-content-bullet-list">
       {items.map((item) => (
-        <li key={item} className="flex gap-3">
-          <span className="mt-[11px] h-1.5 w-1.5 shrink-0 rounded-full bg-violet-500" />
+        <li key={item} className="terms-content-bullet-item">
+          <span className="terms-content-bullet-dot" />
           <span>{item}</span>
         </li>
       ))}
@@ -91,38 +86,37 @@ function BulletList({ items }: { items: string[] }) {
 }
 
 export default function TermsContent() {
-  const articleClass =
-    "scroll-mt-28 border-b border-slate-200 py-9";
+  const articleClass = "terms-content-article";
 
-  const bodyClass =
-    "space-y-4 text-sm leading-7 text-slate-600";
+  const bodyClass = "terms-content-article-body";
 
   return (
-    <section className="relative border-b border-slate-200 bg-white">
+    <section className="terms-content-section">
       {/* Soft background glow */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-0 overflow-hidden"
+        className="terms-content-background"
       >
-        <div className="absolute left-[55%] top-0 h-[500px] w-[700px] -translate-x-1/2 rounded-full bg-violet-100/50 blur-[150px]" />
+        <div className="terms-content-glow" />
       </div>
 
-      <div className="relative mx-auto grid max-w-6xl gap-12 px-6 py-20 sm:px-8 lg:grid-cols-[220px_minmax(0,1fr)] lg:px-10 lg:py-24">
+      <div className="terms-content-container">
         {/* Table of contents */}
-        <aside className="lg:sticky lg:top-24 lg:self-start">
-          <p className="mb-5 text-[10px] font-semibold uppercase tracking-[0.28em] text-slate-500">
+        <aside className="terms-content-sidebar">
+          <div className="terms-content-sidebar-inner">
+          <p className="terms-content-sidebar-title">
             Terms of Service
           </p>
 
           <nav aria-label="Terms of Service sections">
-            <ul className="space-y-2.5">
+            <ul className="terms-content-nav-list">
               {sections.map((section) => (
                 <li key={section.id}>
                   <a
                     href={`#${section.id}`}
-                    className="group flex items-start gap-2 text-xs leading-5 text-slate-500 transition-colors hover:text-violet-600"
+                    className="terms-content-nav-link"
                   >
-                    <span className="w-5 shrink-0 text-slate-400 transition-colors group-hover:text-violet-500">
+                    <span className="terms-content-nav-number">
                       {section.number}
                     </span>
 
@@ -132,13 +126,14 @@ export default function TermsContent() {
               ))}
             </ul>
           </nav>
+          </div>
         </aside>
 
         {/* Terms content */}
-        <div className="min-w-0">
+        <div className="terms-content-main">
           {/* Introduction */}
-          <div className="mb-10 rounded-2xl border border-violet-200/80 bg-violet-50/40 p-6 sm:p-7">
-            <p className="text-sm leading-7 text-slate-600">
+          <div className="terms-content-intro">
+            <p className="terms-content-intro-text">
               These Terms of Service (&quot;Terms&quot;) govern your access to
               and use of the Velquorin Labs website and the services we provide.
               By accessing our website, communicating with us about a project,
@@ -149,7 +144,7 @@ export default function TermsContent() {
           {/* 01 */}
           <article
             id="acceptance"
-            className={`${articleClass} first:pt-0`}
+            className={`${articleClass} terms-content-article-first`}
           >
             <SectionHeading number="01">
               Acceptance of Terms
@@ -555,7 +550,7 @@ export default function TermsContent() {
           <article id="contact" className="scroll-mt-28 pt-9">
             <SectionHeading number="18">Contact Us</SectionHeading>
 
-            <div className="space-y-5 text-sm leading-7 text-slate-600">
+            <div className="terms-content-contact-body">
               <p>
                 If you have questions about these Terms of Service or would
                 like to discuss a service-related matter, please contact
@@ -564,7 +559,7 @@ export default function TermsContent() {
 
               <Link
                 href="/contact"
-                className="inline-flex items-center rounded-full border border-violet-200 bg-violet-50 px-5 py-2.5 text-xs font-medium text-violet-700 transition hover:border-violet-300 hover:bg-violet-100"
+                className="terms-content-contact-link"
               >
                 Contact Velquorin Labs →
               </Link>

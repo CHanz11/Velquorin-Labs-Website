@@ -1,3 +1,4 @@
+
 import Link from "next/link";
 
 const sections = [
@@ -24,24 +25,20 @@ function SectionHeading({
   children: React.ReactNode;
 }) {
   return (
-    <div className="mb-5 flex items-center gap-3">
-      <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-violet-200 bg-violet-50 text-[10px] font-medium text-violet-600">
-        {number}
-      </span>
+    <div className="cookie-policy-section-heading">
+      <span className="cookie-policy-section-number">{number}</span>
 
-      <h2 className="text-xl font-semibold tracking-tight text-slate-950">
-        {children}
-      </h2>
+      <h2 className="cookie-policy-section-title">{children}</h2>
     </div>
   );
 }
 
 function BulletList({ items }: { items: string[] }) {
   return (
-    <ul className="space-y-2 pl-1">
+    <ul className="cookie-policy-bullet-list">
       {items.map((item) => (
-        <li key={item} className="flex gap-3">
-          <span className="mt-[11px] h-1.5 w-1.5 shrink-0 rounded-full bg-violet-600" />
+        <li key={item} className="cookie-policy-bullet-item">
+          <span className="cookie-policy-bullet-dot" />
           <span>{item}</span>
         </li>
       ))}
@@ -50,54 +47,53 @@ function BulletList({ items }: { items: string[] }) {
 }
 
 export default function CookiePolicyContent() {
-  const articleClass =
-    "scroll-mt-28 border-b border-slate-200 py-9";
-
-  const contentClass =
-    "space-y-4 text-sm leading-7 text-slate-600";
+  const articleClass = "cookie-policy-article";
+  const contentClass = "cookie-policy-article-body";
 
   return (
-    <section className="relative border-b border-violet-100 bg-white">
+    <section className="cookie-policy-content-section">
       {/* Subtle background glow */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-0 overflow-hidden"
+        className="cookie-policy-content-background"
       >
-        <div className="absolute left-[55%] top-0 h-[500px] w-[700px] -translate-x-1/2 rounded-full bg-violet-100/45 blur-[150px]" />
+        <div className="cookie-policy-content-glow" />
       </div>
 
-      <div className="relative mx-auto grid max-w-6xl gap-12 px-6 py-20 sm:px-8 lg:grid-cols-[220px_minmax(0,1fr)] lg:px-10 lg:py-24">
+      <div className="cookie-policy-content-container">
         {/* Table of contents */}
-        <aside className="lg:sticky lg:top-24 lg:self-start">
-          <p className="mb-5 text-[10px] font-semibold uppercase tracking-[0.28em] text-slate-500">
-            Cookie Policy
-          </p>
+        <aside className="cookie-policy-sidebar">
+          <div className="cookie-policy-sidebar-inner">
+            <p className="cookie-policy-sidebar-title">
+              Cookie Policy
+            </p>
 
-          <nav aria-label="Cookie Policy sections">
-            <ul className="space-y-2.5">
-              {sections.map((section) => (
-                <li key={section.id}>
-                  <a
-                    href={`#${section.id}`}
-                    className="group flex items-start gap-2 text-xs leading-5 text-slate-500 transition-colors hover:text-violet-700"
-                  >
-                    <span className="w-5 shrink-0 text-slate-400 transition-colors group-hover:text-violet-600">
-                      {section.number}
-                    </span>
+            <nav aria-label="Cookie Policy sections">
+              <ul className="cookie-policy-sidebar-list">
+                {sections.map((section) => (
+                  <li key={section.id}>
+                    <a
+                      href={`#${section.id}`}
+                      className="cookie-policy-sidebar-link"
+                    >
+                      <span className="cookie-policy-sidebar-number">
+                        {section.number}
+                      </span>
 
-                    <span>{section.title}</span>
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </nav>
+                      <span>{section.title}</span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          </div>
         </aside>
 
         {/* Policy content */}
-        <div className="min-w-0">
+        <div className="cookie-policy-main">
           {/* Introduction */}
-          <div className="mb-10 rounded-2xl border border-violet-200 bg-violet-50/40 p-6 shadow-sm sm:p-7">
-            <p className="text-sm leading-7 text-slate-600">
+          <div className="cookie-policy-intro">
+            <p className="cookie-policy-intro-text">
               This Cookie Policy explains how Velquorin Labs may use cookies
               and similar technologies on our website. It should be read
               together with our Privacy Policy, which explains more broadly how
@@ -108,9 +104,11 @@ export default function CookiePolicyContent() {
           {/* 01 */}
           <article
             id="what-are-cookies"
-            className={`${articleClass} first:pt-0`}
+            className={`${articleClass} cookie-policy-article-first`}
           >
-            <SectionHeading number="01">What Are Cookies?</SectionHeading>
+            <SectionHeading number="01">
+              What Are Cookies?
+            </SectionHeading>
 
             <div className={contentClass}>
               <p>
@@ -162,7 +160,9 @@ export default function CookiePolicyContent() {
 
           {/* 03 */}
           <article id="cookie-types" className={articleClass}>
-            <SectionHeading number="03">Types of Cookies</SectionHeading>
+            <SectionHeading number="03">
+              Types of Cookies
+            </SectionHeading>
 
             <div className={contentClass}>
               <p>
@@ -188,7 +188,9 @@ export default function CookiePolicyContent() {
 
           {/* 04 */}
           <article id="essential" className={articleClass}>
-            <SectionHeading number="04">Essential Cookies</SectionHeading>
+            <SectionHeading number="04">
+              Essential Cookies
+            </SectionHeading>
 
             <div className={contentClass}>
               <p>
@@ -207,7 +209,9 @@ export default function CookiePolicyContent() {
 
           {/* 05 */}
           <article id="preferences" className={articleClass}>
-            <SectionHeading number="05">Preference Cookies</SectionHeading>
+            <SectionHeading number="05">
+              Preference Cookies
+            </SectionHeading>
 
             <div className={contentClass}>
               <p>
@@ -226,7 +230,9 @@ export default function CookiePolicyContent() {
 
           {/* 06 */}
           <article id="analytics" className={articleClass}>
-            <SectionHeading number="06">Analytics Cookies</SectionHeading>
+            <SectionHeading number="06">
+              Analytics Cookies
+            </SectionHeading>
 
             <div className={contentClass}>
               <p>
@@ -275,7 +281,9 @@ export default function CookiePolicyContent() {
 
           {/* 08 */}
           <article id="choices" className={articleClass}>
-            <SectionHeading number="08">Your Cookie Choices</SectionHeading>
+            <SectionHeading number="08">
+              Your Cookie Choices
+            </SectionHeading>
 
             <div className={contentClass}>
               <p>
@@ -299,7 +307,9 @@ export default function CookiePolicyContent() {
 
           {/* 09 */}
           <article id="browser-controls" className={articleClass}>
-            <SectionHeading number="09">Browser Controls</SectionHeading>
+            <SectionHeading number="09">
+              Browser Controls
+            </SectionHeading>
 
             <div className={contentClass}>
               <p>
@@ -322,7 +332,9 @@ export default function CookiePolicyContent() {
 
           {/* 10 */}
           <article id="signals" className={articleClass}>
-            <SectionHeading number="10">Privacy Signals</SectionHeading>
+            <SectionHeading number="10">
+              Privacy Signals
+            </SectionHeading>
 
             <div className={contentClass}>
               <p>
@@ -342,7 +354,9 @@ export default function CookiePolicyContent() {
 
           {/* 11 */}
           <article id="retention" className={articleClass}>
-            <SectionHeading number="11">Cookie Retention</SectionHeading>
+            <SectionHeading number="11">
+              Cookie Retention
+            </SectionHeading>
 
             <div className={contentClass}>
               <p>
@@ -381,27 +395,32 @@ export default function CookiePolicyContent() {
           </article>
 
           {/* 13 */}
-          <article id="contact" className="scroll-mt-28 pt-9">
-            <SectionHeading number="13">Contact Us</SectionHeading>
+          <article
+            id="contact"
+            className="cookie-policy-contact-article"
+          >
+            <SectionHeading number="13">
+              Contact Us
+            </SectionHeading>
 
-            <div className="space-y-5 text-sm leading-7 text-slate-600">
+            <div className="cookie-policy-contact-body">
               <p>
                 If you have questions about this Cookie Policy or how
                 Velquorin Labs uses cookies and similar technologies, please
                 contact us through our Contact page.
               </p>
 
-              <div className="flex flex-wrap gap-3">
+              <div className="cookie-policy-contact-actions">
                 <Link
                   href="/contact"
-                  className="inline-flex items-center rounded-full border border-violet-200 bg-violet-50 px-5 py-2.5 text-xs font-medium text-violet-700 transition hover:border-violet-300 hover:bg-violet-100"
+                  className="cookie-policy-contact-link cookie-policy-contact-link-primary"
                 >
                   Contact Velquorin Labs →
                 </Link>
 
                 <Link
                   href="/privacy-policy"
-                  className="inline-flex items-center rounded-full border border-slate-200 bg-white px-5 py-2.5 text-xs font-medium text-slate-600 transition hover:border-violet-300 hover:text-violet-700"
+                  className="cookie-policy-contact-link cookie-policy-contact-link-secondary"
                 >
                   Read Privacy Policy →
                 </Link>

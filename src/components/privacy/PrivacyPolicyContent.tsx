@@ -269,47 +269,39 @@ const sections = [
 
 export default function PrivacyPolicyContent() {
   return (
-    <section className="border-b border-violet-100 bg-white">
-      <div className="mx-auto max-w-6xl px-6 py-20 lg:px-8 lg:py-24">
-        <div className="grid gap-12 lg:grid-cols-[240px_1fr] lg:gap-16">
+    <section className="privacy-content-section">
+      <div className="privacy-content-container">
+        <div className="privacy-content-layout">
           {/* Side navigation */}
-          <aside className="hidden lg:block">
-            <div className="sticky top-28">
-              <p className="mb-5 text-[10px] font-semibold uppercase tracking-[0.28em] text-slate-500">
+          <aside className="privacy-content-sidebar">
+            <div className="privacy-content-sidebar-inner">
+              <p className="privacy-content-sidebar-title">
                 Privacy Policy
               </p>
 
               <nav aria-label="Privacy Policy sections">
-                <ul className="space-y-3">
+                <ul className="privacy-content-nav-list">
                   {sections.map((section) => (
                     <li key={section.number}>
-                      <a
-                        href={`#section-${section.number}`}
-                        className="text-xs text-slate-500 transition-colors hover:text-violet-600"
-                      >
+                      <a href={`#section-${section.number}`}>
                         {section.number}. {section.title}
                       </a>
                     </li>
                   ))}
 
                   <li>
-                    <a
-                      href="#contact-privacy"
-                      className="text-xs text-slate-500 transition-colors hover:text-violet-600"
-                    >
-                      13. Contact Us
-                    </a>
+                    <a href="#contact-privacy">13. Contact Us</a>
                   </li>
                 </ul>
               </nav>
             </div>
           </aside>
 
-          {/* Policy */}
-          <div className="max-w-3xl">
+          {/* Policy content */}
+          <div className="privacy-content-main">
             {/* Introduction */}
-            <div className="mb-14 rounded-2xl border border-violet-200 bg-violet-50/50 p-6 sm:p-8">
-              <p className="text-sm leading-7 text-slate-600">
+            <div className="privacy-content-intro">
+              <p>
                 Velquorin Labs respects your privacy. This policy describes
                 the types of information we may collect, why we use it, when
                 it may be shared, and the choices that may be available to
@@ -318,24 +310,22 @@ export default function PrivacyPolicyContent() {
             </div>
 
             {/* Privacy sections */}
-            <div className="space-y-0">
+            <div className="privacy-content-sections">
               {sections.map((section) => (
                 <article
                   id={`section-${section.number}`}
                   key={section.number}
-                  className="scroll-mt-28 border-b border-slate-200 py-10 first:pt-0"
+                  className="privacy-content-article"
                 >
-                  <div className="mb-5 flex items-start gap-4">
-                    <span className="mt-1 flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-violet-200 bg-violet-50 text-[10px] font-semibold text-violet-600">
+                  <div className="privacy-content-article-heading">
+                    <span className="privacy-content-number">
                       {section.number}
                     </span>
 
-                    <h2 className="text-xl font-semibold tracking-tight text-[#11152f] sm:text-2xl">
-                      {section.title}
-                    </h2>
+                    <h2>{section.title}</h2>
                   </div>
 
-                  <div className="space-y-4 pl-0 text-sm leading-7 text-slate-600 sm:pl-12 [&_li]:relative [&_li]:pl-5 [&_li]:before:absolute [&_li]:before:left-0 [&_li]:before:top-[11px] [&_li]:before:h-1.5 [&_li]:before:w-1.5 [&_li]:before:rounded-full [&_li]:before:bg-violet-500 [&_ul]:space-y-2">
+                  <div className="privacy-content-article-body">
                     {section.content}
                   </div>
                 </article>
@@ -344,19 +334,15 @@ export default function PrivacyPolicyContent() {
               {/* Contact */}
               <article
                 id="contact-privacy"
-                className="scroll-mt-28 pt-10"
+                className="privacy-content-contact"
               >
-                <div className="mb-5 flex items-start gap-4">
-                  <span className="mt-1 flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-violet-200 bg-violet-50 text-[10px] font-semibold text-violet-600">
-                    13
-                  </span>
+                <div className="privacy-content-article-heading">
+                  <span className="privacy-content-number">13</span>
 
-                  <h2 className="text-xl font-semibold tracking-tight text-[#11152f] sm:text-2xl">
-                    Contact Us
-                  </h2>
+                  <h2>Contact Us</h2>
                 </div>
 
-                <div className="space-y-4 text-sm leading-7 text-slate-600 sm:pl-12">
+                <div className="privacy-content-contact-body">
                   <p>
                     If you have questions about this Privacy Policy or would
                     like to make a privacy-related request, please contact
@@ -365,7 +351,7 @@ export default function PrivacyPolicyContent() {
 
                   <a
                     href="/contact"
-                    className="inline-flex items-center rounded-full border border-violet-200 bg-violet-50 px-5 py-2.5 text-xs font-semibold text-violet-700 transition hover:border-violet-300 hover:bg-violet-100 hover:text-violet-800"
+                    className="privacy-content-contact-link"
                   >
                     Contact Velquorin Labs →
                   </a>

@@ -3863,3 +3863,487 @@ ABOUT PAGE RESPONSIVE STYLES
     column-gap: 14px;
   }
 }
+
+/* =========================================================
+   PRIVACY — HERO RESPONSIVE
+   ========================================================= */
+
+@media (min-width: 640px) {
+  .privacy-hero-container {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+
+  .privacy-hero-title {
+    font-size: 48px;
+  }
+
+  .privacy-hero-description {
+    font-size: 16px;
+  }
+
+  .privacy-hero-metadata-dot {
+    display: block;
+  }
+}
+
+@media (min-width: 1024px) {
+  .privacy-hero-container {
+    padding-right: 32px;
+    padding-left: 32px;
+    padding-top: 128px;
+    padding-bottom: 128px;
+  }
+
+  .privacy-hero-title {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 639px) {
+  .privacy-hero-container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .privacy-hero-title {
+    font-size: 36px;
+    line-height: 1.1;
+  }
+
+  .privacy-hero-description {
+    margin-top: 20px;
+  }
+
+  .privacy-hero-metadata {
+    gap: 10px 14px;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 380px) {
+  .privacy-hero-container {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .privacy-hero-title {
+    font-size: 32px;
+  }
+
+  .privacy-hero-glow {
+    width: 600px;
+  }
+}
+
+
+/* =========================================================
+   PRIVACY POLICY — CONTENT RESPONSIVE
+   ========================================================= */
+
+@media (min-width: 640px) {
+  .privacy-content-container {
+    padding: 80px 32px;
+  }
+
+  .privacy-content-intro {
+    padding: 32px;
+  }
+
+  .privacy-content-article-heading h2 {
+    font-size: 24px;
+  }
+
+  .privacy-content-article-body,
+  .privacy-content-contact-body {
+    padding-left: 48px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .privacy-content-container {
+    padding: 96px 32px;
+  }
+
+  .privacy-content-layout {
+    grid-template-columns: 240px minmax(0, 1fr);
+    gap: 64px;
+  }
+
+  .privacy-content-sidebar {
+    display: block;
+  }
+}
+
+@media (max-width: 639px) {
+  .privacy-content-container {
+    padding: 64px 20px;
+  }
+
+  .privacy-content-intro {
+    margin-bottom: 40px;
+    padding: 20px;
+  }
+
+  .privacy-content-article {
+    padding: 32px 0;
+  }
+
+  .privacy-content-article-heading {
+    gap: 12px;
+  }
+
+  .privacy-content-article-heading h2 {
+    font-size: 20px;
+  }
+
+  .privacy-content-article-body,
+  .privacy-content-contact-body {
+    font-size: 14px;
+    line-height: 1.75;
+  }
+
+  .privacy-content-contact {
+    padding-top: 32px;
+  }
+}
+
+/* TERMS OF SERVICE — HERO RESPONSIVE */
+
+@media (min-width: 640px) {
+  .terms-hero-container {
+    padding: 112px 32px;
+  }
+
+  .terms-hero-title {
+    font-size: 48px;
+  }
+
+  .terms-hero-description {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .terms-hero-container {
+    padding: 128px 40px;
+  }
+
+  .terms-hero-title {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 639px) {
+  .terms-hero-container {
+    padding: 72px 20px;
+  }
+
+  .terms-hero-title {
+    font-size: 36px;
+  }
+
+  .terms-hero-metadata {
+    column-gap: 12px;
+  }
+
+  .terms-hero-glow {
+    left: 10%;
+    width: 360px;
+    height: 360px;
+  }
+}
+
+/* TERMS OF SERVICE — CONTENT RESPONSIVE */
+
+@media (min-width: 640px) {
+  .terms-content-container {
+    padding: 80px 32px;
+  }
+
+  .terms-content-intro {
+    padding: 28px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .terms-content-container {
+    grid-template-columns: 220px minmax(0, 1fr);
+    gap: 48px;
+    padding: 96px 40px;
+  }
+
+  .terms-content-sidebar {
+    display: block;
+  }
+}
+
+@media (max-width: 639px) {
+  .terms-content-container {
+    gap: 32px;
+    padding: 64px 20px;
+  }
+
+  .terms-content-intro {
+    padding: 20px;
+  }
+
+  .terms-content-article {
+    padding: 32px 0;
+  }
+
+  .terms-content-heading-title {
+    font-size: 18px;
+  }
+
+  .terms-content-article-body,
+  .terms-content-contact-body {
+    font-size: 14px;
+    line-height: 1.75;
+  }
+
+  .terms-content-glow {
+    width: 420px;
+    height: 400px;
+  }
+}
+
+/* Cookie Policy Hero - Responsive */
+
+@media (min-width: 640px) {
+  .cookie-hero-container {
+    padding: 112px 32px;
+  }
+
+  .cookie-hero-heading {
+    font-size: 48px;
+  }
+
+  .cookie-hero-description {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cookie-hero-container {
+    padding: 128px 40px;
+  }
+
+  .cookie-hero-heading {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 639px) {
+  .cookie-hero-container {
+    padding: 64px 20px;
+  }
+
+  .cookie-hero-heading {
+    font-size: 32px;
+  }
+
+  .cookie-hero-glow {
+    width: 420px;
+    height: 400px;
+  }
+
+  .cookie-hero-metadata {
+    column-gap: 12px;
+  }
+}
+
+/* Cookie Policy Content - Responsive */
+
+@media (min-width: 640px) {
+  .cookie-policy-content-container {
+    padding: 80px 32px;
+  }
+
+  .cookie-policy-intro {
+    padding: 28px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cookie-policy-content-container {
+    grid-template-columns: 220px minmax(0, 1fr);
+    gap: 48px;
+    padding: 96px 40px;
+  }
+
+  .cookie-policy-sidebar {
+    display: block;
+    align-self: stretch;
+  }
+
+  .cookie-policy-sidebar-title {
+    position: sticky;
+    top: 96px;
+  }
+}
+
+@media (max-width: 639px) {
+  .cookie-policy-content-container {
+    gap: 32px;
+    padding: 64px 20px;
+  }
+
+  .cookie-policy-intro {
+    padding: 20px;
+  }
+
+  .cookie-policy-article {
+    padding: 32px 0;
+  }
+
+  .cookie-policy-article-first {
+    padding-top: 0;
+  }
+
+  .cookie-policy-section-title {
+    font-size: 18px;
+  }
+
+  .cookie-policy-article-body,
+  .cookie-policy-contact-body {
+    font-size: 14px;
+    line-height: 1.75;
+  }
+
+  .cookie-policy-content-glow {
+    width: 420px;
+    height: 400px;
+  }
+}
+
+
+/* ========================================
+   ACCEPTABLE USE HERO RESPONSIVE STYLES
+======================================== */
+
+@media (min-width: 640px) {
+  .acceptable-use-hero-container {
+    padding: 112px 32px;
+  }
+
+  .acceptable-use-hero-heading {
+    font-size: 48px;
+  }
+
+  .acceptable-use-hero-description {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .acceptable-use-hero-container {
+    padding: 128px 40px;
+  }
+
+  .acceptable-use-hero-heading {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 639px) {
+  .acceptable-use-hero-container {
+    padding: 64px 20px;
+  }
+
+  .acceptable-use-hero-heading {
+    font-size: 32px;
+  }
+
+  .acceptable-use-hero-glow {
+    width: 420px;
+    height: 400px;
+  }
+
+  .acceptable-use-hero-metadata {
+    column-gap: 12px;
+  }
+}
+
+
+/* ========================================
+   ACCEPTABLE USE CONTENT RESPONSIVE STYLES
+======================================== */
+
+@media (min-width: 640px) {
+  .acceptable-use-content-container {
+    padding: 80px 32px;
+  }
+
+  .acceptable-use-intro {
+    padding: 28px;
+  }
+
+  .acceptable-use-section-title {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .acceptable-use-content-container {
+    padding: 112px 40px;
+  }
+
+  .acceptable-use-content-layout {
+    grid-template-columns: 220px minmax(0, 1fr);
+    gap: 64px;
+  }
+
+  .acceptable-use-sidebar {
+    display: block;
+    align-self: stretch;
+  }
+}
+
+@media (max-width: 639px) {
+  .acceptable-use-content-container {
+    padding: 64px 20px;
+  }
+
+  .acceptable-use-content-layout {
+    gap: 32px;
+  }
+
+  .acceptable-use-intro {
+    margin-bottom: 40px;
+    padding: 20px;
+  }
+
+  .acceptable-use-article {
+    padding: 32px 0;
+  }
+
+  .acceptable-use-article-first {
+    padding-top: 0;
+  }
+
+  .acceptable-use-contact-article {
+    padding-top: 32px;
+  }
+
+  .acceptable-use-section-title {
+    font-size: 18px;
+  }
+
+  .acceptable-use-body-text,
+  .acceptable-use-prose,
+  .acceptable-use-bullet-item {
+    font-size: 14px;
+    line-height: 1.75;
+  }
+
+  .acceptable-use-content-glow-primary {
+    width: 420px;
+    height: 400px;
+  }
+
+  .acceptable-use-content-glow-secondary {
+    width: 320px;
+    height: 320px;
+  }
+}
