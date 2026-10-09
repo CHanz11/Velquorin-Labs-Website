@@ -1,27 +1,27 @@
 const values = [
   {
     number: "01",
-    title: "Automate Repetitive Work",
+    title: "Build Your Online Presence",
     description:
-      "Reduce manual tasks and repetitive processes with intelligent automation that helps your team save time and focus on higher-value work.",
+      "Create a new website, redesign an existing one, or keep your website updated and running smoothly.",
   },
   {
     number: "02",
-    title: "Improve Customer Experiences",
+    title: "Simplify Information Collection",
     description:
-      "Create faster, more responsive customer interactions with AI-powered conversations and streamlined digital experiences.",
+      "Use customized booking, contact, registration, and submission forms to collect the information your business needs.",
   },
   {
     number: "03",
-    title: "Increase Revenue",
+    title: "Improve Customer Support",
     description:
-      "Capture more opportunities, organize leads, and improve business workflows with digital solutions designed around growth.",
+      "Explore AI-powered customer conversations with SHASHA AI, planned to answer common website questions 24/7.",
   },
   {
     number: "04",
-    title: "Build Stronger Digital Experiences",
+    title: "Organize Client Operations",
     description:
-      "Create modern websites and connected digital experiences that strengthen your online presence and support your business.",
+      "Prepare to manage clients, projects, files, invoices, appointments, and communication in one portal.",
   },
 ];
 
@@ -32,19 +32,17 @@ export default function ValueSection() {
         {/* Section heading */}
         <div className="home-value-heading">
           <p className="home-value-eyebrow">
-            Technology That Creates Real Business Value
+            WHAT WE HELP YOU ACHIEVE
           </p>
 
           <h2 className="home-value-title">
-            Practical AI and Web Solutions
+            Practical Solutions
             <br className="home-value-title-break" />
-            Built for Real Results
+            for Your Business
           </h2>
 
           <p className="home-value-description">
-            Turn complex technology into practical solutions that help your
-            business save time, improve customer experiences, capture more
-            opportunities, and operate more efficiently.
+            From building your website to simplifying client operations, we help you create better ways to work and serve your customers.
           </p>
         </div>
 
@@ -86,8 +84,7 @@ export default function ValueSection() {
             <span className="home-value-support-dot" />
 
             <span>
-              Built around practical business outcomes — not technology for its
-              own sake.
+              AI products and the client portal are coming soon. Features will be confirmed at launch.
             </span>
           </div>
         </div>

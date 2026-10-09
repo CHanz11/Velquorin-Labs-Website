@@ -9,23 +9,21 @@ export default function HeroSection() {
         <div className="home-hero-content">
           <div className="home-hero-eyebrow">
             <span className="home-hero-eyebrow-dot" />
-            Web, AI &amp; Business Solutions
+            AI &amp; Digital Solutions
           </div>
 
           <h1 className="home-hero-title">
             Build Smarter.
             <br />
-            Work Better.
+            Automate More.
             <br />
             <span className="home-hero-gradient-text">
-              Grow With Velquorin.
+              Grow With AI.
             </span>
           </h1>
 
           <p className="home-hero-description">
-            Velquorin Labs helps businesses build modern websites, create
-            custom forms, and explore AI-powered solutions that improve
-            customer experiences and simplify everyday operations.
+            Velquorin Labs helps businesses build modern websites, create custom forms, and simplify client operations with innovative digital and AI-powered solutions.
           </p>
 
           <div className="home-hero-buttons">
@@ -45,21 +43,22 @@ export default function HeroSection() {
           </div>
 
           <div className="home-hero-service-list">
-            <span>Website Services</span>
-            <span>Custom Forms</span>
-            <span>AI Solutions</span>
-            <span>Client Portal</span>
+            <span>Business Operations & Client Portal</span>
+            <span>AI Chatbots</span>
+            <span>Website Design & Development</span>
           </div>
         </div>
 
         {/* RIGHT VISUAL */}
         <div className="home-hero-visual">
+
           <div
             className="home-hero-ai-glow"
             aria-hidden="true"
           />
 
           <div className="home-hero-ai-scene">
+
             {/* Decorative orbit rings */}
             <div className="home-hero-ai-ring home-hero-ai-ring-one" />
             <div className="home-hero-ai-ring home-hero-ai-ring-two" />
@@ -71,8 +70,9 @@ export default function HeroSection() {
             <div className="home-hero-ai-line home-hero-ai-line-bottom" />
             <div className="home-hero-ai-line home-hero-ai-line-left" />
 
-            {/* Center Core */}
+            {/* Center AI Core */}
             <div className="home-hero-ai-core">
+
               <div className="home-hero-ai-core-pulse" />
 
               <div className="home-hero-ai-core-inner">
@@ -81,12 +81,13 @@ export default function HeroSection() {
                 </span>
 
                 <span className="home-hero-ai-core-label">
-                  VELQUORIN LABS
+                  VELQUORIN AI
                 </span>
               </div>
+
             </div>
 
-            {/* SHASHA AI Chatbot */}
+            {/* AI Chatbot */}
             <div className="home-hero-ai-node home-hero-ai-node-chat">
               <div className="home-hero-ai-node-icon">
                 ◇
@@ -94,16 +95,16 @@ export default function HeroSection() {
 
               <div>
                 <span className="home-hero-ai-node-title">
-                  SHASHA AI
+                  AI Chatbot
                 </span>
 
                 <span className="home-hero-ai-node-status">
-                  Coming Soon
+                  Active
                 </span>
               </div>
             </div>
 
-            {/* Business Operations & Client Portal */}
+            {/* Automation */}
             <div className="home-hero-ai-node home-hero-ai-node-automation">
               <div className="home-hero-ai-node-icon">
                 ⚡
@@ -111,16 +112,16 @@ export default function HeroSection() {
 
               <div>
                 <span className="home-hero-ai-node-title">
-                  Client Portal
+                  Automation
                 </span>
 
                 <span className="home-hero-ai-node-status">
-                  Coming Soon
+                  Connected
                 </span>
               </div>
             </div>
 
-            {/* AI Form Assistant */}
+            {/* AI Forms */}
             <div className="home-hero-ai-node home-hero-ai-node-forms">
               <div className="home-hero-ai-node-icon">
                 ✦
@@ -128,16 +129,16 @@ export default function HeroSection() {
 
               <div>
                 <span className="home-hero-ai-node-title">
-                  AI Form Assistant
+                  AI Forms
                 </span>
 
                 <span className="home-hero-ai-node-status">
-                  Coming Soon
+                  Intelligent
                 </span>
               </div>
             </div>
 
-            {/* Website Services */}
+            {/* Web Solutions */}
             <div className="home-hero-ai-node home-hero-ai-node-web">
               <div className="home-hero-ai-node-icon">
                 ◎
@@ -149,7 +150,7 @@ export default function HeroSection() {
                 </span>
 
                 <span className="home-hero-ai-node-status">
-                  Available
+                  Online
                 </span>
               </div>
             </div>
@@ -159,7 +160,9 @@ export default function HeroSection() {
             <span className="home-hero-ai-particle home-hero-ai-particle-two" />
             <span className="home-hero-ai-particle home-hero-ai-particle-three" />
             <span className="home-hero-ai-particle home-hero-ai-particle-four" />
+
           </div>
+
         </div>
       </div>
     </section>
