@@ -1,30 +1,29 @@
 const formFeatures = [
   {
     number: "01",
-    title: "Conversational Data Collection",
+    title: "24/7 Customer Support",
     description:
-      "Turn traditional forms into guided conversations that collect information naturally, one question at a time.",
+      "Help answer common customer questions and provide business information through an AI chatbot installed on your website.",
   },
   {
     number: "02",
-    title: "Structured Information",
+    title: "Business Knowledge",
     description:
-      "Organize customer responses into useful structured data that businesses can review, manage, and act on.",
+      "Configure the chatbot around your business information so visitors can get relevant answers about your services and offerings.",
   },
   {
     number: "03",
-    title: "Smart Validation",
+    title: "Website Integration",
     description:
-      "Help users provide clearer and more complete information through intelligent validation and guided interactions.",
+      "Add SHASHA AI to your website to give visitors a convenient way to ask questions and learn about your business.",
   },
   {
     number: "04",
-    title: "Flexible Publishing",
+    title: "Free Version Planned",
     description:
-      "Publish forms on dedicated links or embed them directly into websites so customers can access them where needed.",
+      "A free version is planned to help businesses explore AI-powered customer support before choosing additional capabilities.",
   },
 ];
-
 export default function ConversationalFormsSection() {
   return (
     <section
@@ -44,31 +43,26 @@ export default function ConversationalFormsSection() {
             <div className="services-forms-label">
               <span className="services-forms-label-dot" />
 
-              <span>Smart Lead Collection · Service 03</span>
+              <span>AI Customer Support · Service 03</span>
             </div>
 
             <p className="services-forms-eyebrow">
-              Conversational AI Forms
+              SHASHA AI Chatbot — Coming Soon
             </p>
 
             <h2 className="services-forms-title">
-              Turn Forms Into{" "}
+              Meet SHASHA AI{" "}
               <span className="services-forms-title-gradient">
-                Better Conversations.
+                Your Website AI Assistant.
               </span>
             </h2>
 
             <p className="services-forms-description">
-              Velquorin Labs creates conversational form experiences that help
-              businesses collect customer information through a simpler,
-              guided interaction instead of overwhelming users with long
-              traditional forms.
+              SHASHA AI is our upcoming AI chatbot designed to help businesses answer common customer questions and provide useful business information directly on their websites, 24/7.
             </p>
 
             <p className="services-forms-description">
-              Responses can be understood, validated, and organized into
-              structured information while keeping the customer in control
-              before anything is submitted.
+              We&apos;re developing SHASHA AI to make website-based customer support more accessible, with a free version planned for businesses that want to get started with AI.
             </p>
 
             <div className="services-forms-buttons">
@@ -76,14 +70,14 @@ export default function ConversationalFormsSection() {
                 href="/contact"
                 className="services-forms-button-primary"
               >
-                Discuss a Form Project
+                Ask About SHASHA AI
               </a>
 
               <a
-                href="#custom-solutions"
+                href="#services"
                 className="services-forms-button-secondary"
               >
-                Explore Custom Solutions
+                Explore Our Services
               </a>
             </div>
           </div>
@@ -114,19 +108,19 @@ export default function ConversationalFormsSection() {
         {/* Form Flow */}
         <div className="services-forms-flow">
           <div className="services-forms-flow-content">
-            <span>Ask</span>
+            <span>Visitor</span>
             <span className="services-forms-flow-arrow">→</span>
 
-            <span>Understand</span>
+            <span>Ask a Question</span>
             <span className="services-forms-flow-arrow">→</span>
 
-            <span>Validate</span>
+            <span>AI Response</span>
             <span className="services-forms-flow-arrow">→</span>
 
-            <span>Review</span>
+            <span>Customer Support</span>
             <span className="services-forms-flow-arrow">→</span>
 
-            <span>Submit</span>
+            <span>Next Steps</span>
           </div>
         </div>
       </div>

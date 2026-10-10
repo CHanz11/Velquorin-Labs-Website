@@ -1,3 +1,4 @@
+
 export default function AboutHeroSection() {
   return (
     <section className="about-hero-section">
@@ -33,17 +34,17 @@ export default function AboutHeroSection() {
 
           {/* Description */}
           <p className="about-hero-description">
-            Velquorin Labs builds AI and digital solutions designed to help
-            businesses automate work, improve customer experiences, and create
-            stronger digital operations.
+            Velquorin Labs helps businesses build their online presence,
+            simplify customer interactions, and improve client operations
+            through websites, custom forms, and practical digital solutions.
           </p>
 
           {/* Supporting statement */}
           <div className="about-hero-services">
-            <span>AI Chatbots</span>
-            <span>AI Automation</span>
-            <span>Conversational AI Forms</span>
-            <span>Web Solutions</span>
+            <span>Website Services</span>
+            <span>Custom Forms</span>
+            <span>AI Solutions</span>
+            <span>Business Operations</span>
           </div>
         </div>
       </div>

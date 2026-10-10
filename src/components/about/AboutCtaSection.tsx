@@ -27,22 +27,22 @@ export default function AboutCtaSection() {
             </p>
 
             <h2 className="about-cta-title">
-              Have an Idea or Business Problem{" "}
+              Have a Project in Mind?{" "}
               <span className="about-cta-title-gradient">
-                We Can Help Solve?
+                Let&apos;s Build It.
               </span>
             </h2>
 
             <p className="about-cta-description">
-              Tell us what you are trying to improve, automate, or build.
-              Velquorin Labs can help turn the idea into a practical digital
-              solution designed around your business.
+              Whether you need a new website, website improvements, custom
+              forms, or a tailored digital solution, tell us about your
+              business needs and let&apos;s discuss how we can help.
             </p>
 
             {/* CTA buttons */}
             <div className="about-cta-buttons">
               <Link href="/contact" className="about-cta-button-primary">
-                Start a Project
+                Discuss Your Project
               </Link>
 
               <Link href="/services" className="about-cta-button-secondary">
@@ -52,19 +52,19 @@ export default function AboutCtaSection() {
 
             {/* Supporting text */}
             <div className="about-cta-supporting">
-              <span>AI Solutions</span>
+              <span>Website Services</span>
 
               <span className="about-cta-supporting-dot" />
 
-              <span>Automation</span>
+              <span>Custom Forms</span>
 
               <span className="about-cta-supporting-dot" />
 
-              <span>Digital Experiences</span>
+              <span>AI Products</span>
 
               <span className="about-cta-supporting-dot" />
 
-              <span>Web Solutions</span>
+              <span>Business Operations</span>
             </div>
           </div>
         </div>

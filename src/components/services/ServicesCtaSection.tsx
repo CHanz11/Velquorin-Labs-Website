@@ -1,3 +1,4 @@
+
 import Link from "next/link";
 
 export default function ServicesCtaSection() {
@@ -40,16 +41,16 @@ export default function ServicesCtaSection() {
 
             {/* Heading */}
             <h2 className="services-cta-title">
-              Ready to Turn Your Idea Into a{" "}
-              <span>Practical Digital Solution?</span>
+              Ready to Improve Your Business with{" "}
+              <span>Web, AI, and Automation?</span>
             </h2>
 
             {/* Description */}
             <p className="services-cta-description">
-              Tell us what you want to improve, automate, or build. Velquorin
-              Labs can help you explore the right combination of AI,
-              automation, conversational experiences, and web technology for
-              your business.
+              Whether you need a website, custom forms, or a tailored digital
+              solution, Velquorin Labs can help you take the next step. We&apos;re
+              also developing AI-powered tools and a business operations portal
+              to support more of your business needs in the future.
             </p>
 
             {/* CTA Buttons */}
@@ -58,7 +59,7 @@ export default function ServicesCtaSection() {
                 href="/contact"
                 className="services-cta-button-primary"
               >
-                <span>Start a Project</span>
+                <span>Discuss Your Project</span>
                 <span className="services-cta-button-arrow">→</span>
               </Link>
 
@@ -72,19 +73,22 @@ export default function ServicesCtaSection() {
 
             {/* Service Tags */}
             <div className="services-cta-tags">
-              <span>AI Chatbots</span>
+              <span>Website Development &amp; Maintenance</span>
               <span className="services-cta-tag-dot">•</span>
 
-              <span>AI Automation</span>
+              <span>Custom Forms Development</span>
               <span className="services-cta-tag-dot">•</span>
 
-              <span>Conversational Forms</span>
+              <span>SHASHA AI Chatbot — Coming Soon</span>
               <span className="services-cta-tag-dot">•</span>
 
-              <span>Web Solutions</span>
+              <span>AI Form Assistant — Coming Soon</span>
               <span className="services-cta-tag-dot">•</span>
 
-              <span>Custom AI Solutions</span>
+              <span>Business Operations &amp; Client Portal — Coming Soon</span>
+              <span className="services-cta-tag-dot">•</span>
+
+              <span>Custom Web &amp; AI-Based Solutions</span>
             </div>
           </div>
         </div>

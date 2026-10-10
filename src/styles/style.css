@@ -9331,3 +9331,289 @@ color: #8b5cf6;
   border-color: #c4b5fd;
   color: #6d28d9;
 }
+
+
+/* ========================================
+   Business Operations & Client Portal 
+======================================== */
+
+
+/* Business Operations & Client Portal */
+
+.business-operations-section {
+  padding: 100px 24px;
+  background: var(--color-background, #ffffff);
+}
+
+.business-operations-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+  align-items: center;
+  gap: 64px;
+}
+
+.business-operations-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 22px;
+  color: var(--color-primary, #7c3aed);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.business-operations-label-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-primary, #7c3aed);
+}
+
+.business-operations-eyebrow {
+  margin-bottom: 14px;
+  color: var(--color-primary, #7c3aed);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.business-operations-title {
+  margin: 0 0 22px;
+  font-size: clamp(32px, 4vw, 48px);
+  line-height: 1.15;
+  letter-spacing: -0.04em;
+}
+
+.business-operations-title span {
+  color: var(--color-primary, #7c3aed);
+}
+
+.business-operations-description {
+  margin-bottom: 28px;
+  color: #64748b;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.business-operations-features {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px 20px;
+  margin-bottom: 32px;
+}
+
+.business-operations-feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: #334155;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.business-operations-check {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #ede9fe;
+  color: #7c3aed;
+  font-weight: 700;
+}
+
+.business-operations-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.business-operations-button-primary,
+.business-operations-button-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.business-operations-button-primary {
+  background: var(--color-primary, #7c3aed);
+  color: #ffffff;
+}
+
+.business-operations-button-primary:hover {
+  transform: translateY(-2px);
+}
+
+.business-operations-button-secondary {
+  border: 1px solid #e2e8f0;
+  color: #334155;
+}
+
+.business-operations-button-secondary:hover {
+  background: #f8fafc;
+}
+
+.business-operations-powered {
+  margin-top: 28px;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.business-operations-powered strong {
+  color: #334155;
+}
+
+.business-operations-visual {
+  padding: 28px;
+  border: 1px solid #e9e5f5;
+  border-radius: 24px;
+  background: linear-gradient(145deg, #faf8ff, #ffffff 75%);
+  box-shadow: 0 20px 60px rgb(30 27 75 / 8%);
+}
+
+.business-operations-visual-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e9e5f5;
+}
+
+.business-operations-visual-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: #7c3aed;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.business-operations-visual-header > div {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.business-operations-visual-header strong {
+  color: #1e1b4b;
+  font-size: 15px;
+}
+
+.business-operations-visual-header > div span {
+  color: #64748b;
+  font-size: 12px;
+}
+
+.business-operations-status {
+  padding: 6px 9px;
+  border-radius: 20px;
+  background: #ede9fe;
+  color: #6d28d9;
+  font-size: 10px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.business-operations-visual-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  padding: 24px 0;
+}
+
+.business-operations-visual-card {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  min-height: 94px;
+  padding: 16px;
+  border: 1px solid #eeeaf7;
+  border-radius: 14px;
+  background: #ffffff;
+  color: #334155;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.business-operations-visual-number {
+  color: #8b5cf6;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.business-operations-visual-footer {
+  padding-top: 18px;
+  border-top: 1px solid #e9e5f5;
+  color: #64748b;
+  font-size: 12px;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .business-operations-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .business-operations-visual {
+    max-width: 620px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .business-operations-section {
+    padding: 64px 20px;
+  }
+
+  .business-operations-features {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .business-operations-buttons {
+    flex-direction: column;
+  }
+
+  .business-operations-button-primary,
+  .business-operations-button-secondary {
+    width: 100%;
+  }
+
+  .business-operations-visual {
+    padding: 18px;
+  }
+
+  .business-operations-visual-header {
+    flex-wrap: wrap;
+  }
+
+  .business-operations-status {
+    margin-left: auto;
+  }
+
+  .business-operations-visual-grid {
+    gap: 8px;
+  }
+
+  .business-operations-visual-card {
+    padding: 12px;
+  }
+}

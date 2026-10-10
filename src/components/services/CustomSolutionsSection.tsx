@@ -1,27 +1,28 @@
+
 const customSolutionFeatures = [
   {
     number: "01",
-    title: "Built Around Your Business",
+    title: "Custom Website Development",
     description:
-      "We start with your goals, challenges, and existing processes instead of forcing your business into a predefined solution.",
+      "Build tailored websites and web applications designed around your business goals, customer needs, and required functionality.",
   },
   {
     number: "02",
-    title: "Custom AI Systems",
+    title: "AI-Powered Solutions",
     description:
-      "Create tailored AI-powered tools and experiences designed around specific business requirements and workflows.",
+      "Explore custom AI tools and intelligent features that help address specific business challenges and improve customer experiences.",
   },
   {
     number: "03",
-    title: "Connected Solutions",
+    title: "Business Process Automation",
     description:
-      "Combine AI, automation, web experiences, and business integrations into one connected digital solution.",
+      "Connect systems and automate repetitive tasks with workflows designed around how your business operates.",
   },
   {
     number: "04",
-    title: "Designed to Grow",
+    title: "Integrated Digital Experiences",
     description:
-      "Build with future expansion in mind so your solution can evolve as your operations, customers, and requirements change.",
+      "Bring websites, AI chatbots, conversational forms, and business integrations together into a solution tailored to your requirements.",
   },
 ];
 
@@ -43,22 +44,23 @@ export default function CustomSolutionsSection() {
           <div className="services-custom-label">
             <span className="services-custom-label-dot" />
 
-            <span>Custom AI Solutions</span>
+            <span>Custom Web &amp; AI Solutions · Service 06</span>
           </div>
 
           <p className="services-custom-eyebrow">
-            Built for Unique Business Needs
+            Tailored to Your Business Requirements
           </p>
 
           <h2 className="services-custom-title">
             Your Business Is Unique.{" "}
-            <span>Your Solution Can Be Too.</span>
+            <span>Your Digital Solutions Should Be Too.</span>
           </h2>
 
           <p className="services-custom-description">
-            Not every business challenge fits into a standard service.
-            Velquorin Labs can design custom AI and digital solutions around
-            your specific goals, workflows, systems, and requirements.
+            Every business has different goals, challenges, and workflows.
+            Velquorin Labs develops custom web and AI-based solutions around
+            your specific requirements, helping you create digital experiences
+            that fit the way your business works.
           </p>
         </div>
 
@@ -91,27 +93,28 @@ export default function CustomSolutionsSection() {
               <div className="services-custom-connected-label">
                 <span />
 
-                <p>One Connected Solution</p>
+                <p>Solutions Built Around Your Needs</p>
               </div>
 
               <h3>
-                Combine the Technology Your Business Needs.
+                Bring Your Web, AI, and Automation Ideas to Life.
               </h3>
 
               <p className="services-custom-connected-description">
-                A custom solution can combine conversational AI, automation,
-                forms, websites, integrations, and other digital capabilities
-                into a system designed around the way your business operates.
+                Whether you need a custom website, an AI-powered tool, an
+                automated workflow, or a combination of technologies, we can
+                discuss your requirements and plan a solution around your
+                business goals.
               </p>
 
               {/* Technology Pills */}
               <div className="services-custom-pills">
                 {[
-                  "AI Chatbots",
+                  "Custom Websites",
+                  "AI Solutions",
                   "AI Automation",
                   "Conversational Forms",
-                  "Web Solutions",
-                  "Business Integrations",
+                  "System Integrations",
                 ].map((item) => (
                   <span key={item}>{item}</span>
                 ))}
@@ -121,7 +124,7 @@ export default function CustomSolutionsSection() {
             {/* CTA */}
             <div className="services-custom-cta">
               <a href="/contact">
-                Discuss Your Idea
+                Discuss Your Project
                 <span>→</span>
               </a>
             </div>
@@ -132,23 +135,23 @@ export default function CustomSolutionsSection() {
         <div className="services-custom-flow-wrapper">
           <div className="services-custom-flow">
             <div className="services-custom-flow-content">
-              <span>Business Need</span>
+              <span>Your Business Needs</span>
 
               <span className="services-custom-flow-arrow">→</span>
 
-              <span>Strategy</span>
+              <span>Plan the Solution</span>
 
               <span className="services-custom-flow-arrow">→</span>
 
-              <span>Custom Solution</span>
+              <span>Custom Development</span>
 
               <span className="services-custom-flow-arrow">→</span>
 
-              <span>Build</span>
+              <span>Test &amp; Refine</span>
 
               <span className="services-custom-flow-arrow">→</span>
 
-              <span>Grow</span>
+              <span>Launch</span>
             </div>
           </div>
         </div>

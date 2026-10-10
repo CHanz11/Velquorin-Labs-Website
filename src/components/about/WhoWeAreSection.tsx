@@ -1,3 +1,4 @@
+
 export default function WhoWeAreSection() {
   return (
     <section className="about-who-section">
@@ -26,19 +27,22 @@ export default function WhoWeAreSection() {
           {/* Right */}
           <div className="about-who-description">
             <p>
-              Velquorin Labs is an AI and digital solutions company focused on
-              helping businesses use technology in practical, meaningful ways.
+              Velquorin Labs is a digital solutions company helping businesses
+              build a stronger online presence and work more efficiently through
+              practical web and technology services.
             </p>
 
             <p>
-              We design intelligent solutions that automate repetitive work,
-              improve customer interactions, capture opportunities, and create
-              more connected digital experiences.
+              We design and develop websites, create customized business forms,
+              and explore AI-powered solutions that can improve customer
+              interactions and simplify information collection.
             </p>
 
             <p>
-              Our approach is simple: understand the business first, then build
-              technology around the problems that actually need to be solved.
+              We also plan to offer SHASHA AI Chatbot, AI Form Assistant, and a
+              Business Operations &amp; Client Portal to help businesses manage
+              customer interactions and everyday client operations more
+              efficiently.
             </p>
           </div>
         </div>
@@ -53,8 +57,8 @@ export default function WhoWeAreSection() {
             <h3>Practical</h3>
 
             <p>
-              We focus on technology that solves real problems and creates
-              measurable value for businesses.
+              We focus on useful digital solutions that address real business
+              needs, from website improvements to customized forms and tools.
             </p>
           </div>
 
@@ -66,8 +70,8 @@ export default function WhoWeAreSection() {
             <h3>Adaptable</h3>
 
             <p>
-              Our solutions are designed around each business instead of
-              forcing every company into the same system.
+              We tailor our website services and custom development to your
+              requirements, preferences, workflows, and business goals.
             </p>
           </div>
 
@@ -79,8 +83,9 @@ export default function WhoWeAreSection() {
             <h3>Built to Grow</h3>
 
             <p>
-              We build with the future in mind so solutions can evolve as
-              business needs and opportunities change.
+              We help businesses establish their digital foundations today and
+              explore additional solutions as their needs and opportunities
+              evolve.
             </p>
           </div>
         </div>

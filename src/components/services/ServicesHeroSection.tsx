@@ -18,7 +18,6 @@ export default function ServicesHeroSection() {
           {/* Label */}
           <div className="services-hero-label">
             <span className="services-hero-label-dot" />
-
             <span>Our Services</span>
           </div>
 
@@ -32,9 +31,9 @@ export default function ServicesHeroSection() {
 
           {/* Description */}
           <p className="services-hero-description">
-            Velquorin Labs builds practical AI and digital solutions that help
-            businesses automate work, improve customer experiences, capture
-            opportunities, and create stronger digital operations.
+            From website design and custom forms to AI-powered products
+            and business operations tools, Velquorin Labs helps you build
+            practical digital solutions around your business needs.
           </p>
 
           {/* Buttons */}
@@ -56,11 +55,12 @@ export default function ServicesHeroSection() {
 
           {/* Service labels */}
           <div className="services-hero-service-labels">
-            <span>AI Chatbots</span>
-            <span>AI Automation</span>
-            <span>Conversational AI Forms</span>
-            <span>Web Solutions</span>
-            <span>Custom AI Solutions</span>
+            <span>Website Services</span>
+            <span>Custom Forms</span>
+            <span>SHASHA AI Chatbot</span>
+            <span>AI Form Assistant</span>
+            <span>Business Operations</span>
+            <span>Custom Web &amp; AI Solutions</span>
           </div>
         </div>
       </div>

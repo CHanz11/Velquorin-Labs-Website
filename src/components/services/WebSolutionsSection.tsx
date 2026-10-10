@@ -1,29 +1,31 @@
+
 const webFeatures = [
   {
     number: "01",
-    title: "Modern Website Design",
+    title: "Prompt-Based Form Creation",
     description:
-      "Create clean, professional, and responsive websites designed around your business, customers, and goals.",
+      "Describe the form you need in a prompt and let AI help generate a form structure tailored to your requirements.",
   },
   {
     number: "02",
-    title: "Website Maintenance",
+    title: "Customized Business Forms",
     description:
-      "Keep your website updated, maintained, and working reliably as your business and digital presence grow.",
+      "Create forms designed around your business processes, customer needs, and the information you want to collect.",
   },
   {
     number: "03",
-    title: "Performance & Reliability",
+    title: "Simplified Information Collection",
     description:
-      "Build fast, responsive digital experiences with a strong technical foundation across desktop and mobile devices.",
+      "Plan forms that make it easier to gather customer details, business data, inquiries, and other required information.",
   },
   {
     number: "04",
-    title: "Custom Web Solutions",
+    title: "Flexible Form Requirements",
     description:
-      "Develop tailored web functionality and digital experiences when your business needs more than a standard website.",
+      "Describe your fields and form purpose so the planned AI Form Assistant can help shape the form around your needs.",
   },
 ];
+
 
 export default function WebSolutionsSection() {
   return (
@@ -42,49 +44,47 @@ export default function WebSolutionsSection() {
           {/* Left Content */}
           <div className="services-web-content">
             {/* Service Badge */}
+            
             <div className="services-web-label">
               <span className="services-web-label-dot" />
-
-              <span>Web Solutions · Service 04</span>
+              <span>AI Form Creation · Service 04</span>
             </div>
 
             <p className="services-web-eyebrow">
-              Website Design &amp; Maintenance
+              AI Form Assistant — Coming Soon
             </p>
 
             <h2 className="services-web-title">
-              Modern Websites Built for{" "}
-              <span>Real Businesses.</span>
+              Create Forms With{" "}
+              <span>the Power of AI.</span>
             </h2>
 
             <p className="services-web-description">
-              Velquorin Labs designs modern, responsive websites that help
-              businesses establish a professional digital presence and create
-              better experiences for their customers.
+              AI Form Assistant is our upcoming tool designed to help you create
+              customized forms by describing what you need in a prompt.
             </p>
 
             <p className="services-web-description">
-              From company websites to more customized web solutions, we focus
-              on usability, performance, reliability, and technology that can
-              grow alongside your business.
+              Use it to plan forms for collecting customer information, business
+              data, inquiries, and other information your business needs.
             </p>
 
-            {/* Buttons */}
             <div className="services-web-buttons">
               <a
                 href="/contact"
                 className="services-web-button-primary"
               >
-                Discuss Your Website
+                Ask About AI Form Assistant
               </a>
 
               <a
-                href="#custom-solutions"
+                href="#services"
                 className="services-web-button-secondary"
               >
-                Explore Custom Solutions
+                Explore Our Services
               </a>
             </div>
+
           </div>
 
           {/* Feature Cards */}
@@ -112,25 +112,17 @@ export default function WebSolutionsSection() {
 
         {/* Bottom Web Flow */}
         <div className="services-web-flow">
+          
           <div className="services-web-flow-content">
-            <span>Strategy</span>
-
+            <span>Describe Your Form</span>
             <span className="services-web-flow-arrow">→</span>
-
-            <span>Design</span>
-
+            <span>AI-Assisted Creation</span>
             <span className="services-web-flow-arrow">→</span>
-
-            <span>Development</span>
-
+            <span>Customize Fields</span>
             <span className="services-web-flow-arrow">→</span>
-
-            <span>Launch</span>
-
-            <span className="services-web-flow-arrow">→</span>
-
-            <span>Maintain</span>
+            <span>Collect Information</span>
           </div>
+
         </div>
       </div>
     </section>

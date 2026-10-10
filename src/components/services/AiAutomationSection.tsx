@@ -1,27 +1,27 @@
 const automationFeatures = [
   {
     number: "01",
-    title: "Workflow Automation",
+    title: "Booking & Appointment Forms",
     description:
-      "Automate repetitive business processes and routine tasks so your team can spend more time on higher-value work.",
+      "Make it easier for customers to request appointments, book services, and submit their preferred dates and details.",
   },
   {
     number: "02",
-    title: "Business Integrations",
+    title: "Contact & Inquiry Forms",
     description:
-      "Connect the tools your business already uses so information can move between systems with less manual work.",
+      "Collect customer questions, service inquiries, and contact information through forms tailored to your business.",
   },
   {
     number: "03",
-    title: "AI-Powered Tasks",
+    title: "Registration Forms",
     description:
-      "Use AI to understand information, organize data, generate responses, and assist with everyday business operations.",
+      "Gather customer, member, or participant information through structured registration forms.",
   },
   {
     number: "04",
-    title: "Custom Automation",
+    title: "Custom Submission Forms",
     description:
-      "Build automation workflows around your specific processes, requirements, and business goals.",
+      "Create forms for applications, requests, feedback, and other information your business needs to collect.",
   },
 ];
 
@@ -41,29 +41,26 @@ export default function AiAutomationSection() {
             <div className="services-automation-label">
               <span className="services-automation-label-dot" />
 
-              <span>Business Automation · Service 02</span>
+              <span>Custom Development · Service 02</span>
             </div>
 
             <p className="services-automation-eyebrow">
-              AI Automation
+              Custom Forms Development
             </p>
 
             <h2 className="services-automation-title">
-              Smarter Workflows Built to{" "}
+              Custom Forms Built Around{" "}
               <span className="services-automation-title-gradient">
-                Save Time.
+                Your Business.
               </span>
             </h2>
 
             <p className="services-automation-description">
-              Velquorin Labs creates intelligent automation systems that connect
-              business processes, reduce repetitive manual work, and help teams
-              operate more efficiently.
+              Velquorin Labs develops modern, customized forms designed around your business workflows, customer requirements, and information collection needs.
             </p>
 
             <p className="services-automation-description">
-              From simple task automation to connected AI-powered workflows, we
-              design solutions around how your business actually operates.
+              Whether you need a booking form, contact form, registration form, or custom submission form, we tailor the structure and fields to the information your business needs to collect.
             </p>
 
             <div className="services-automation-buttons">
@@ -71,17 +68,17 @@ export default function AiAutomationSection() {
                 href="/contact"
                 className="services-automation-button-primary"
               >
-                Discuss an Automation
+                Request Custom Forms
               </a>
 
               <a
                 href="#custom-solutions"
                 className="services-automation-button-secondary"
               >
-                Explore Custom Solutions
+                Discuss Your Requirements
               </a>
             </div>
-          </div>
+                      </div>
 
           {/* Feature Cards */}
           <div className="services-automation-features">
@@ -109,15 +106,15 @@ export default function AiAutomationSection() {
         {/* Bottom Automation Flow */}
         <div className="services-automation-flow">
           <div className="services-automation-flow-content">
-            <span>Business Process</span>
+            <span>Business Needs</span>
             <span className="services-automation-flow-arrow">→</span>
-            <span>Automation</span>
+            <span>Form Design</span>
             <span className="services-automation-flow-arrow">→</span>
-            <span>AI Assistance</span>
+            <span>Custom Fields</span>
             <span className="services-automation-flow-arrow">→</span>
-            <span>Connected Systems</span>
+            <span>Information Collection</span>
             <span className="services-automation-flow-arrow">→</span>
-            <span>Better Operations</span>
+            <span>Organized Submissions</span>
           </div>
         </div>
       </div>

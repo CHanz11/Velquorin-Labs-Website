@@ -1,27 +1,27 @@
 const capabilities = [
   {
     number: "01",
-    title: "Customer Support",
+    title: "Website Redesign",
     description:
-      "Answer common customer questions and provide helpful business information around the clock.",
+      "Transform your existing website into a modern, professional design based on your preferences, references, and business goals.",
   },
   {
     number: "02",
-    title: "Lead Capture",
+    title: "Website Development",
     description:
-      "Collect visitor information and help turn conversations into organized business opportunities.",
+      "Design and develop a new website tailored to your company's needs, brand identity, and desired functionality.",
   },
   {
     number: "03",
-    title: "Business Knowledge",
+    title: "Website Maintenance",
     description:
-      "Use your approved business information to provide more relevant and consistent responses.",
+      "Request website changes, content updates, and ongoing maintenance to keep your existing website current and reliable.",
   },
   {
     number: "04",
-    title: "Website Integration",
+    title: "Responsive & Reliable Websites",
     description:
-      "Embed intelligent conversational experiences directly into your existing business website.",
+      "Create a consistent experience across desktop, tablet, and mobile devices while supporting your business's online presence.",
   },
 ];
 
@@ -42,7 +42,7 @@ export default function AiChatbotsSection() {
             <div className="services-chatbots-label">
               <span className="services-chatbots-label-dot" />
 
-              <span>AI Customer Experience</span>
+              <span>Website Services</span>
             </div>
 
             <p className="services-chatbots-service-number">
@@ -50,22 +50,18 @@ export default function AiChatbotsSection() {
             </p>
 
             <h2 className="services-chatbots-title">
-              Intelligent Conversations{" "}
+              Websites Built Around{" "}
               <span className="services-chatbots-title-gradient">
-                Built for Business.
+               Your Business.
               </span>
             </h2>
 
             <p className="services-chatbots-description">
-              Velquorin Labs builds AI chatbot experiences designed to help
-              businesses communicate with customers, answer questions, capture
-              leads, and make useful business information easier to access.
+              We redesign existing websites, develop new websites, and provide requested updates and maintenance to help your business maintain a modern, professional online presence.
             </p>
 
             <p className="services-chatbots-description">
-              Our goal is not simply to place a chatbot on your website. We
-              design conversational systems around the way your business
-              actually communicates and operates.
+              Whether you need a complete redesign based on your references, a new website built from scratch, or changes to your current site, we tailor our work to your requirements.
             </p>
 
             <div className="services-chatbots-buttons">
@@ -73,14 +69,14 @@ export default function AiChatbotsSection() {
                 href="/contact"
                 className="services-chatbots-button-primary"
               >
-                Discuss an AI Chatbot
+                Request Website Service
               </a>
 
               <a
-                href="#shasha"
+                href="/contact"
                 className="services-chatbots-button-secondary"
               >
-                Meet SHASHA AI
+                Discuss Your Project
               </a>
             </div>
           </div>
@@ -109,28 +105,26 @@ export default function AiChatbotsSection() {
           <div className="services-chatbots-shasha-inner">
             <div className="services-chatbots-shasha-content">
               <p className="services-chatbots-shasha-eyebrow">
-                Powered by Velquorin Labs
+                Website Services
               </p>
 
               <h3>
-                Meet{" "}
+                Your Website.{" "}
                 <span className="services-chatbots-shasha-title-gradient">
-                  SHASHA AI.
+                  Your Requirements.
                 </span>
               </h3>
 
               <p className="services-chatbots-shasha-description">
-                SHASHA AI is our conversational AI platform being built to help
-                businesses communicate with customers, capture opportunities,
-                and create more connected digital experiences.
+                Tell us what you want to redesign, build, or improve. Velquorin Labs will discuss your requirements and help you determine the right approach for your website.
               </p>
 
               <div className="services-chatbots-shasha-tags">
                 {[
-                  "Customer Conversations",
-                  "Lead Capture",
-                  "Business Knowledge",
-                  "Website Integration",
+                  "Website Redesign",
+                  "New Website Development",
+                  "Website Updates",
+                  "Ongoing Maintenance",
                 ].map((item) => (
                   <span key={item}>{item}</span>
                 ))}
@@ -139,7 +133,7 @@ export default function AiChatbotsSection() {
 
             <div className="services-chatbots-shasha-action">
               <a href="/contact">
-                Ask About SHASHA AI →
+                Request a Website Consultation →
               </a>
             </div>
           </div>

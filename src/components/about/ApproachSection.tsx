@@ -1,27 +1,27 @@
 const principles = [
   {
     number: "01",
-    title: "Understand Before We Build",
+    title: "Understand Your Business Needs",
     description:
-      "We start by understanding the business, its challenges, existing workflows, customers, and the result the solution needs to achieve.",
+      "We learn about your business goals, website requirements, customer needs, and daily processes before recommending the right service or solution.",
   },
   {
     number: "02",
-    title: "Keep Technology Practical",
+    title: "Design Around Your Requirements",
     description:
-      "We choose technology based on what the business actually needs, focusing on useful solutions instead of unnecessary complexity.",
+      "Whether you need a website redesign, a new website, custom forms, or a tailored digital solution, we work around your preferences and references.",
   },
   {
     number: "03",
-    title: "Connect the Right Systems",
+    title: "Build Useful Digital Solutions",
     description:
-      "We design solutions that can work with existing processes, tools, and digital experiences instead of operating in isolation.",
+      "We develop websites and customized forms designed for your business. Our planned AI products and client portal will expand the solutions we can offer.",
   },
   {
     number: "04",
-    title: "Build for What Comes Next",
+    title: "Support and Improve",
     description:
-      "We create with growth in mind so solutions can be improved, expanded, and adapted as the business evolves.",
+      "We provide website updates and maintenance based on your requests, and can discuss further improvements as your business needs evolve.",
   },
 ];
 
@@ -54,9 +54,9 @@ export default function ApproachSection() {
           </h2>
 
           <p className="about-approach-description">
-            We believe effective technology starts with understanding what a
-            business is trying to accomplish. Every solution should have a
-            clear purpose and support the way the business works.
+            From website development and custom forms to planned AI products
+            and business operations tools, our approach starts with your
+            requirements and focuses on practical solutions for your business.
           </p>
         </div>
 

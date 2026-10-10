@@ -1,35 +1,51 @@
 const solutions = [
   {
     number: "01",
-    label: "AI SYSTEMS",
-    title: "Intelligent Customer Experiences",
+    label: "WEBSITE SERVICES",
+    title: "Websites Built Around Your Business",
     description:
-      "We build AI-powered experiences that help businesses communicate with customers, answer questions, capture opportunities, and provide faster support.",
-    items: ["AI Chatbots", "Conversational AI", "Lead Capture"],
+      "We redesign existing websites, develop new websites, and provide requested updates and maintenance to keep your online presence modern and reliable.",
+    items: [
+      "Website Redesign",
+      "Website Development",
+      "Maintenance & Updates",
+    ],
   },
   {
     number: "02",
-    label: "AUTOMATION",
-    title: "Connected Business Workflows",
+    label: "CUSTOM FORMS",
+    title: "Forms That Fit Your Workflow",
     description:
-      "We create automation that connects repetitive processes and business tools so teams can reduce manual work and operate more efficiently.",
-    items: ["Workflow Automation", "Business Integrations", "AI-Assisted Tasks"],
+      "We develop customized forms that help businesses collect customer information, manage inquiries, and support everyday processes.",
+    items: [
+      "Booking Forms",
+      "Contact & Inquiry Forms",
+      "Registration & Submission Forms",
+    ],
   },
   {
     number: "03",
-    label: "DIGITAL EXPERIENCES",
-    title: "Smarter Ways to Collect Information",
+    label: "AI PRODUCTS — COMING SOON",
+    title: "Smarter Customer Interactions",
     description:
-      "We design modern digital experiences that make it easier for businesses to collect, understand, and organize customer information.",
-    items: ["Conversational Forms", "Lead Collection", "Smart Workflows"],
+      "Our planned AI products will help businesses answer customer questions around the clock and simplify form creation through AI prompts.",
+    items: [
+      "SHASHA AI Chatbot",
+      "AI Form Assistant",
+      "Website Customer Support",
+    ],
   },
   {
     number: "04",
-    label: "WEB SOLUTIONS",
-    title: "Modern Digital Foundations",
+    label: "BUSINESS OPERATIONS — COMING SOON",
+    title: "Client Operations in One Place",
     description:
-      "We build responsive websites and digital solutions designed to strengthen a company's online presence and support long-term growth.",
-    items: ["Website Design", "Maintenance", "Custom Web Solutions"],
+      "Our planned Business Operations & Client Portal will help businesses organize client work and manage everyday operations from one place.",
+    items: [
+      "Client & Project Management",
+      "File Sharing & Information Collection",
+      "Invoices & Appointments",
+    ],
   },
 ];
 
@@ -55,16 +71,16 @@ export default function WhatWeBuildSection() {
           </p>
 
           <h2 className="about-build-title">
-            Digital Solutions Designed to{" "}
+            Practical Solutions for{" "}
             <span className="about-build-title-gradient">
-              Work Together.
+              Everyday Business Needs.
             </span>
           </h2>
 
           <p className="about-build-description">
-            Our work combines artificial intelligence, automation, and modern
-            web technology to create practical systems around the way a
-            business actually operates.
+            From website development and custom forms to planned AI products
+            and client operations tools, we build digital solutions around
+            your business needs.
           </p>
         </div>
 
@@ -113,7 +129,7 @@ export default function WhatWeBuildSection() {
             <span className="about-build-bottom-dot" />
 
             <p>
-              AI + Automation + Digital Experiences + Web
+              Websites + Custom Forms + AI Products + Business Operations
             </p>
           </div>
         </div>

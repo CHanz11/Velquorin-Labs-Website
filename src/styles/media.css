@@ -4347,3 +4347,59 @@ ABOUT PAGE RESPONSIVE STYLES
     height: 320px;
   }
 }
+
+/* ========================================
+   Business Operations & Client Portal - Responsive
+======================================== */
+
+@media (max-width: 900px) {
+  .business-operations-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .business-operations-visual {
+    max-width: 620px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .business-operations-section {
+    padding: 64px 20px;
+  }
+
+  .business-operations-features {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .business-operations-buttons {
+    flex-direction: column;
+  }
+
+  .business-operations-button-primary,
+  .business-operations-button-secondary {
+    width: 100%;
+  }
+
+  .business-operations-visual {
+    padding: 18px;
+  }
+
+  .business-operations-visual-header {
+    flex-wrap: wrap;
+  }
+
+  .business-operations-status {
+    margin-left: auto;
+  }
+
+  .business-operations-visual-grid {
+    gap: 8px;
+  }
+
+  .business-operations-visual-card {
+    padding: 12px;
+  }
+}
