@@ -1,33 +1,35 @@
+
 const processSteps = [
   {
     number: "01",
     title: "Understand",
     description:
-      "We learn about your business, challenges, workflows, and goals before recommending the right solution.",
-    label: "Discovery",
+      "We discuss your business goals, project ideas, requirements, and references to understand what you need and recommend the right solution.",
+    label: "DISCOVERY",
   },
   {
     number: "02",
-    title: "Design",
+    title: "Plan",
     description:
-      "We plan the experience, workflow, integrations, and technology needed to turn the idea into a practical solution.",
-    label: "Strategy",
+      "We define the scope, features, design, timeline, and approach for your website, custom forms, or tailored digital solution.",
+    label: "PLANNING",
   },
   {
     number: "03",
     title: "Build",
     description:
-      "We develop, integrate, test, and refine your solution using modern technologies built around your business.",
-    label: "Development",
+      "We develop your solution, review the details with you, and make the agreed adjustments before delivery.",
+    label: "DEVELOPMENT",
   },
   {
     number: "04",
-    title: "Improve",
+    title: "Deliver & Support",
     description:
-      "After launch, we maintain, optimize, and improve the solution as your business and requirements grow.",
-    label: "Optimization",
+      "We launch or hand over your completed project and provide ongoing website maintenance or further improvements as agreed.",
+    label: "DELIVERY",
   },
 ];
+
 
 export default function ProcessSection() {
   return (
@@ -51,9 +53,10 @@ export default function ProcessSection() {
           </h2>
 
           <p className="process-description">
-            A clear, collaborative approach to turn your business needs into
-            practical AI and digital solutions.
+            A straightforward, collaborative process to turn your business
+            requirements into practical digital solutions.
           </p>
+
         </div>
 
         {/* Process steps */}

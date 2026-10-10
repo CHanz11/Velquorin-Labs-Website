@@ -1,55 +1,89 @@
+
 const services = [
   {
     number: "01",
-    label: "AI CUSTOMER EXPERIENCE",
-    title: "AI Chatbots",
+    label: "WEBSITE SERVICES",
+    title: "Website Design, Development & Maintenance",
     description:
-      "Intelligent AI chatbots designed to answer customer questions, provide business information, capture leads, and support visitors around the clock.",
+      "Redesign your existing website, build a new website for your business, or request updates and ongoing maintenance based on your needs and design references.",
     features: [
-      "24/7 automated customer support",
-      "Business knowledge integration",
-      "Lead capture and qualification",
+      "Website redesign and modernization",
+      "Custom website development and deployment",
+      "Website updates and maintenance",
     ],
-    href: "/services/ai-chatbots",
+    href: "/contact",
+    status: "Available",
   },
   {
     number: "02",
-    label: "BUSINESS AUTOMATION",
-    title: "AI Automation",
+    label: "CUSTOM DEVELOPMENT",
+    title: "Custom Forms Development",
     description:
-      "Automate repetitive workflows and connect business processes with intelligent systems designed to save time and reduce manual work.",
+      "Get modern, customized forms designed around your business workflows, customer requirements, and information collection needs.",
     features: [
-      "Workflow automation",
-      "Business process integration",
-      "AI-powered task automation",
+      "Booking and appointment forms",
+      "Contact and inquiry forms",
+      "Registration and submission forms",
     ],
-    href: "/services/ai-automation",
+    href: "/contact",
+    status: "Available",
   },
   {
     number: "03",
-    label: "SMART LEAD COLLECTION",
-    title: "Conversational AI Forms",
+    label: "AI CUSTOMER SUPPORT",
+    title: "SHASHA AI Chatbot",
     description:
-      "Transform traditional forms into conversational experiences that intelligently collect, understand, validate, and organize customer information.",
+      "Add an AI chatbot to your website to help answer common customer questions 24/7. A free version is planned.",
     features: [
-      "Conversational data collection",
-      "Structured lead information",
-      "Smart validation and workflows",
+      "Website-embedded AI chatbot",
+      "Automated answers to customer questions",
+      "Free version planned",
     ],
-    href: "/services/conversational-ai-forms",
+    href: "/contact",
+    status: "Coming Soon",
   },
   {
     number: "04",
-    label: "WEB SOLUTIONS",
-    title: "Website Design & Maintenance",
+    label: "AI FORM CREATION",
+    title: "AI Form Assistant",
     description:
-      "Modern, responsive websites designed to strengthen your digital presence, support your business goals, and stay reliable as your company grows.",
+      "Describe the form you need in a prompt and let AI help create a customized form for collecting customer information and business data.",
     features: [
-      "Modern responsive websites",
-      "Website updates and maintenance",
-      "Performance and reliability",
+      "Prompt-based form creation",
+      "Customized business forms",
+      "Simplified information collection",
     ],
-    href: "/services/website-design-maintenance",
+    href: "/contact",
+    status: "Coming Soon",
+  },
+  {
+    number: "05",
+    label: "BUSINESS OPERATIONS",
+    title: "Business Operations & Client Portal",
+    description:
+      "Run your client operations from one place with a centralized portal for organizing projects, managing clients, and handling everyday business activities.",
+    features: [
+      "Manage clients and organize projects",
+      "Share files and collect information",
+      "Invoices, appointments, and communication",
+    ],
+    href: "/contact",
+    status: "Coming Soon",
+    poweredBy: "Powered by Velquorin Labs · Built on SuiteDash",
+  },
+  {
+    number: "06",
+    label: "CUSTOM PROJECTS",
+    title: "Custom Web & AI Solutions",
+    description:
+      "Have a unique idea or business challenge? Tell us about your project so we can discuss your requirements and explore a solution tailored to your business.",
+    features: [
+      "Custom web applications",
+      "Business-specific AI solutions",
+      "Solutions based on your requirements",
+    ],
+    href: "/contact",
+    status: "Project-Based",
   },
 ];
 
@@ -70,17 +104,16 @@ export default function ServicesSection() {
           </p>
 
           <h2 className="home-services-title">
-            Solutions Built for
+            Digital Solutions
             <br />
             <span className="home-services-title-gradient">
-              Modern Businesses
+              for Modern Businesses
             </span>
-          </h2>
-
+          </h2>       
           <p className="home-services-description">
-            From intelligent conversations to automated workflows and modern
-            websites, Velquorin Labs builds practical digital solutions
-            designed around real business needs.
+            From website design and custom forms to AI-powered products and
+            business operations, we provide digital solutions tailored to
+            your business needs.
           </p>
         </div>
 
@@ -104,9 +137,8 @@ export default function ServicesSection() {
                     <p className="home-service-label">
                       {service.label}
                     </p>
-
                     <span className="home-service-number-label">
-                      Service {service.number}
+                      {service.status}
                     </span>
                   </div>
 
@@ -141,12 +173,17 @@ export default function ServicesSection() {
                 </div>
 
                 {/* Link */}
+                
                 <div className="home-service-link-wrapper">
                   <a
                     href={service.href}
                     className="home-service-link"
                   >
-                    Explore Service
+                    {service.status === "Coming Soon"
+                      ? "Learn More"
+                      : service.status === "Project-Based"
+                        ? "Discuss Your Project"
+                        : "Request Service"}
 
                     <span
                       aria-hidden="true"
@@ -156,6 +193,7 @@ export default function ServicesSection() {
                     </span>
                   </a>
                 </div>
+
               </div>
             </article>
           ))}
@@ -168,10 +206,12 @@ export default function ServicesSection() {
               Need something more specific?
             </h3>
 
+            
             <p className="home-services-cta-description">
-              We can also build custom AI and digital solutions around your
-              business requirements.
+              Have a specific business need or project idea? Let&apos;s discuss
+              your requirements and find the right solution for you.
             </p>
+
           </div>
 
           <a

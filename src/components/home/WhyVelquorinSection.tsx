@@ -1,29 +1,31 @@
+
 const reasons = [
   {
     number: "01",
-    title: "Business-Focused Solutions",
+    title: "Solutions for Real Business Needs",
     description:
-      "We design solutions around real business problems, workflows, and goals instead of adding technology without a clear purpose.",
+      "Whether you need a new website, a custom form, or a better way to manage client operations, we focus on solutions that address your actual business needs.",
   },
   {
     number: "02",
-    title: "Customizable Solutions",
+    title: "Tailored to Your Requirements",
     description:
-      "Every business works differently. Our solutions can be adapted around your processes, requirements, and customer experience.",
+      "We work around your goals, design references, workflows, and preferences to create websites and digital tools that fit the way your business operates.",
   },
   {
     number: "03",
-    title: "Designed to Integrate",
+    title: "Web and AI in One Place",
     description:
-      "Our solutions are built to work with your existing systems, tools, and digital processes wherever practical.",
+      "From website development and custom forms to AI-powered products and business operations tools, we bring practical digital services together under one roof.",
   },
   {
     number: "04",
-    title: "Built to Grow",
+    title: "Support Beyond Launch",
     description:
-      "We create solutions with future improvements in mind, making it easier to expand capabilities as your business evolves.",
+      "We can help you maintain and improve your website, make requested changes, and explore new digital solutions as your business needs evolve.",
   },
 ];
+
 
 export default function WhyVelquorinSection() {
   return (
@@ -50,11 +52,11 @@ export default function WhyVelquorinSection() {
               Your Business
             </span>
           </h2>
-
-          <p className="why-velquorin-description">
-            We focus on practical, flexible solutions designed around your
-            business instead of forcing your business around the technology.
-          </p>
+            <p className="why-velquorin-description">
+              From building your online presence to simplifying customer
+              interactions and client operations, we help you find practical
+              digital solutions for your business.
+            </p>
         </div>
 
         {/* Reasons */}

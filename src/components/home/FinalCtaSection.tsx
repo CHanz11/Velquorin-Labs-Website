@@ -1,3 +1,4 @@
+
 import Link from "next/link";
 
 export default function FinalCtaSection() {
@@ -28,18 +29,20 @@ export default function FinalCtaSection() {
 
           <div className="final-cta-content">
             <p className="final-cta-eyebrow">
-              Let&apos;s Build Something Smarter
+              Let&apos;s Build Something for Your Business
             </p>
 
             <h2 className="final-cta-title">
-              Ready to Build Smarter
-              <span className="final-cta-gradient-text"> With AI?</span>
+              Have an Idea?
+              <span className="final-cta-gradient-text">
+                {" "}Let&apos;s Build It.
+              </span>
             </h2>
 
             <p className="final-cta-description">
-              Tell us what you&apos;re trying to improve, automate, or build.
-              Velquorin Labs can help turn your business needs into practical AI
-              and digital solutions.
+              Whether you need a new website, custom forms, help improving
+              your online presence, or a digital solution tailored to your
+              business, Velquorin Labs is ready to discuss your project.
             </p>
 
             <div className="final-cta-actions">
@@ -47,7 +50,7 @@ export default function FinalCtaSection() {
                 href="/contact"
                 className="final-cta-button final-cta-button-primary"
               >
-                Start a Project
+                Discuss Your Project
               </Link>
 
               <Link
@@ -59,8 +62,7 @@ export default function FinalCtaSection() {
             </div>
 
             <p className="final-cta-supporting-text">
-              Practical solutions • Built around your business • Designed to
-              grow
+              Websites • Custom Forms • AI Solutions • Business Operations
             </p>
           </div>
         </div>

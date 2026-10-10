@@ -1,30 +1,32 @@
+
 const connectedServices = [
   {
     number: "01",
-    title: "Website",
-    description: "Your digital presence",
+    title: "Web Solutions",
+    description: "Design, development & maintenance",
   },
   {
     number: "02",
-    title: "AI Chatbot",
-    description: "Customer conversations",
+    title: "Custom Forms",
+    description: "Booking, contact & submissions",
   },
   {
     number: "03",
-    title: "Conversational Forms",
-    description: "Smart lead collection",
+    title: "SHASHA AI",
+    description: "24/7 website customer support",
   },
   {
     number: "04",
-    title: "AI Automation",
-    description: "Connected workflows",
+    title: "AI Form Assistant",
+    description: "Prompt-based form creation",
   },
   {
     number: "05",
-    title: "Business Tools",
-    description: "Integrated operations",
+    title: "Client Operations",
+    description: "Projects, files & client management",
   },
 ];
+
 
 export default function ConnectedExperienceSection() {
   return (
@@ -53,8 +55,9 @@ export default function ConnectedExperienceSection() {
           </h2>
 
           <p className="connected-experience-description">
-            Velquorin Labs can connect your website, AI, customer interactions,
-            and business workflows into a more unified digital experience.
+            From websites and custom forms to AI-powered products and client
+            operations, Velquorin Labs helps businesses build a more connected
+            digital experience.
           </p>
         </div>
 
@@ -107,31 +110,33 @@ export default function ConnectedExperienceSection() {
 
           {/* Workflow */}
           <div className="connected-experience-workflow-wrapper">
+            
             <div className="connected-experience-workflow">
               <span className="connected-experience-workflow-dot" />
 
               <span>Website</span>
               <span className="connected-experience-workflow-arrow">→</span>
 
-              <span>Conversation</span>
+              <span>Forms</span>
               <span className="connected-experience-workflow-arrow">→</span>
 
-              <span>Lead</span>
+              <span>Customer</span>
               <span className="connected-experience-workflow-arrow">→</span>
 
-              <span>Automation</span>
+              <span>AI Support</span>
               <span className="connected-experience-workflow-arrow">→</span>
 
-              <span>Business</span>
+              <span>Operations</span>
             </div>
+
           </div>
         </div>
 
         {/* Supporting statement */}
         <div className="connected-experience-support">
           <p>
-            Start with the solution your business needs today and expand into
-            additional connected services as your requirements grow.
+            Start with the service you need today and expand into additional
+  digital solutions as your business grows.
           </p>
         </div>
       </div>
