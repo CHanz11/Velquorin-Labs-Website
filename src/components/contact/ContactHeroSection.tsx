@@ -1,10 +1,12 @@
+
 export default function ContactHeroSection() {
   const services = [
-    "AI Chatbots",
-    "AI Automation",
-    "Conversational AI Forms",
-    "Web Solutions",
-    "Custom AI Solutions",
+    "Website Development & Maintenance",
+    "Custom Forms Development",
+    "SHASHA AI Chatbot — Coming Soon",
+    "AI Form Assistant — Coming Soon",
+    "Business Operations & Client Portal — Coming Soon",
+    "Custom Web & AI-Based Solutions",
   ];
 
   return (
@@ -25,9 +27,7 @@ export default function ContactHeroSection() {
           <div className="contact-hero-eyebrow">
             <span className="contact-hero-eyebrow-dot" />
 
-            <span>
-              Contact Velquorin Labs
-            </span>
+            <span>Contact Velquorin Labs</span>
           </div>
 
           {/* Heading */}
@@ -41,8 +41,10 @@ export default function ContactHeroSection() {
           {/* Description */}
           <p className="contact-hero-description">
             Have a project, business challenge, or idea in mind? Tell us what
-            you&apos;re looking to improve, automate, or build, and we&apos;ll
-            explore how Velquorin Labs can help.
+            you want to build, improve, or automate. Whether you need a
+            website, custom forms, or a tailored digital solution, we&apos;re
+            ready to discuss your goals and explore the right next step for
+            your business.
           </p>
 
           {/* Service labels */}
@@ -99,8 +101,8 @@ export default function ContactHeroSection() {
             <div className="contact-hero-divider" />
 
             <p className="contact-hero-contact-description">
-              Share your idea with us and we&apos;ll help identify a practical
-              next step for your project.
+              Share your project details or business goals with us. We&apos;ll
+              help you identify a practical next step with Velquorin Labs.
             </p>
           </div>
         </div>

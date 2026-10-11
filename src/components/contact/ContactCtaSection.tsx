@@ -1,3 +1,4 @@
+
 import Link from "next/link";
 
 export default function ContactCtaSection() {
@@ -25,16 +26,17 @@ export default function ContactCtaSection() {
             </div>
 
             <h2 className="contact-info-title">
-              Have an Idea? Let&apos;s Turn It Into a{" "}
+              Ready to Take the Next Step With{" "}
               <span className="contact-info-title-gradient">
-                Practical Solution.
+                Velquorin Labs?
               </span>
             </h2>
 
             <p className="contact-info-description">
-              Whether you&apos;re exploring AI, automation, conversational
-              experiences, or a better digital solution, start by telling us
-              what your business needs.
+              From website development and custom forms to tailored web and
+              AI-based solutions, we help you explore practical ways to move
+              your business forward. Our upcoming AI tools and business
+              operations portal will expand those possibilities even further.
             </p>
 
             <div className="contact-info-actions">
@@ -42,7 +44,7 @@ export default function ContactCtaSection() {
                 href="#contact-form"
                 className="contact-info-primary-button"
               >
-                Start Your Project
+                Tell Us About Your Project
                 <span aria-hidden="true">→</span>
               </a>
 
@@ -56,10 +58,12 @@ export default function ContactCtaSection() {
 
             <div className="contact-info-services">
               {[
-                "AI Chatbots",
-                "AI Automation",
-                "Conversational AI Forms",
-                "Web Solutions",
+                "Website Development & Maintenance",
+                "Custom Forms Development",
+                "SHASHA AI Chatbot — Coming Soon",
+                "AI Form Assistant — Coming Soon",
+                "Business Operations & Client Portal — Coming Soon",
+                "Custom Web & AI-Based Solutions",
               ].map((service) => (
                 <span key={service}>
                   {service}

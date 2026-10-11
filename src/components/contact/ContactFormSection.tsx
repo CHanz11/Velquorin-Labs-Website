@@ -1,4 +1,35 @@
 export default function ContactFormSection() {
+  const services = [
+    {
+      value: "website-development-maintenance",
+      label: "Website Development & Maintenance",
+    },
+    {
+      value: "custom-forms-development",
+      label: "Custom Forms Development",
+    },
+    {
+      value: "shasha-ai-chatbot",
+      label: "SHASHA AI Chatbot — Coming Soon",
+    },
+    {
+      value: "ai-form-assistant",
+      label: "AI Form Assistant — Coming Soon",
+    },
+    {
+      value: "business-operations-client-portal",
+      label: "Business Operations & Client Portal — Coming Soon",
+    },
+    {
+      value: "custom-web-ai-solutions",
+      label: "Custom Web & AI-Based Solutions",
+    },
+    {
+      value: "other",
+      label: "Other / Not Sure Yet",
+    },
+  ];
+
   return (
     <section
       id="contact-form"
@@ -19,9 +50,7 @@ export default function ContactFormSection() {
           <div className="contact-form-eyebrow">
             <span className="contact-form-eyebrow-dot" />
 
-            <span>
-              Start a Conversation
-            </span>
+            <span>Start a Conversation</span>
           </div>
 
           <h2 className="contact-form-title">
@@ -32,9 +61,9 @@ export default function ContactFormSection() {
           </h2>
 
           <p className="contact-form-description">
-            Share a few details about what you&apos;re looking to build,
-            automate, or improve. This helps us understand your needs before we
-            start the conversation.
+            Tell us what you want to build, improve, or automate. Choose the
+            service that best matches your needs and share a few details so
+            we can better understand your project.
           </p>
         </div>
 
@@ -46,7 +75,12 @@ export default function ContactFormSection() {
             className="contact-form-top-accent"
           />
 
-          <form className="contact-form">
+          <form
+            className="contact-form"
+            action="mailto:velquorinlabs@gmail.com"
+            method="post"
+            encType="text/plain"
+          >
             {/* Name + Email */}
             <div className="contact-form-row">
               <div className="contact-form-field">
@@ -62,6 +96,8 @@ export default function ContactFormSection() {
                   name="name"
                   type="text"
                   placeholder="Enter your name"
+                  autoComplete="name"
+                  required
                   className="contact-form-input"
                 />
               </div>
@@ -79,6 +115,8 @@ export default function ContactFormSection() {
                   name="email"
                   type="email"
                   placeholder="you@company.com"
+                  autoComplete="email"
+                  required
                   className="contact-form-input"
                 />
               </div>
@@ -102,6 +140,7 @@ export default function ContactFormSection() {
                   name="company"
                   type="text"
                   placeholder="Company name"
+                  autoComplete="organization"
                   className="contact-form-input"
                 />
               </div>
@@ -118,22 +157,21 @@ export default function ContactFormSection() {
                   id="service"
                   name="service"
                   defaultValue=""
+                  required
                   className="contact-form-input contact-form-select"
                 >
                   <option value="" disabled>
                     Select a service
                   </option>
 
-                  <option value="ai-chatbots">AI Chatbots</option>
-                  <option value="ai-automation">AI Automation</option>
-                  <option value="conversational-forms">
-                    Conversational AI Forms
-                  </option>
-                  <option value="web-solutions">
-                    Website Design &amp; Maintenance
-                  </option>
-                  <option value="custom-ai">Custom AI Solutions</option>
-                  <option value="other">Other / Not Sure Yet</option>
+                  {services.map((service) => (
+                    <option
+                      key={service.value}
+                      value={service.value}
+                    >
+                      {service.label}
+                    </option>
+                  ))}
                 </select>
               </div>
             </div>
@@ -151,7 +189,8 @@ export default function ContactFormSection() {
                 id="message"
                 name="message"
                 rows={6}
-                placeholder="Tell us what you're trying to build, automate, improve, or solve..."
+                placeholder="Describe your goals, requirements, challenges, or the solution you have in mind..."
+                required
                 className="contact-form-input contact-form-textarea"
               />
             </div>
@@ -165,8 +204,11 @@ export default function ContactFormSection() {
                 </p>
 
                 <p>
-                  Your information will only be used to communicate with you
-                  about your request.
+                  Please review our{" "}
+                  <a href="/privacy-policy">
+                    Privacy Policy
+                  </a>{" "}
+                  to learn how your information is handled.
                 </p>
               </div>
 
@@ -189,9 +231,7 @@ export default function ContactFormSection() {
 
         {/* Supporting contact option */}
         <div className="contact-form-support">
-          <p>
-            Prefer email? You can contact us directly.
-          </p>
+          <p>Prefer email? You can contact us directly.</p>
 
           <a
             href="mailto:velquorinlabs@gmail.com"
