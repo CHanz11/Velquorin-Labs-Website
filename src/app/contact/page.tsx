@@ -6,7 +6,7 @@ import ContactCtaSection from "@/components/contact/ContactCtaSection";
 export default function ContactPage() {
   return (
     <main>
-      <ContactHeroSection />
+      {/* <ContactHeroSection /> */}
       <ContactFormSection />
       <ContactInfoSection />
       <ContactCtaSection />

@@ -136,7 +136,7 @@ export default function ConnectedExperienceSection() {
         <div className="connected-experience-support">
           <p>
             Start with the service you need today and expand into additional
-  digital solutions as your business grows.
+            digital solutions as your business grows.
           </p>
         </div>
       </div>

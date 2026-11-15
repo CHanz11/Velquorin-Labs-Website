@@ -1,4 +1,54 @@
+"use client";
+
+import { useState, type FormEvent } from "react";
+
 export default function ContactFormSection() {
+
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [statusMessage, setStatusMessage] = useState("");
+  const [statusType, setStatusType] = useState<"success" | "error" | "">("");
+
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+
+    const form = event.currentTarget;
+
+    setIsSubmitting(true);
+    setStatusMessage("");
+    setStatusType("");
+
+    try {
+      const formData = new FormData(form);
+
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(Object.fromEntries(formData.entries())),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        throw new Error(result.message || "Unable to submit your inquiry.");
+      }
+
+      setStatusType("success");
+      setStatusMessage(result.message);
+      form.reset();
+    } catch (error) {
+      setStatusType("error");
+      setStatusMessage(
+        error instanceof Error
+          ? error.message
+          : "Something went wrong. Please try again."
+      );
+    } finally {
+      setIsSubmitting(false);
+    }
+  }
+
   const services = [
     {
       value: "website-development-maintenance",
@@ -77,9 +127,8 @@ export default function ContactFormSection() {
 
           <form
             className="contact-form"
-            action="mailto:velquorinlabs@gmail.com"
-            method="post"
-            encType="text/plain"
+            onSubmit={handleSubmit}
+            aria-busy={isSubmitting}
           >
             {/* Name + Email */}
             <div className="contact-form-row">
@@ -215,8 +264,9 @@ export default function ContactFormSection() {
               <button
                 type="submit"
                 className="contact-form-submit"
+                disabled={isSubmitting}
               >
-                Send Inquiry
+                {isSubmitting ? "Sending..." : "Send Inquiry"}
 
                 <span
                   aria-hidden="true"
@@ -225,6 +275,17 @@ export default function ContactFormSection() {
                   →
                 </span>
               </button>
+
+              {statusMessage && (
+                <p
+                  className={`contact-form-status contact-form-status-${statusType}`}
+                  role={statusType === "error" ? "alert" : "status"}
+                  aria-live="polite"
+                >
+                  {statusMessage}
+                </p>
+              )}
+
             </div>
           </form>
         </div>
